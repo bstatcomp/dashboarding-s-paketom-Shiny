@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Poglavje 3 Urejanje oblike in razporeditve dashboard-a | Dashboarding s paketom Shiny</title>
+  <meta name="description" content="Gradivo za delavnico Dashboarding s paketom Shiny pobude DataScience@UL-FRI." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Poglavje 3 Urejanje oblike in razporeditve dashboard-a | Dashboarding s paketom Shiny" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Gradivo za delavnico Dashboarding s paketom Shiny pobude DataScience@UL-FRI." />
+  <meta name="github-repo" content="patrik-kojanec/dashboarding_v_Shiny_R" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Poglavje 3 Urejanje oblike in razporeditve dashboard-a | Dashboarding s paketom Shiny" />
+  
+  <meta name="twitter:description" content="Gradivo za delavnico Dashboarding s paketom Shiny pobude DataScience@UL-FRI." />
+  
+
+<meta name="author" content="Jana Faganeli Pucer, Patrik Kojanec, Matej Pičulin in Erik Štrumbelj" />
+
+
+<meta name="date" content="2022-01-31" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="odzivni-dashboard-i.html"/>
+<link rel="next" href="napredni-nasveti-za-uporabo-paketa-shiny-r.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Dashboarding v Shiny R</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Uvod</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#motivacija"><i class="fa fa-check"></i>Motivacija</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#struktura-te-knjige"><i class="fa fa-check"></i>Struktura te knjige</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="statični-dashboard.html"><a href="statični-dashboard.html"><i class="fa fa-check"></i><b>1</b> Statični dashboard</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="statični-dashboard.html"><a href="statični-dashboard.html#priprava"><i class="fa fa-check"></i><b>1.1</b> Priprava</a></li>
+<li class="chapter" data-level="1.2" data-path="statični-dashboard.html"><a href="statični-dashboard.html#moja-prva-shiny-aplikacija"><i class="fa fa-check"></i><b>1.2</b> Moja prva Shiny aplikacija</a></li>
+<li class="chapter" data-level="1.3" data-path="statični-dashboard.html"><a href="statični-dashboard.html#osnovni-sestavni-deli"><i class="fa fa-check"></i><b>1.3</b> Osnovni sestavni deli</a></li>
+<li class="chapter" data-level="1.4" data-path="statični-dashboard.html"><a href="statični-dashboard.html#formatiranje-teksta"><i class="fa fa-check"></i><b>1.4</b> Formatiranje teksta</a></li>
+<li class="chapter" data-level="1.5" data-path="statični-dashboard.html"><a href="statični-dashboard.html#stranski-pano-in-vnos-slik"><i class="fa fa-check"></i><b>1.5</b> Stranski pano in vnos slik</a></li>
+<li class="chapter" data-level="1.6" data-path="statični-dashboard.html"><a href="statični-dashboard.html#kontrolni-widgeti"><i class="fa fa-check"></i><b>1.6</b> Kontrolni Widgeti</a></li>
+<li class="chapter" data-level="1.7" data-path="statični-dashboard.html"><a href="statični-dashboard.html#domača-naloga"><i class="fa fa-check"></i><b>1.7</b> Domača naloga</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html"><i class="fa fa-check"></i><b>2</b> Odzivni dashboard-i</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#uvod-1"><i class="fa fa-check"></i><b>2.1</b> Uvod</a></li>
+<li class="chapter" data-level="2.2" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#priprava-1"><i class="fa fa-check"></i><b>2.2</b> Priprava</a>
+<ul>
+<li class="chapter" data-level="" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#vhodi-in-izhodi"><i class="fa fa-check"></i>Vhodi in izhodi</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#strežniška-funkcija"><i class="fa fa-check"></i><b>2.3</b> Strežniška funkcija</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#odzivni-tekst"><i class="fa fa-check"></i><b>2.3.1</b> Odzivni tekst</a></li>
+<li class="chapter" data-level="2.3.2" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#branje-datotek-in-prikaz-tabel"><i class="fa fa-check"></i><b>2.3.2</b> Branje datotek in prikaz tabel</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#odzivni-graf"><i class="fa fa-check"></i><b>2.4</b> Odzivni graf</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#odzivni-widgeti"><i class="fa fa-check"></i><b>2.4.1</b> Odzivni widgeti</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#funkcija-reactive"><i class="fa fa-check"></i><b>2.5</b> Funkcija <code>reactive()</code></a></li>
+<li class="chapter" data-level="2.6" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#domača-naloga-1"><i class="fa fa-check"></i><b>2.6</b> Domača naloga</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html"><i class="fa fa-check"></i><b>3</b> Urejanje oblike in razporeditve dashboard-a</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#tip-spletnih-strani"><i class="fa fa-check"></i><b>3.1</b> Tip spletnih strani</a></li>
+<li class="chapter" data-level="3.2" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#razporeditve-in-panoji"><i class="fa fa-check"></i><b>3.2</b> Razporeditve in panoji</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#razporeditve"><i class="fa fa-check"></i><b>3.2.1</b> Razporeditve</a></li>
+<li class="chapter" data-level="3.2.2" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#večje-število-hkratnih-prikazov"><i class="fa fa-check"></i><b>3.2.2</b> Večje število hkratnih prikazov</a></li>
+<li class="chapter" data-level="3.2.3" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#pano-z-zavihki"><i class="fa fa-check"></i><b>3.2.3</b> Pano z zavihki</a></li>
+<li class="chapter" data-level="3.2.4" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#stran-z-navigacijo"><i class="fa fa-check"></i><b>3.2.4</b> Stran z navigacijo</a></li>
+<li class="chapter" data-level="3.2.5" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#pano-z-navigacijo"><i class="fa fa-check"></i><b>3.2.5</b> Pano z navigacijo</a></li>
+<li class="chapter" data-level="3.2.6" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#ročno-definirana-razporeditev"><i class="fa fa-check"></i><b>3.2.6</b> Ročno definirana razporeditev</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#barvne-sheme-in-teme"><i class="fa fa-check"></i><b>3.3</b> Barvne sheme in teme</a></li>
+<li class="chapter" data-level="3.4" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#domača-naloga-2"><i class="fa fa-check"></i><b>3.4</b> Domača naloga</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="napredni-nasveti-za-uporabo-paketa-shiny-r.html"><a href="napredni-nasveti-za-uporabo-paketa-shiny-r.html"><i class="fa fa-check"></i><b>4</b> Napredni nasveti za uporabo paketa Shiny R</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="napredni-nasveti-za-uporabo-paketa-shiny-r.html"><a href="napredni-nasveti-za-uporabo-paketa-shiny-r.html#odvisnosti-widgetov-in-deklarativno-programiranje"><i class="fa fa-check"></i><b>4.1</b> Odvisnosti widgetov in deklarativno programiranje</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Dashboarding s paketom Shiny</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="urejanje-oblike-in-razporeditve-dashboard-a" class="section level1" number="3">
+<h1><span class="header-section-number">Poglavje 3</span> Urejanje oblike in razporeditve dashboard-a</h1>
+<p>Na prvem predavanju smo spoznali, da obliko aplikacije urejamo v delu kode, ki skrbi za uporabniški vmesnik (<code>ui</code>). Razporeditev gradnikov v naši aplikaciji določamo na treh nivojih, in sicer:</p>
+<ul>
+<li>strani (<em>page</em>),</li>
+<li>razporeditve (<em>layout</em>),</li>
+<li>panoja (<em>panel</em>).</li>
+</ul>
+<div id="tip-spletnih-strani" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Tip spletnih strani</h2>
+<p>Aplikacije so lahko razdeljene na eno ali več strani. V kodi za uporabniški vmesnik iz prejšnjih predavanj opazimo, da <code>ui</code> predstavlja funkcije <code>fluidPage</code>. Funkcija <code>fluidPage</code> pripravi vso potrebno kodo HTML, CSS in JavaScript, ki nam prikaže spletno stran v želeni obliki. Poleg funkcije <code>fluidPage</code> lahko uporabimo še funkciji <code>fixedPage</code> in <code>fillPage</code>, ko izdelujemo spletno stran z eno stranjo, ter funkcijo <code>navbarPage</code> za izdelavo aplikacij z več stranmi.</p>
+<p>Funkcija <code>fluidPage</code> razporedi objekte enakomerno po celotni širini strani. Funkcija <code>fixedPage</code> deluje podobno kot <code>fluidPage</code>, s to razliko, da vsebuje omejitev širine končne spletne strani, kar skrbi za to, da se naša aplikacija ne razteza prekomerno čez celoten ekran. Če uporabimo <code>fillPage</code>, se aplikacija razširi čez celoten ekran oziroma brskalnik. Taka oblika spletne strani je primerna, ko želimo prikazati grafe na celotni spleti strani.</p>
+<p>Poženite spodnjo kodo in poizkusite spreminjati tip strani med <code>fluidPage</code>, <code>fixedPage</code> in <code>fillPage</code>, ter spremenite <code>height</code> v <code>width</code>. Spreminjajte tudi velikost okna. Kmalu boste opazili razliko vsaj med <code>fillPage</code> in ostalima dvema tipoma strani.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb18-1" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fillPage</span>( <span class="co">#fluid, fixed</span></span>
+<span id="cb18-2"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">img</span>(<span class="at">src =</span> <span class="st">&quot;images/DS_FRI_logo.png&quot;</span>, <span class="at">height =</span> <span class="st">&quot;95%&quot;</span>) <span class="co">#width</span></span>
+<span id="cb18-3"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb18-3" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb18-4"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb18-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-5"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb18-5" aria-hidden="true" tabindex="-1"></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output){}</span>
+<span id="cb18-6"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb18-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-7"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="fu">shinyApp</span>(<span class="at">ui =</span> ui, <span class="at">server =</span> server)</span></code></pre></div>
+<p>Funkcija <code>navbarPage</code> daje uporabniku možnost, da preko zavihkov dostopa do različnih strani naše aplikacije. V nadaljevanju bomo večino časa uporabljali <code>fluidPage</code>, ker je najbolj prijazna za uporabo. Ko bomo spoznali razporeditve in panoje, bomo prikazali tudi primer uporabe <code>navbarPage</code>.</p>
+<p>Spletna stran Shiny s <code>fluidPage</code> je sestavljena iz 12 enako-širokih navideznih stolpcev in poljubno mnogo vrstic. Vsak nov objekt, ki ga dodamo aplikaciji, se avtomatsko vstavi v novo vrstico. Višina vrstice je odvisna od velikosti objekta. V primeru, da bi z vrsticami prekoračili maksimalno višino našega ekrana, se lahko do zadnje vrstice pomaknemo s pomočjo miškinega kolesca. Čeprav ima lahko aplikacije poljubno višino, je pametno, da višino omejimo na višino okna.</p>
+</div>
+<div id="razporeditve-in-panoji" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Razporeditve in panoji</h2>
+<p>Ko določimo tip strani, lahko najprej izberemo razporeditev objektov ali pa se osredotočimo na vstavljanje panojev. Razporeditve objektov določamo, ko želimo aplikaciji podati točno določeno strukturo (npr. imamo lahko več objektov v vsaki vrstici ali pa lahko ločimo stran na več delov). Panoje si lahko predstavljamo kot zabojnike, ki lahko vsebujejo različne objekte, kot so besedilo, grafi, vnosna polja, tabele, druge panoje…</p>
+<p>En primer razporeditve - <code>sidebarLayout</code> - smo že spoznali na prvem predavanju. Sedaj si bomo ogledali ostale glavne vrste razporeditev in panojev. Nato bomo pokazali, kako ustvarimo razporeditev po želji.</p>
+<div id="razporeditve" class="section level3" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Razporeditve</h3>
+<p>Razporeditve, ki jih so na voljo:</p>
+<ul>
+<li>sidebarLayout: ustvari stranski in glavni pano,</li>
+<li>splitLayout: ustvari navpične stolpce,</li>
+<li>verticalLayout: vsak pano postavi v svojo vrstico,</li>
+<li>flowLayout: panoje razporedi od leve proti desni in od zgoraj navzdol.</li>
+</ul>
+<p>Razporeditev <code>sidebarLayout</code> smo že spoznali. Sedaj poglejmo še razporeditev <code>splitLayout</code>.</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb19-1" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(</span>
+<span id="cb19-2"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb19-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">splitLayout</span>( <span class="co"># &lt;- Spremenite še v verticalLayout in flowLayout</span></span>
+<span id="cb19-3"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb19-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">img</span>(<span class="at">src =</span> <span class="st">&quot;images/DS_FRI_logo.png&quot;</span>),</span>
+<span id="cb19-4"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb19-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">img</span>(<span class="at">src =</span> <span class="st">&quot;images/DS_FRI_logo.png&quot;</span>),</span>
+<span id="cb19-5"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb19-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">img</span>(<span class="at">src =</span> <span class="st">&quot;images/DS_FRI_logo.png&quot;</span>)</span>
+<span id="cb19-6"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb19-6" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb19-7"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb19-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb19-8"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb19-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-9"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb19-9" aria-hidden="true" tabindex="-1"></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output){}</span>
+<span id="cb19-10"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb19-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-11"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb19-11" aria-hidden="true" tabindex="-1"></a><span class="fu">shinyApp</span>(<span class="at">ui =</span> ui, <span class="at">server =</span> server)</span></code></pre></div>
+<div style="border : 2px solid gray">
+<p><img src="images/shiny_3_split.png" /></p>
+</div>
+<p>V tem primeru lahko na vsak logotip gledamo kot na pano zase. Ker uporabljamo <code>splitLayout</code>, je vsaka slika v svojem stolpcu. Ko širino okna zožimo, ostanejo trije stolpci. Razporeditev <code>verticalLayout</code>, logotipe ohrani enega pod drugim, neodvisno od raztezanja okna. V primeru uporabe razporeditve <code>flowLayout</code> pa bodo logotipi razporejeni v eno vrstico. Če okno zožamo, se bodo robni logotipi začeli premikati v spodnjo vrstico.</p>
+</div>
+<div id="večje-število-hkratnih-prikazov" class="section level3" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> Večje število hkratnih prikazov</h3>
+<p>Recimo, da želimo za svoje podjetje izdelati aplikacijo za spremljanje poslovanja različnih oddelkov (npr. oddelek za stike z javnostmi, trženje ali računovodstvo). Z eno izmed izbranih razporeditev lahko vse informacije prikažemo hkrati. Na spodnji sliki je primer take aplikacije, ki uporablja razporeditev <code>verticalLayout</code>. Če želimo videti podatke za računovodstvo, se moramo pomikati navzdol.</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb20-1" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(<span class="fu">h2</span>(<span class="st">&quot;Moje Podjetje d.o.o.&quot;</span>),</span>
+<span id="cb20-2"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb20-2" aria-hidden="true" tabindex="-1"></a>                <span class="fu">verticalLayout</span>(</span>
+<span id="cb20-3"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb20-3" aria-hidden="true" tabindex="-1"></a>                  <span class="fu">img</span>(<span class="at">src =</span> <span class="st">&quot;images/PR.png&quot;</span>),</span>
+<span id="cb20-4"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb20-4" aria-hidden="true" tabindex="-1"></a>                  <span class="fu">img</span>(<span class="at">src =</span> <span class="st">&quot;images/marketing.png&quot;</span>),</span>
+<span id="cb20-5"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb20-5" aria-hidden="true" tabindex="-1"></a>                  <span class="fu">img</span>(<span class="at">src =</span> <span class="st">&quot;images/racunovodstvo.png&quot;</span>)</span>
+<span id="cb20-6"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb20-6" aria-hidden="true" tabindex="-1"></a>                ))</span></code></pre></div>
+<div style="border : 2px solid gray">
+<p><img src="images/shiny_3_messy.png" /></p>
+</div>
+<p>Z uporabo razporeditve <code>splitLayout</code> tvegamo, da bi bil prikaz v primeru ozkega ekrana nepregleden. Težava je, da imamo preveč informacij, da bi jih lahko smiselno prikazali na eni strani. Hkrati pa so te informacije že logično ločene po kategorijah (PR, trženje in računovodstvo). Bolj smiselno bi bilo, da bi uporabnik izbral le želene informacije. V nadaljevanju si bomo ogledali nekaj načinov, kako to doseči.</p>
+<p><em>Pozor</em>: V zgornjem primeru nismo uporabili pravih interaktivnih izhodov, ampak smo uporabili slike namesto grafov, da se koda aplikacije poenostavi in se lahko osredotočimo na razporejanje elementov.</p>
+</div>
+<div id="pano-z-zavihki" class="section level3" number="3.2.3">
+<h3><span class="header-section-number">3.2.3</span> Pano z zavihki</h3>
+<p>Pano <code>tabsetPanel</code> opravlja funkcijo razporeditve in panoja istočasno. Vsebino nam razporedi v podstrani, ločene z zavihki. Uporabljamo ga, ko vsaka podstran naše aplikacije zajema nek neodvisen proces, kjer ni potrebe, da so vse informacije prikazane hkrati. Ravno to smo želeli prikazati v prejšnjem primeru.</p>
+<p>Poglejmo si primer:</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-1" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fillPage</span>(</span>
+<span id="cb21-2"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">titlePanel</span>(<span class="st">&quot;Moje Podjetje d.o.o.&quot;</span>),</span>
+<span id="cb21-3"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-3" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb21-4"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tabsetPanel</span>(</span>
+<span id="cb21-5"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">id =</span> <span class="st">&quot;tabset&quot;</span>,</span>
+<span id="cb21-6"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-6" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb21-7"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tabPanel</span>(</span>
+<span id="cb21-8"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-8" aria-hidden="true" tabindex="-1"></a>      <span class="at">value =</span> <span class="st">&quot;tab1&quot;</span>,</span>
+<span id="cb21-9"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-9" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;Stiki z javnostjo&quot;</span>,</span>
+<span id="cb21-10"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-10" aria-hidden="true" tabindex="-1"></a>      <span class="fu">h2</span>(<span class="st">&quot;Kontakti s strani strank&quot;</span>),</span>
+<span id="cb21-11"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-11" aria-hidden="true" tabindex="-1"></a>      <span class="fu">img</span>(<span class="at">src =</span> <span class="st">&quot;images/PR.png&quot;</span>,</span>
+<span id="cb21-12"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-12" aria-hidden="true" tabindex="-1"></a>          <span class="at">align =</span> <span class="st">&quot;center&quot;</span>)</span>
+<span id="cb21-13"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-13" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb21-14"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-14" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb21-15"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tabPanel</span>(</span>
+<span id="cb21-16"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-16" aria-hidden="true" tabindex="-1"></a>      <span class="at">value =</span> <span class="st">&quot;tab2&quot;</span>,</span>
+<span id="cb21-17"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-17" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;Marketing&quot;</span>,</span>
+<span id="cb21-18"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-18" aria-hidden="true" tabindex="-1"></a>      <span class="fu">h2</span>(<span class="st">&quot;Oglasna kampanja:&quot;</span>),</span>
+<span id="cb21-19"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-19" aria-hidden="true" tabindex="-1"></a>      <span class="fu">img</span>(<span class="at">src =</span> <span class="st">&quot;images/marketing.png&quot;</span>,</span>
+<span id="cb21-20"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-20" aria-hidden="true" tabindex="-1"></a>          <span class="at">align =</span> <span class="st">&quot;center&quot;</span>)</span>
+<span id="cb21-21"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-21" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb21-22"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-22" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb21-23"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-23" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tabPanel</span>(</span>
+<span id="cb21-24"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-24" aria-hidden="true" tabindex="-1"></a>      <span class="at">value =</span> <span class="st">&quot;tab3&quot;</span>,</span>
+<span id="cb21-25"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-25" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;Računovodstvo&quot;</span>,</span>
+<span id="cb21-26"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-26" aria-hidden="true" tabindex="-1"></a>      <span class="fu">img</span>(<span class="at">src =</span> <span class="st">&quot;images/racunovodstvo.png&quot;</span>,</span>
+<span id="cb21-27"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-27" aria-hidden="true" tabindex="-1"></a>          <span class="at">align =</span> <span class="st">&quot;center&quot;</span>)</span>
+<span id="cb21-28"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-28" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb21-29"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-29" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb21-30"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb21-30" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<div style="border : 2px solid gray">
+<p><img src="images/shiny_3_1.PNG" /></p>
+</div>
+<p>Pano <code>tabsetPanel</code> lahko kombiniramo z ostalimi razporeditvami in paneli. Primer je kombinacija z razporeditvijo <code>sidebarLayout</code>, ki nam omogoča, da levi stranski stolpec namenimo predstavitvi podjetja ali navodilom za uporabo aplikacije, medtem ko so v desnem stolpcu prikazani grafi.</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-1" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(<span class="fu">titlePanel</span>(<span class="st">&quot;Moje Podjetje d.o.o.&quot;</span>),</span>
+<span id="cb22-2"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-2" aria-hidden="true" tabindex="-1"></a>                <span class="fu">sidebarLayout</span>(</span>
+<span id="cb22-3"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-3" aria-hidden="true" tabindex="-1"></a>                  <span class="fu">sidebarPanel</span>(</span>
+<span id="cb22-4"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-4" aria-hidden="true" tabindex="-1"></a>                    <span class="fu">h2</span>(<span class="st">&quot;Opis&quot;</span>),</span>
+<span id="cb22-5"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-5" aria-hidden="true" tabindex="-1"></a>                    <span class="st">&quot;V zavihkih najdete vizualizacije, ki prikazujejo trenutna \</span></span>
+<span id="cb22-6"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="st">    stanja za različne oddelke podjetja.&quot;</span></span>
+<span id="cb22-7"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-7" aria-hidden="true" tabindex="-1"></a>                  ),</span>
+<span id="cb22-8"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-8" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb22-9"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mainPanel</span>(<span class="fu">tabsetPanel</span>(</span>
+<span id="cb22-10"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-10" aria-hidden="true" tabindex="-1"></a>      <span class="at">id =</span> <span class="st">&quot;tabset&quot;</span>,</span>
+<span id="cb22-11"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-11" aria-hidden="true" tabindex="-1"></a>      <span class="fu">tabPanel</span>(</span>
+<span id="cb22-12"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-12" aria-hidden="true" tabindex="-1"></a>        <span class="at">value =</span> <span class="st">&quot;tab1&quot;</span>,</span>
+<span id="cb22-13"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-13" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;Stiki z javnostjo&quot;</span>,</span>
+<span id="cb22-14"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-14" aria-hidden="true" tabindex="-1"></a>        <span class="fu">h2</span>(<span class="st">&quot;Kontakti s strani strank&quot;</span>),</span>
+<span id="cb22-15"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-15" aria-hidden="true" tabindex="-1"></a>        <span class="fu">img</span>(<span class="at">src =</span> <span class="st">&quot;images/PR.png&quot;</span>,</span>
+<span id="cb22-16"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-16" aria-hidden="true" tabindex="-1"></a>            <span class="at">align =</span> <span class="st">&quot;center&quot;</span>)</span>
+<span id="cb22-17"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-17" aria-hidden="true" tabindex="-1"></a>      ),</span>
+<span id="cb22-18"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-18" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb22-19"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-19" aria-hidden="true" tabindex="-1"></a>      <span class="fu">tabPanel</span>(</span>
+<span id="cb22-20"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-20" aria-hidden="true" tabindex="-1"></a>        <span class="at">value =</span> <span class="st">&quot;tab2&quot;</span>,</span>
+<span id="cb22-21"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-21" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;Marketing&quot;</span>,</span>
+<span id="cb22-22"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-22" aria-hidden="true" tabindex="-1"></a>        <span class="fu">h2</span>(<span class="st">&quot;Oglasna kampanja:&quot;</span>),</span>
+<span id="cb22-23"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-23" aria-hidden="true" tabindex="-1"></a>        <span class="fu">img</span>(<span class="at">src =</span> <span class="st">&quot;images/marketing.png&quot;</span>,</span>
+<span id="cb22-24"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-24" aria-hidden="true" tabindex="-1"></a>            <span class="at">align =</span> <span class="st">&quot;center&quot;</span>)</span>
+<span id="cb22-25"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-25" aria-hidden="true" tabindex="-1"></a>      ),</span>
+<span id="cb22-26"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-26" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb22-27"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-27" aria-hidden="true" tabindex="-1"></a>      <span class="fu">tabPanel</span>(</span>
+<span id="cb22-28"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-28" aria-hidden="true" tabindex="-1"></a>        <span class="at">value =</span> <span class="st">&quot;tab3&quot;</span>,</span>
+<span id="cb22-29"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-29" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;Računovodstvo&quot;</span>,</span>
+<span id="cb22-30"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-30" aria-hidden="true" tabindex="-1"></a>        <span class="fu">img</span>(<span class="at">src =</span> <span class="st">&quot;images/racunovodstvo.png&quot;</span>,</span>
+<span id="cb22-31"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-31" aria-hidden="true" tabindex="-1"></a>            <span class="at">align =</span> <span class="st">&quot;center&quot;</span>)</span>
+<span id="cb22-32"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-32" aria-hidden="true" tabindex="-1"></a>      ),</span>
+<span id="cb22-33"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-33" aria-hidden="true" tabindex="-1"></a>    ))</span>
+<span id="cb22-34"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb22-34" aria-hidden="true" tabindex="-1"></a>                ))</span></code></pre></div>
+<div style="border : 2px solid gray">
+<p><img src="images/shiny_3_2.PNG" /></p>
+</div>
+<p>Zgornji primer lahko posodobimo tako, da se opis v stranskem panoju odziva glede na aktivni zavihek. To storimo tako, da dodamo še izhod tekst in posodobimo strežnisko funkcijo, kakor je prikazano tu:</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-1" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(<span class="fu">titlePanel</span>(<span class="st">&quot;Moje Podjetje d.o.o.&quot;</span>),</span>
+<span id="cb23-2"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-2" aria-hidden="true" tabindex="-1"></a>                </span>
+<span id="cb23-3"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-3" aria-hidden="true" tabindex="-1"></a>                <span class="fu">sidebarLayout</span>(</span>
+<span id="cb23-4"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-4" aria-hidden="true" tabindex="-1"></a>                  <span class="fu">sidebarPanel</span>(<span class="fu">h2</span>(<span class="st">&quot;Opis&quot;</span>),</span>
+<span id="cb23-5"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-5" aria-hidden="true" tabindex="-1"></a>                               <span class="fu">p</span>(<span class="fu">textOutput</span>(<span class="st">&quot;opis_zavihka&quot;</span>)), ),</span>
+<span id="cb23-6"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-6" aria-hidden="true" tabindex="-1"></a>                  </span>
+<span id="cb23-7"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-7" aria-hidden="true" tabindex="-1"></a>                  <span class="fu">mainPanel</span>(<span class="fu">tabsetPanel</span>(</span>
+<span id="cb23-8"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-8" aria-hidden="true" tabindex="-1"></a>                    <span class="at">id =</span> <span class="st">&quot;tabset&quot;</span>,</span>
+<span id="cb23-9"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-9" aria-hidden="true" tabindex="-1"></a>                    </span>
+<span id="cb23-10"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-10" aria-hidden="true" tabindex="-1"></a>                    <span class="fu">tabPanel</span>(</span>
+<span id="cb23-11"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-11" aria-hidden="true" tabindex="-1"></a>                      <span class="at">value =</span> <span class="st">&quot;tab1&quot;</span>,</span>
+<span id="cb23-12"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-12" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;Stiki z javnostjo&quot;</span>,</span>
+<span id="cb23-13"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-13" aria-hidden="true" tabindex="-1"></a>                      <span class="fu">h2</span>(<span class="st">&quot;Kontakti s strani strank&quot;</span>),</span>
+<span id="cb23-14"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-14" aria-hidden="true" tabindex="-1"></a>                      <span class="fu">img</span>(<span class="at">src =</span> <span class="st">&quot;images/PR.png&quot;</span>,</span>
+<span id="cb23-15"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-15" aria-hidden="true" tabindex="-1"></a>                          <span class="at">align =</span> <span class="st">&quot;center&quot;</span>)</span>
+<span id="cb23-16"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-16" aria-hidden="true" tabindex="-1"></a>                    ),</span>
+<span id="cb23-17"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-17" aria-hidden="true" tabindex="-1"></a>                    </span>
+<span id="cb23-18"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-18" aria-hidden="true" tabindex="-1"></a>                    <span class="fu">tabPanel</span>(</span>
+<span id="cb23-19"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-19" aria-hidden="true" tabindex="-1"></a>                      <span class="at">value =</span> <span class="st">&quot;tab2&quot;</span>,</span>
+<span id="cb23-20"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-20" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;Marketing&quot;</span>,</span>
+<span id="cb23-21"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-21" aria-hidden="true" tabindex="-1"></a>                      <span class="fu">h2</span>(<span class="st">&quot;Oglasna kampanja:&quot;</span>),</span>
+<span id="cb23-22"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-22" aria-hidden="true" tabindex="-1"></a>                      <span class="fu">img</span>(<span class="at">src =</span> <span class="st">&quot;images/marketing.png&quot;</span>,</span>
+<span id="cb23-23"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-23" aria-hidden="true" tabindex="-1"></a>                          <span class="at">align =</span> <span class="st">&quot;center&quot;</span>)</span>
+<span id="cb23-24"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-24" aria-hidden="true" tabindex="-1"></a>                    ),</span>
+<span id="cb23-25"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-25" aria-hidden="true" tabindex="-1"></a>                    </span>
+<span id="cb23-26"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-26" aria-hidden="true" tabindex="-1"></a>                    <span class="fu">tabPanel</span>(</span>
+<span id="cb23-27"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-27" aria-hidden="true" tabindex="-1"></a>                      <span class="at">value =</span> <span class="st">&quot;tab3&quot;</span>,</span>
+<span id="cb23-28"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-28" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;Računovodstvo&quot;</span>,</span>
+<span id="cb23-29"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-29" aria-hidden="true" tabindex="-1"></a>                      <span class="fu">img</span>(<span class="at">src =</span> <span class="st">&quot;images/racunovodstvo.png&quot;</span>,</span>
+<span id="cb23-30"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-30" aria-hidden="true" tabindex="-1"></a>                          <span class="at">align =</span> <span class="st">&quot;center&quot;</span>)</span>
+<span id="cb23-31"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-31" aria-hidden="true" tabindex="-1"></a>                    ),</span>
+<span id="cb23-32"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-32" aria-hidden="true" tabindex="-1"></a>                  ))))</span>
+<span id="cb23-33"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-34"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-34" aria-hidden="true" tabindex="-1"></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output) {</span>
+<span id="cb23-35"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-35" aria-hidden="true" tabindex="-1"></a>  output<span class="sc">$</span>opis_zavihka <span class="ot">&lt;-</span> <span class="fu">renderText</span>({</span>
+<span id="cb23-36"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-36" aria-hidden="true" tabindex="-1"></a>    <span class="fu">print</span>(<span class="fu">names</span>(input<span class="sc">$</span>tabset))</span>
+<span id="cb23-37"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-37" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (input<span class="sc">$</span>tabset <span class="sc">==</span> <span class="st">&quot;tab1&quot;</span>) {</span>
+<span id="cb23-38"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-38" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">&quot;Prikaz PR Kampanje.&quot;</span>)</span>
+<span id="cb23-39"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-39" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb23-40"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-40" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (input<span class="sc">$</span>tabset <span class="sc">==</span> <span class="st">&quot;tab2&quot;</span>) {</span>
+<span id="cb23-41"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-41" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">&quot;Prikaz oglasne Kampanje.&quot;</span>)</span>
+<span id="cb23-42"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-42" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb23-43"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-43" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (input<span class="sc">$</span>tabset <span class="sc">==</span> <span class="st">&quot;tab3&quot;</span>) {</span>
+<span id="cb23-44"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-44" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">&quot;Prikaz računovodskih podatkov.&quot;</span>)</span>
+<span id="cb23-45"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-45" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb23-46"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-46" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb23-47"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb23-47" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div style="border : 2px solid gray">
+<p><img src="images/shiny_3_2_odzivni_opis.PNG" /></p>
+</div>
+</div>
+<div id="stran-z-navigacijo" class="section level3" number="3.2.4">
+<h3><span class="header-section-number">3.2.4</span> Stran z navigacijo</h3>
+<p>Če je vsebina, ki jo želimo prikazati v naši aplikaciji, zelo obširna, postanejo zavihki nepregledni. V ta namen lahko uporabimo obliko strani <code>navbarPage</code>. Ta nam vsako podstran uredi pod novim zavihkom in omogoča dodajanje spustnega menija. Nov zavihek ustvarimo z funkcijo <code>tabPanel</code> (prvi parameter vsebuje ime zavihka). Nato definiramo izgled prikaza panoja pod tem zavihkom. S funkcijo <code>navbarMenu</code>lahko dodamo spustni meni.</p>
+<p>Poglejmo si nekoliko obsežnejši primer:</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-1" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">navbarPage</span>(</span>
+<span id="cb24-2"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Moje Podjetje d.o.o.&quot;</span>,</span>
+<span id="cb24-3"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-3" aria-hidden="true" tabindex="-1"></a>  <span class="co">#To je naslov menija/strani</span></span>
+<span id="cb24-4"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-4" aria-hidden="true" tabindex="-1"></a>  <span class="co">#To se bo prikazalo pod prvim zavihkom &quot;Uvod&quot;</span></span>
+<span id="cb24-5"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tabPanel</span>(</span>
+<span id="cb24-6"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Uvod&quot;</span>,</span>
+<span id="cb24-7"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">h2</span>(<span class="st">&quot;Uvod&quot;</span>),</span>
+<span id="cb24-8"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;To je aplikacija za mesečno poročilo podjetja &#39;Moje Podjetje&#39;.&quot;</span></span>
+<span id="cb24-9"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-9" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb24-10"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-10" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb24-11"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-11" aria-hidden="true" tabindex="-1"></a>  <span class="co">#To se bo prikazalo pod drugim zavihkom &quot;Trenutno stanje&quot;</span></span>
+<span id="cb24-12"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tabPanel</span>(<span class="st">&quot;Trenutno stanje&quot;</span>,</span>
+<span id="cb24-13"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-13" aria-hidden="true" tabindex="-1"></a>           </span>
+<span id="cb24-14"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-14" aria-hidden="true" tabindex="-1"></a>           <span class="fu">sidebarLayout</span>(</span>
+<span id="cb24-15"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-15" aria-hidden="true" tabindex="-1"></a>             <span class="fu">sidebarPanel</span>(</span>
+<span id="cb24-16"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-16" aria-hidden="true" tabindex="-1"></a>               <span class="fu">h2</span>(<span class="st">&quot;Opis&quot;</span>),</span>
+<span id="cb24-17"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-17" aria-hidden="true" tabindex="-1"></a>               <span class="st">&quot;V zavihkih najdete vizualizacije, ki prikazujejo trenutna \</span></span>
+<span id="cb24-18"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-18" aria-hidden="true" tabindex="-1"></a><span class="st">stanja za različne oddelke podjetja.&quot;</span></span>
+<span id="cb24-19"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-19" aria-hidden="true" tabindex="-1"></a>             ),</span>
+<span id="cb24-20"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-21"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-21" aria-hidden="true" tabindex="-1"></a><span class="fu">mainPanel</span>(</span>
+<span id="cb24-22"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">titlePanel</span>(<span class="st">&quot;Oddelki:&quot;</span>),</span>
+<span id="cb24-23"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tabsetPanel</span>(</span>
+<span id="cb24-24"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">id =</span> <span class="st">&quot;tabset&quot;</span>,</span>
+<span id="cb24-25"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-25" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb24-26"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-26" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tabPanel</span>(</span>
+<span id="cb24-27"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-27" aria-hidden="true" tabindex="-1"></a>      <span class="at">value =</span> <span class="st">&quot;tab1&quot;</span>,</span>
+<span id="cb24-28"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-28" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;Stiki z javnostjo&quot;</span>,</span>
+<span id="cb24-29"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-29" aria-hidden="true" tabindex="-1"></a>      <span class="fu">h2</span>(<span class="st">&quot;Kontakti s strani strank&quot;</span>),</span>
+<span id="cb24-30"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-30" aria-hidden="true" tabindex="-1"></a>      <span class="fu">img</span>(<span class="at">src =</span> <span class="st">&quot;images/PR.png&quot;</span>,</span>
+<span id="cb24-31"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-31" aria-hidden="true" tabindex="-1"></a>          <span class="at">align =</span> <span class="st">&quot;center&quot;</span>)</span>
+<span id="cb24-32"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-32" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb24-33"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-33" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb24-34"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-34" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tabPanel</span>(</span>
+<span id="cb24-35"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-35" aria-hidden="true" tabindex="-1"></a>      <span class="at">value =</span> <span class="st">&quot;tab2&quot;</span>,</span>
+<span id="cb24-36"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-36" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;Marketing&quot;</span>,</span>
+<span id="cb24-37"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-37" aria-hidden="true" tabindex="-1"></a>      <span class="fu">h2</span>(<span class="st">&quot;Oglasna kampanja:&quot;</span>),</span>
+<span id="cb24-38"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-38" aria-hidden="true" tabindex="-1"></a>      <span class="fu">img</span>(<span class="at">src =</span> <span class="st">&quot;images/marketing.png&quot;</span>,</span>
+<span id="cb24-39"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-39" aria-hidden="true" tabindex="-1"></a>          <span class="at">align =</span> <span class="st">&quot;center&quot;</span>)</span>
+<span id="cb24-40"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-40" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb24-41"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-41" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb24-42"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-42" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tabPanel</span>(</span>
+<span id="cb24-43"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-43" aria-hidden="true" tabindex="-1"></a>      <span class="at">value =</span> <span class="st">&quot;tab3&quot;</span>,</span>
+<span id="cb24-44"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-44" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;Računovodstvo&quot;</span>,</span>
+<span id="cb24-45"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-45" aria-hidden="true" tabindex="-1"></a>      <span class="fu">img</span>(<span class="at">src =</span> <span class="st">&quot;images/racunovodstvo.png&quot;</span>,</span>
+<span id="cb24-46"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-46" aria-hidden="true" tabindex="-1"></a>          <span class="at">align =</span> <span class="st">&quot;center&quot;</span>)</span>
+<span id="cb24-47"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-47" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb24-48"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-48" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb24-49"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-49" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb24-50"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-50" aria-hidden="true" tabindex="-1"></a>           )),</span>
+<span id="cb24-51"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-52"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-52" aria-hidden="true" tabindex="-1"></a><span class="co">#To se bo prikazalo pod tretjim zavihkom &quot;Zaključki&quot;</span></span>
+<span id="cb24-53"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-53" aria-hidden="true" tabindex="-1"></a><span class="fu">tabPanel</span>(<span class="st">&quot;Zaključki&quot;</span>,</span>
+<span id="cb24-54"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-54" aria-hidden="true" tabindex="-1"></a>         <span class="st">&quot;Zaključki bodo na voljo po seji izvršnega odbora.&quot;</span>),</span>
+<span id="cb24-55"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-56"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-56" aria-hidden="true" tabindex="-1"></a><span class="co">#Četrti &quot;zavihek&quot; je spustni meni z dodatnimi izbirami</span></span>
+<span id="cb24-57"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-57" aria-hidden="true" tabindex="-1"></a><span class="fu">navbarMenu</span>(</span>
+<span id="cb24-58"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-58" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Ostalo&quot;</span>,</span>
+<span id="cb24-59"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-59" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb24-60"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-60" aria-hidden="true" tabindex="-1"></a>  <span class="co">#Dodatna izbira &quot;Kontakti&quot;</span></span>
+<span id="cb24-61"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-61" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tabPanel</span>(</span>
+<span id="cb24-62"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-62" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Kontakti&quot;</span>,</span>
+<span id="cb24-63"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-63" aria-hidden="true" tabindex="-1"></a>    <span class="fu">img</span>(<span class="at">src =</span> <span class="st">&quot;images/DS_FRI_logo.png&quot;</span>),</span>
+<span id="cb24-64"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-64" aria-hidden="true" tabindex="-1"></a>    <span class="fu">br</span>(),</span>
+<span id="cb24-65"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-65" aria-hidden="true" tabindex="-1"></a>    <span class="fu">p</span>(<span class="st">&quot;mail: datascience@fri.uni-lj.si&quot;</span>)</span>
+<span id="cb24-66"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-66" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb24-67"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-67" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb24-68"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-68" aria-hidden="true" tabindex="-1"></a>  <span class="co">#Dodatna izbira &quot;Podpora&quot;</span></span>
+<span id="cb24-69"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-69" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tabPanel</span>(<span class="st">&quot;Podpora&quot;</span>, <span class="fu">p</span>(<span class="st">&quot;Under construction&quot;</span>))</span>
+<span id="cb24-70"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-70" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb24-71"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb24-71" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<div style="border : 2px solid gray">
+<p><img src="images/shiny_3_3.PNG" /></p>
+</div>
+<p>Opazimo, da <code>navbarPage</code> ustvari zavihke čisto na vrhu strani. Na tak način preprosto prehajamo med različnimi deli naše aplikacije. Posamezne strani lahko še vedno ohranijo oblike in razporeditve, ki smo jih videli v prejšnjih primerih (primer zavihek “Trenutno stanje”). Poleg tega lahko zavihkom določimo več možnosti v obliki spustnega menija, kar vidimo na zavihku “Ostalo.”</p>
+</div>
+<div id="pano-z-navigacijo" class="section level3" number="3.2.5">
+<h3><span class="header-section-number">3.2.5</span> Pano z navigacijo</h3>
+<p>Zadnja vrsta panoja, ki si jo bomo ogledali, je <code>navlistPanel</code>. Pri uporabi <code>navbarPage</code> lahko v primeru, ko imamo več zavihkov ali pa daljša imena zavihkov, zmanjka prostora v oknu. V takem primeru je bolj pregledno, če imena strani aplikacije prikažemo v obliki kazala. Ravno ta je glavna značilnost <code>navlistPanel</code> razporeditve.</p>
+<p>Ponovno si to poglejmo na primeru:</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-1" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(</span>
+<span id="cb25-2"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">titlePanel</span>(<span class="st">&quot;Moje Podjetje d.o.o.&quot;</span>, ),</span>
+<span id="cb25-3"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">h2</span>(<span class="st">&quot;Mesečno poročilo&quot;</span>),</span>
+<span id="cb25-4"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">navlistPanel</span>(</span>
+<span id="cb25-5"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">id =</span> <span class="st">&quot;kazalo&quot;</span>,</span>
+<span id="cb25-6"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Uvod&quot;</span>,</span>
+<span id="cb25-7"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tabPanel</span>(<span class="at">value =</span> <span class="st">&quot;panel 1.1&quot;</span>, <span class="st">&quot;Izhodno stanje&quot;</span>),</span>
+<span id="cb25-8"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tabPanel</span>(<span class="at">value =</span> <span class="st">&quot;panel 1.2&quot;</span>, <span class="st">&quot;Mesečni cilji&quot;</span>),</span>
+<span id="cb25-9"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Pregled opravljenega dela&quot;</span>,</span>
+<span id="cb25-10"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tabPanel</span>(</span>
+<span id="cb25-11"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-11" aria-hidden="true" tabindex="-1"></a>      <span class="at">value =</span> <span class="st">&quot;panel 2.2&quot;</span>,</span>
+<span id="cb25-12"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-12" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;Trenutno stanje&quot;</span>,</span>
+<span id="cb25-13"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-13" aria-hidden="true" tabindex="-1"></a>      <span class="fu">tabsetPanel</span>(</span>
+<span id="cb25-14"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-14" aria-hidden="true" tabindex="-1"></a>        <span class="at">id =</span> <span class="st">&quot;tabset&quot;</span>,</span>
+<span id="cb25-15"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-15" aria-hidden="true" tabindex="-1"></a>        <span class="fu">tabPanel</span>(</span>
+<span id="cb25-16"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-16" aria-hidden="true" tabindex="-1"></a>          <span class="at">value =</span> <span class="st">&quot;tab1&quot;</span>,</span>
+<span id="cb25-17"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-17" aria-hidden="true" tabindex="-1"></a>          <span class="st">&quot;Stiki z javnostjo&quot;</span>,</span>
+<span id="cb25-18"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-18" aria-hidden="true" tabindex="-1"></a>          <span class="fu">h2</span>(<span class="st">&quot;Kontakti s strani strank&quot;</span>),</span>
+<span id="cb25-19"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-19" aria-hidden="true" tabindex="-1"></a>          <span class="fu">img</span>(<span class="at">src =</span> <span class="st">&quot;images/PR.png&quot;</span>,</span>
+<span id="cb25-20"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-20" aria-hidden="true" tabindex="-1"></a>              <span class="at">align =</span> <span class="st">&quot;center&quot;</span>)</span>
+<span id="cb25-21"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-21" aria-hidden="true" tabindex="-1"></a>        ),</span>
+<span id="cb25-22"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-22" aria-hidden="true" tabindex="-1"></a>        <span class="fu">tabPanel</span>(</span>
+<span id="cb25-23"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-23" aria-hidden="true" tabindex="-1"></a>          <span class="at">value =</span> <span class="st">&quot;tab2&quot;</span>,</span>
+<span id="cb25-24"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-24" aria-hidden="true" tabindex="-1"></a>          <span class="st">&quot;Marketing&quot;</span>,</span>
+<span id="cb25-25"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-25" aria-hidden="true" tabindex="-1"></a>          <span class="fu">h2</span>(<span class="st">&quot;Oglasna kampanja:&quot;</span>),</span>
+<span id="cb25-26"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-26" aria-hidden="true" tabindex="-1"></a>          <span class="fu">img</span>(<span class="at">src =</span> <span class="st">&quot;images/marketing.png&quot;</span>,</span>
+<span id="cb25-27"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-27" aria-hidden="true" tabindex="-1"></a>              <span class="at">align =</span> <span class="st">&quot;center&quot;</span>)</span>
+<span id="cb25-28"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-28" aria-hidden="true" tabindex="-1"></a>        ),</span>
+<span id="cb25-29"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-29" aria-hidden="true" tabindex="-1"></a>        <span class="fu">tabPanel</span>(</span>
+<span id="cb25-30"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-30" aria-hidden="true" tabindex="-1"></a>          <span class="at">value =</span> <span class="st">&quot;tab3&quot;</span>,</span>
+<span id="cb25-31"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-31" aria-hidden="true" tabindex="-1"></a>          <span class="st">&quot;Računovodstvo&quot;</span>,</span>
+<span id="cb25-32"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-32" aria-hidden="true" tabindex="-1"></a>          <span class="fu">img</span>(<span class="at">src =</span> <span class="st">&quot;images/racunovodstvo.png&quot;</span>,</span>
+<span id="cb25-33"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-33" aria-hidden="true" tabindex="-1"></a>              <span class="at">align =</span> <span class="st">&quot;center&quot;</span>)</span>
+<span id="cb25-34"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-34" aria-hidden="true" tabindex="-1"></a>        ),</span>
+<span id="cb25-35"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-35" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb25-36"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-36" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb25-37"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-37" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tabPanel</span>(<span class="at">value =</span> <span class="st">&quot;panel 2.3&quot;</span>, <span class="st">&quot;Poročila&quot;</span>),</span>
+<span id="cb25-38"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-38" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Zaključki&quot;</span>,</span>
+<span id="cb25-39"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-39" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tabPanel</span>(<span class="at">value =</span> <span class="st">&quot;panel 1.2&quot;</span>, <span class="st">&quot;Novi mesečni cilji&quot;</span>),</span>
+<span id="cb25-40"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-40" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tabPanel</span>(<span class="at">value =</span> <span class="st">&quot;panel 1.2&quot;</span>, <span class="st">&quot;Nov mesečni strateški plan&quot;</span>),</span>
+<span id="cb25-41"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-41" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb25-42"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb25-42" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<div style="border : 2px solid gray">
+<p><img src="images/shiny_3_4.PNG" /></p>
+</div>
+<p>Kot vidimo, se <code>tabPanel</code> z vrednostjo “panel 2.2” prikaže na desni polovici strani, njegova vsebina pa je v celoti definirana znotraj <code>tabPanel</code> funkcije. Na tak način bi lahko zelo obširno vsebino razdelili na več strani.</p>
+</div>
+<div id="ročno-definirana-razporeditev" class="section level3" number="3.2.6">
+<h3><span class="header-section-number">3.2.6</span> Ročno definirana razporeditev</h3>
+<p>Poleg že pripravljenih razporeditev, ki jih nudi Shiny, lahko sami določimo razporeditev. Strani aplikacij so razdeljene v vrstice, vsaka z dvanajstimi navideznimi stolpci, na katere lahko postavljamo poljubne objekte in panoje. Za poljubno razporeditev potrebujemo dve funkciji: <code>fluidRow</code> in <code>column</code>. Funkcija <code>fluidRow</code> ustvari novo vrstico, kot njene argumente pa podamo <code>column</code> funkcije. Prvi argument funkcije <code>column</code> predstavlja širino podano v številu stolpcev, čez katere se bodo raztezali objekti ali panoji. Definiramo jih s parametri funkcije <code>column</code>?? . Poleg širine lahko s parametrom <code>offset</code> določimo tudi zamik stolpca. V tem primeru moramo paziti, da ne presežemo dvanajstega stolpca. Vrednost parametra <code>offset</code> se nanaša na zamik od prejšnjega definiranega stolpca (<code>column</code>), ne pa od levega roba spletne strani. Ko definiramo strukturo, lahko začnemo vstavljati objekte in panoje. Poglejmo si primer:</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(shiny)</span>
+<span id="cb26-2"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-3"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-3" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(</span>
+<span id="cb26-4"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">titlePanel</span>(<span class="st">&quot;Poljubna razporeditev&quot;</span>),</span>
+<span id="cb26-5"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-5" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb26-6"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fluidRow</span>(</span>
+<span id="cb26-7"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">column</span>(</span>
+<span id="cb26-8"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-8" aria-hidden="true" tabindex="-1"></a>      <span class="dv">6</span>,</span>
+<span id="cb26-9"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-9" aria-hidden="true" tabindex="-1"></a>      <span class="fu">titlePanel</span>(<span class="st">&quot;Levi stran&quot;</span>),</span>
+<span id="cb26-10"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-10" aria-hidden="true" tabindex="-1"></a>      <span class="fu">sidebarLayout</span>(<span class="fu">sidebarPanel</span>(<span class="fu">h3</span>(<span class="st">&quot;Levi stranski pano&quot;</span>)),</span>
+<span id="cb26-11"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-11" aria-hidden="true" tabindex="-1"></a>                    <span class="fu">mainPanel</span>(<span class="fu">h3</span>(<span class="st">&quot;Levi glavni pano&quot;</span>)))</span>
+<span id="cb26-12"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-12" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb26-13"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">column</span>(</span>
+<span id="cb26-14"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-14" aria-hidden="true" tabindex="-1"></a>      <span class="dv">6</span>,</span>
+<span id="cb26-15"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-15" aria-hidden="true" tabindex="-1"></a>      <span class="fu">titlePanel</span>(<span class="st">&quot;Desna stran&quot;</span>),</span>
+<span id="cb26-16"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-16" aria-hidden="true" tabindex="-1"></a>      <span class="fu">sidebarLayout</span>(<span class="fu">sidebarPanel</span>(<span class="fu">h3</span>(</span>
+<span id="cb26-17"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-17" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;Desni stranski pano&quot;</span></span>
+<span id="cb26-18"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-18" aria-hidden="true" tabindex="-1"></a>      )),</span>
+<span id="cb26-19"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-19" aria-hidden="true" tabindex="-1"></a>      <span class="fu">mainPanel</span>(<span class="fu">h3</span>(<span class="st">&quot;Desni glavni pano&quot;</span>)))</span>
+<span id="cb26-20"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-20" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb26-21"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-21" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb26-22"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-22" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb26-23"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fluidRow</span>(<span class="fu">column</span>(</span>
+<span id="cb26-24"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-24" aria-hidden="true" tabindex="-1"></a>    <span class="dv">12</span>,</span>
+<span id="cb26-25"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-25" aria-hidden="true" tabindex="-1"></a>    <span class="fu">titlePanel</span>(<span class="st">&quot;Vrstica, ki se razteza čez vseh 12 stolpcev&quot;</span>),</span>
+<span id="cb26-26"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-26" aria-hidden="true" tabindex="-1"></a>    <span class="fu">p</span>(</span>
+<span id="cb26-27"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-27" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;</span></span>
+<span id="cb26-28"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-28" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb26-29"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-29" aria-hidden="true" tabindex="-1"></a>  )),</span>
+<span id="cb26-30"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-30" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb26-31"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fluidRow</span>(</span>
+<span id="cb26-32"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-32" aria-hidden="true" tabindex="-1"></a>    <span class="fu">column</span>(</span>
+<span id="cb26-33"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-33" aria-hidden="true" tabindex="-1"></a>      <span class="dv">5</span>,</span>
+<span id="cb26-34"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-34" aria-hidden="true" tabindex="-1"></a>      <span class="fu">titlePanel</span>(<span class="st">&quot;Primer vgnezdenih vrstic&quot;</span>),</span>
+<span id="cb26-35"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-35" aria-hidden="true" tabindex="-1"></a>      <span class="fu">fluidRow</span>(<span class="fu">column</span>(<span class="dv">6</span>,</span>
+<span id="cb26-36"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-36" aria-hidden="true" tabindex="-1"></a>                      <span class="fu">wellPanel</span>(</span>
+<span id="cb26-37"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-37" aria-hidden="true" tabindex="-1"></a>                        <span class="st">&quot;Levi stolpec v novi vrstici&quot;</span></span>
+<span id="cb26-38"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-38" aria-hidden="true" tabindex="-1"></a>                      )),</span>
+<span id="cb26-39"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-39" aria-hidden="true" tabindex="-1"></a>               <span class="fu">column</span>(</span>
+<span id="cb26-40"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-40" aria-hidden="true" tabindex="-1"></a>                 <span class="dv">6</span>,</span>
+<span id="cb26-41"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-41" aria-hidden="true" tabindex="-1"></a>                 <span class="fu">wellPanel</span>(<span class="st">&quot;Desni stolpec v novi vrstici&quot;</span>)</span>
+<span id="cb26-42"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-42" aria-hidden="true" tabindex="-1"></a>               )) <span class="co"># Vgnezdeni stolpci se morajo prav tako sešteti v 12</span></span>
+<span id="cb26-43"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-43" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb26-44"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-44" aria-hidden="true" tabindex="-1"></a>    <span class="fu">column</span>(<span class="dv">3</span>,</span>
+<span id="cb26-45"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-45" aria-hidden="true" tabindex="-1"></a>           <span class="at">offset =</span> <span class="dv">1</span>, <span class="co"># offset se upošteva od konca prejšnjega stolpca</span></span>
+<span id="cb26-46"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-46" aria-hidden="true" tabindex="-1"></a>           <span class="fu">fluidRow</span>(<span class="fu">h2</span>(<span class="fu">br</span>(</span>
+<span id="cb26-47"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-47" aria-hidden="true" tabindex="-1"></a>           )), <span class="co"># Prazna vrstica za lepši prikaz</span></span>
+<span id="cb26-48"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-48" aria-hidden="true" tabindex="-1"></a>           <span class="fu">column</span>(</span>
+<span id="cb26-49"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-49" aria-hidden="true" tabindex="-1"></a>             <span class="dv">12</span>,</span>
+<span id="cb26-50"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-50" aria-hidden="true" tabindex="-1"></a>             <span class="fu">wellPanel</span>(<span class="st">&quot;Stolpec širine 3, zacne v 6.&quot;</span>)</span>
+<span id="cb26-51"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-51" aria-hidden="true" tabindex="-1"></a>           ))),</span>
+<span id="cb26-52"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-52" aria-hidden="true" tabindex="-1"></a>    <span class="fu">column</span>(<span class="dv">3</span>,</span>
+<span id="cb26-53"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-53" aria-hidden="true" tabindex="-1"></a>           <span class="fu">fluidRow</span>(</span>
+<span id="cb26-54"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-54" aria-hidden="true" tabindex="-1"></a>             <span class="fu">h2</span>(<span class="fu">br</span>()), <span class="co"># Prazna vrstica za lepši prikaz</span></span>
+<span id="cb26-55"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-55" aria-hidden="true" tabindex="-1"></a>             <span class="fu">column</span>(<span class="dv">6</span>, <span class="fu">wellPanel</span>(<span class="st">&quot;Stolpec širine 2.&quot;</span>)),</span>
+<span id="cb26-56"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-56" aria-hidden="true" tabindex="-1"></a>             <span class="fu">column</span>(<span class="dv">6</span>, <span class="fu">wellPanel</span>(<span class="st">&quot;Stolpec širine 2.&quot;</span>))</span>
+<span id="cb26-57"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-57" aria-hidden="true" tabindex="-1"></a>           ))</span>
+<span id="cb26-58"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-58" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb26-59"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb26-59" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<div style="border : 2px solid gray">
+<p><img src="images/shiny_3_5.PNG" /></p>
+</div>
+<p>Ob pregledu zgornjega primera opazimo, da lahko znotraj stolpca uporabimo razporeditve in panoje, kot pri navadni obliki strani. Edina razlika je, da je prikaz zožen. Poleg tega lahko znotraj stolpcev gnezdimo nove vrstice. Pri tem moramo paziti, da se širine stolpcev znotraj vgnezdenih vrstic seštejejo v 12. Dodan je tudi <code>wellPanel</code>, ki ustvari pano s temnejšim ozadnjem in obrobo, da bolje ločimo pozicije.</p>
+</div>
+</div>
+<div id="barvne-sheme-in-teme" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Barvne sheme in teme</h2>
+<p>Za konec si poglejmo še, kako spreminjamo obliko oziroma barvo samih gradnikov. To naredimo z uporabo paketa <code>bslib</code>.</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages(&quot;bslib&quot;)</span></span>
+<span id="cb27-2"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-3"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(bslib)</span></code></pre></div>
+<p>Vse kar moramo storiti, da zamenjamo tematiko okna, je, da tipu okna podamo parameter <code>theme</code>:</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb28-1" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(</span>
+<span id="cb28-2"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb28-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-3"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">theme =</span> <span class="fu">bs_theme</span>(<span class="sc">&lt;</span>parametri za obliko<span class="sc">&gt;</span>),</span>
+<span id="cb28-4"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb28-4" aria-hidden="true" tabindex="-1"></a>...</span></code></pre></div>
+<p>Funkciji <code>bs_theme</code> lahko podamo naslednje parametre:</p>
+<ul>
+<li>version: verzija, ki jo uporabljamo (trenutno privzeta tema 5),</li>
+<li>bootswatch: izbira prednastavljene teme,</li>
+<li>bg: barva ozadja,</li>
+<li>fg: barva ospredja - barva glavnega teksta,</li>
+<li>primary: barva za povezave,</li>
+<li>secondary: barva neizstopajočih component,</li>
+<li>success: barva sporočil o uspehih,</li>
+<li>info: barva pisave za informiranje,</li>
+<li>warning: barva za opozorila,</li>
+<li>danger: barva za napake,</li>
+<li>base_font: privzeta pisave,</li>
+<li>code_font: pisava za kodne izseke,</li>
+<li>heading_font: pisava za naslove,</li>
+<li>font_scale: faktor povečave pisave.</li>
+</ul>
+<p>Aplikaciji iz prejžnjega primera spremenimo barvo ospredja v svetlo sivo ter ozadje v temno sivo. Barve lahko podajamo s privzetimi besedami ali v obliki RGB. Spremenimo še pisavo naslovov v pisavo <em>Courier</em>:</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb29-1" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(</span>
+<span id="cb29-2"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb29-2" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb29-3"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb29-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">theme =</span> <span class="fu">bs_theme</span>(<span class="at">fg =</span> <span class="st">&quot;lightgray&quot;</span>,</span>
+<span id="cb29-4"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb29-4" aria-hidden="true" tabindex="-1"></a>                   <span class="at">bg =</span> <span class="st">&quot;#303030&quot;</span>,</span>
+<span id="cb29-5"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb29-5" aria-hidden="true" tabindex="-1"></a>                   <span class="at">heading_font =</span> <span class="fu">c</span>(<span class="st">&quot;Courier&quot;</span>)),</span>
+<span id="cb29-6"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb29-6" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb29-7"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb29-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">titlePanel</span>(<span class="st">&quot;Poljubna razporeditev&quot;</span>),</span>
+<span id="cb29-8"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb29-8" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb29-9"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb29-9" aria-hidden="true" tabindex="-1"></a>...</span></code></pre></div>
+<div style="border : 2px solid gray">
+<p><img src="images/shiny_3_6_manual_colors.png" /></p>
+</div>
+<p>Poglejmo si še uporabo prednstavljene barvne sheme <em>minty</em>:</p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb30-1" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(</span>
+<span id="cb30-2"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb30-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-3"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="at">theme =</span> <span class="fu">bs_theme</span>(<span class="at">bootswatch =</span> <span class="st">&quot;minty&quot;</span>),</span>
+<span id="cb30-4"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb30-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-5"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb30-5" aria-hidden="true" tabindex="-1"></a><span class="fu">titlePanel</span>(<span class="st">&quot;Poljubna razporeditev&quot;</span>),</span>
+<span id="cb30-6"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb30-6" aria-hidden="true" tabindex="-1"></a>...</span></code></pre></div>
+<div style="border : 2px solid gray">
+<p><img src="images/shiny_3_6_minty.png" /></p>
+</div>
+<p>Vidimo, da je uporaba teh tem sila preprosta. Če želimo dobiti imena vseh prednastavljenih tem, uporabimo ukaz <code>bootswatch_themes()</code></p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bootswatch_themes</span>()</span></code></pre></div>
+<pre><code>##  [1] &quot;cerulean&quot;  &quot;cosmo&quot;     &quot;cyborg&quot;    &quot;darkly&quot;    &quot;flatly&quot;    &quot;journal&quot;   &quot;litera&quot;    &quot;lumen&quot;    
+##  [9] &quot;lux&quot;       &quot;materia&quot;   &quot;minty&quot;     &quot;pulse&quot;     &quot;sandstone&quot; &quot;simplex&quot;   &quot;sketchy&quot;   &quot;slate&quot;    
+## [17] &quot;solar&quot;     &quot;spacelab&quot;  &quot;superhero&quot; &quot;united&quot;    &quot;yeti&quot;</code></pre>
+</div>
+<div id="domača-naloga-2" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> Domača naloga</h2>
+<p>Zamislite si, da vas prodajalec koles prosi, da mu sestavite dashboard, s katerim bo nadzoroval prodajo in zaloge v skladiščih. Prodajalec ima tri trgovine, vsaka trgovina pa ima svoje skladišče. Podatke o prodaji (<em>sales</em>) in o stanju v skladiščih (<em>production</em>) najdete v mapi “_data/DN3”. Ti so agregacije originalnih tabel baze podatkov, ki jih najdete v podmapi “<em>bike_stores</em>.” Podatke smo pridobili na spletni strani <a href="https://www.sqlservertutorial.net/sql-server-sample-database/" class="uri">https://www.sqlservertutorial.net/sql-server-sample-database/</a>, na kateri si lahko ogledate njihovo shemo, ki vam bo pomagala razumeti povezave med njimi.</p>
+<p>Dashboard naj bo sestavljen iz dveh strani: ena bo namenjena produkciji, druga pa prodaji. Stran produkcije naj prikaže podatek o količini, o stroških proizvodnje, o možnem prihodku in o morebitnem zaslužku koles na zalogi. Hkrati naj dashboard izriše grafa, na katerih prikaže 5 najdražjih in 5 najštevilčnejših koles na zalogi. Aplikacija mora nuditi možnost, da uporabnik podatke filtrira glede na trgovino, kategorijo in znamko koles.</p>
+<p>Stran prodaje pa bo prikazovala graf prihodkov skozi čas. Hkrati naj prikazuje grafe za 3 najboljše zaposlene, trgovine in stranke. Slednje določimo tako, da izračunamo, kateri zaposleni, trgovina in stranka je ustvarila največji prihodek. Aplikacija mora uporabniku omogočiti, da izbere časovno obdobje prodaj. Poleg tega mora uporabnik imeti možnost, da namesto prihodkov kot metriko uporabi zaslužek ali pa količino koles.</p>
+<p>Dashboard naj bo torej podoben temu:</p>
+<div style="border : 2px solid gray">
+<p><img src="images/DN3_a.PNG" /></p>
+</div>
+<div style="border : 2px solid gray">
+<p><img src="images/DN3_b.PNG" /></p>
+</div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="odzivni-dashboard-i.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="napredni-nasveti-za-uporabo-paketa-shiny-r.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/03-Oblikovanje-Shiny-aplikacij.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

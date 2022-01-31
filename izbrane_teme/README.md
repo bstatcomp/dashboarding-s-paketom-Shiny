@@ -1,0 +1,1 @@
+V tej mapi se hrani gradiva za teme, ki jih udeleženci izberejo za zadnje predavanje.

@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Poglavje 1 Statični dashboard | Dashboarding s paketom Shiny</title>
+  <meta name="description" content="Gradivo za delavnico Dashboarding s paketom Shiny pobude DataScience@UL-FRI." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Poglavje 1 Statični dashboard | Dashboarding s paketom Shiny" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Gradivo za delavnico Dashboarding s paketom Shiny pobude DataScience@UL-FRI." />
+  <meta name="github-repo" content="patrik-kojanec/dashboarding_v_Shiny_R" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Poglavje 1 Statični dashboard | Dashboarding s paketom Shiny" />
+  
+  <meta name="twitter:description" content="Gradivo za delavnico Dashboarding s paketom Shiny pobude DataScience@UL-FRI." />
+  
+
+<meta name="author" content="Jana Faganeli Pucer, Patrik Kojanec, Matej Pičulin in Erik Štrumbelj" />
+
+
+<meta name="date" content="2022-01-31" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="odzivni-dashboard-i.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Dashboarding v Shiny R</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Uvod</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#motivacija"><i class="fa fa-check"></i>Motivacija</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#struktura-te-knjige"><i class="fa fa-check"></i>Struktura te knjige</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="statični-dashboard.html"><a href="statični-dashboard.html"><i class="fa fa-check"></i><b>1</b> Statični dashboard</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="statični-dashboard.html"><a href="statični-dashboard.html#priprava"><i class="fa fa-check"></i><b>1.1</b> Priprava</a></li>
+<li class="chapter" data-level="1.2" data-path="statični-dashboard.html"><a href="statični-dashboard.html#moja-prva-shiny-aplikacija"><i class="fa fa-check"></i><b>1.2</b> Moja prva Shiny aplikacija</a></li>
+<li class="chapter" data-level="1.3" data-path="statični-dashboard.html"><a href="statični-dashboard.html#osnovni-sestavni-deli"><i class="fa fa-check"></i><b>1.3</b> Osnovni sestavni deli</a></li>
+<li class="chapter" data-level="1.4" data-path="statični-dashboard.html"><a href="statični-dashboard.html#formatiranje-teksta"><i class="fa fa-check"></i><b>1.4</b> Formatiranje teksta</a></li>
+<li class="chapter" data-level="1.5" data-path="statični-dashboard.html"><a href="statični-dashboard.html#stranski-pano-in-vnos-slik"><i class="fa fa-check"></i><b>1.5</b> Stranski pano in vnos slik</a></li>
+<li class="chapter" data-level="1.6" data-path="statični-dashboard.html"><a href="statični-dashboard.html#kontrolni-widgeti"><i class="fa fa-check"></i><b>1.6</b> Kontrolni Widgeti</a></li>
+<li class="chapter" data-level="1.7" data-path="statični-dashboard.html"><a href="statični-dashboard.html#domača-naloga"><i class="fa fa-check"></i><b>1.7</b> Domača naloga</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html"><i class="fa fa-check"></i><b>2</b> Odzivni dashboard-i</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#uvod-1"><i class="fa fa-check"></i><b>2.1</b> Uvod</a></li>
+<li class="chapter" data-level="2.2" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#priprava-1"><i class="fa fa-check"></i><b>2.2</b> Priprava</a>
+<ul>
+<li class="chapter" data-level="" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#vhodi-in-izhodi"><i class="fa fa-check"></i>Vhodi in izhodi</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#strežniška-funkcija"><i class="fa fa-check"></i><b>2.3</b> Strežniška funkcija</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#odzivni-tekst"><i class="fa fa-check"></i><b>2.3.1</b> Odzivni tekst</a></li>
+<li class="chapter" data-level="2.3.2" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#branje-datotek-in-prikaz-tabel"><i class="fa fa-check"></i><b>2.3.2</b> Branje datotek in prikaz tabel</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#odzivni-graf"><i class="fa fa-check"></i><b>2.4</b> Odzivni graf</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#odzivni-widgeti"><i class="fa fa-check"></i><b>2.4.1</b> Odzivni widgeti</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#funkcija-reactive"><i class="fa fa-check"></i><b>2.5</b> Funkcija <code>reactive()</code></a></li>
+<li class="chapter" data-level="2.6" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#domača-naloga-1"><i class="fa fa-check"></i><b>2.6</b> Domača naloga</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html"><i class="fa fa-check"></i><b>3</b> Urejanje oblike in razporeditve dashboard-a</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#tip-spletnih-strani"><i class="fa fa-check"></i><b>3.1</b> Tip spletnih strani</a></li>
+<li class="chapter" data-level="3.2" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#razporeditve-in-panoji"><i class="fa fa-check"></i><b>3.2</b> Razporeditve in panoji</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#razporeditve"><i class="fa fa-check"></i><b>3.2.1</b> Razporeditve</a></li>
+<li class="chapter" data-level="3.2.2" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#večje-število-hkratnih-prikazov"><i class="fa fa-check"></i><b>3.2.2</b> Večje število hkratnih prikazov</a></li>
+<li class="chapter" data-level="3.2.3" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#pano-z-zavihki"><i class="fa fa-check"></i><b>3.2.3</b> Pano z zavihki</a></li>
+<li class="chapter" data-level="3.2.4" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#stran-z-navigacijo"><i class="fa fa-check"></i><b>3.2.4</b> Stran z navigacijo</a></li>
+<li class="chapter" data-level="3.2.5" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#pano-z-navigacijo"><i class="fa fa-check"></i><b>3.2.5</b> Pano z navigacijo</a></li>
+<li class="chapter" data-level="3.2.6" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#ročno-definirana-razporeditev"><i class="fa fa-check"></i><b>3.2.6</b> Ročno definirana razporeditev</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#barvne-sheme-in-teme"><i class="fa fa-check"></i><b>3.3</b> Barvne sheme in teme</a></li>
+<li class="chapter" data-level="3.4" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#domača-naloga-2"><i class="fa fa-check"></i><b>3.4</b> Domača naloga</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="napredni-nasveti-za-uporabo-paketa-shiny-r.html"><a href="napredni-nasveti-za-uporabo-paketa-shiny-r.html"><i class="fa fa-check"></i><b>4</b> Napredni nasveti za uporabo paketa Shiny R</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="napredni-nasveti-za-uporabo-paketa-shiny-r.html"><a href="napredni-nasveti-za-uporabo-paketa-shiny-r.html#odvisnosti-widgetov-in-deklarativno-programiranje"><i class="fa fa-check"></i><b>4.1</b> Odvisnosti widgetov in deklarativno programiranje</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Dashboarding s paketom Shiny</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="statični-dashboard" class="section level1" number="1">
+<h1><span class="header-section-number">Poglavje 1</span> Statični dashboard</h1>
+<div id="priprava" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Priprava</h2>
+<p>Cilj današnjega predavanja je, da spoznamo knjižnico Shiny in strukturo njenih aplikacij. Spoznali bomo osnovne gradnike uporabniškega vmesnika, zaradi česar se bomo zaenkrat omejili le na statične aplikacije. Interaktivne aplikacije bomo spoznali v naslednjem poglavju.</p>
+<p>Najprej je seveda pomembno, da si namestimo potreben paket <strong>Shiny</strong> z ukazom <em>install.packages</em>.</p>
+<p>Odpremo RStudio in v konzolo vpišemo ukaz:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="statični-dashboard.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(shiny)</span></code></pre></div>
+<p>Ko je namestitev končana, naložimo paket in z ukazom <em>runExample</em> preverimo, če deluje:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="statični-dashboard.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(shiny)</span>
+<span id="cb2-2"><a href="statični-dashboard.html#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="statični-dashboard.html#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">runExample</span>(<span class="st">&quot;01_hello&quot;</span>)</span></code></pre></div>
+<p>Če vse deluje pravilno, bi se moralo odpreti okno, kot je prikazano na tej sliki:</p>
+<div style="border : 2px solid gray">
+<p><img src="images/shiny_ex.PNG" /></p>
+</div>
+<p>Postavitev elementov je odvisna od velikosti odprtega okna in se lahko nekoliko razlikuje od primera na zgornji sliki. V vsakem primeru lahko z drsnikom spreminjamo število košev, ki v grafu predstavljajo število stolpcev histograma. Na ta način lahko avtomatsko spreminjamo prikaz histograma. Ko zaključimo z uporabo aplikacije, s klikom na gumb X v zgornjem desnem kotu aplikacijo zapremo. Na ta način ustavimo proces v ozadju. Ko se vrnemo v Rstudio, lahko preberemo sporočilo: <code>Listening on http://127.0.0.1:7844</code>. Rstudio je pripravljen na izvedbo novega ukaza. To pomeni, da je aplikacija uspešno zaprta. Če Rstudio ni pripravljen na nov ukaz, je aplikacija še vedno odprta nekje v ozadju.</p>
+<p>Poleg prvega primera “01_hello” lahko poženemo tudi druge že pripravljene primere. Tako dobimo občutek, kaj vse nam nudi paket Shiny.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="statični-dashboard.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">runExample</span>(<span class="st">&quot;01_hello&quot;</span>) <span class="co"># histogram</span></span>
+<span id="cb3-2"><a href="statični-dashboard.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">runExample</span>(<span class="st">&quot;02_text&quot;</span>) <span class="co"># tabele in data frame-i</span></span>
+<span id="cb3-3"><a href="statični-dashboard.html#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">runExample</span>(<span class="st">&quot;03_reactivity&quot;</span>) <span class="co"># reaktivni izrazi</span></span>
+<span id="cb3-4"><a href="statični-dashboard.html#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">runExample</span>(<span class="st">&quot;04_mpg&quot;</span>) <span class="co"># globalne spremenljivke</span></span>
+<span id="cb3-5"><a href="statični-dashboard.html#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">runExample</span>(<span class="st">&quot;05_sliders&quot;</span>) <span class="co"># drsniki</span></span>
+<span id="cb3-6"><a href="statični-dashboard.html#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">runExample</span>(<span class="st">&quot;06_tabsets&quot;</span>) <span class="co"># zavihki</span></span>
+<span id="cb3-7"><a href="statični-dashboard.html#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="fu">runExample</span>(<span class="st">&quot;07_widgets&quot;</span>) <span class="co"># tekst za pomoč in akcijski gumbi</span></span>
+<span id="cb3-8"><a href="statični-dashboard.html#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="fu">runExample</span>(<span class="st">&quot;08_html&quot;</span>) <span class="co"># aplikacija Shiny sestavljena iz HTML</span></span>
+<span id="cb3-9"><a href="statični-dashboard.html#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="fu">runExample</span>(<span class="st">&quot;09_upload&quot;</span>) <span class="co"># primer prenašanja datotek</span></span>
+<span id="cb3-10"><a href="statični-dashboard.html#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="fu">runExample</span>(<span class="st">&quot;10_download&quot;</span>) <span class="co"># primer nalaganja datotek</span></span>
+<span id="cb3-11"><a href="statični-dashboard.html#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="fu">runExample</span>(<span class="st">&quot;11_timer&quot;</span>) <span class="co"># samodejni timer</span></span></code></pre></div>
+</div>
+<div id="moja-prva-shiny-aplikacija" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Moja prva Shiny aplikacija</h2>
+<p>Novo aplikacijo Shiny lahko ustvarimo s čarovnikom. V meniju izberemo <em>File -&gt; New File -&gt; Shiny Web App</em>. Ta proces privzeto ustvari mapo z izbranim imenom in pripravljeno skripto <em>app.R</em>, ki predstavlja začetni primer.</p>
+<p>Prvo aplikacijo bomo ustvarili kar sami. Odprimo novo skripto R in vpišimo te ukaze:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="statični-dashboard.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(shiny)</span>
+<span id="cb4-2"><a href="statični-dashboard.html#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="statični-dashboard.html#cb4-3" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(</span>
+<span id="cb4-4"><a href="statični-dashboard.html#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">titlePanel</span>(<span class="st">&quot;Moja prva Shiny aplikacija&quot;</span>)</span>
+<span id="cb4-5"><a href="statični-dashboard.html#cb4-5" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-6"><a href="statični-dashboard.html#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="statični-dashboard.html#cb4-7" aria-hidden="true" tabindex="-1"></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output){}</span>
+<span id="cb4-8"><a href="statični-dashboard.html#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="statični-dashboard.html#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="statični-dashboard.html#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="fu">shinyApp</span>(<span class="at">ui =</span> ui, <span class="at">server =</span> server)</span></code></pre></div>
+<p>Dokler skripte R ne shranimo, bo orodna vrstica na vrhu izgledala takole:</p>
+<div style="border : 2px solid gray">
+<p><img src="images/shiny_1_head1.png" /></p>
+</div>
+<p>Ko pa skripto shranimo, se orodna vrstica spremeni v:</p>
+<div style="border : 2px solid gray">
+<p><img src="images/shiny_1_head2.png" /></p>
+</div>
+<p>Kadar Rstudio v zadnji vrstici skripte zazna ukaz <code>shinyApp</code>, samodejno prilagodi orodno vrstico za delo s Shiny R-jem. Še opozorilo: če vas R vpraša, v katerem kodiranju želite shraniti skripto, izberite UTF8. Paket Shiny za pravilno delovanje uporablja to kodiranje.</p>
+<p>Sedaj s klikom na gumb <em>Run App</em> poženimo našo prvo aplikacijo. Prikaže se nam okno:</p>
+<div style="border : 2px solid gray">
+<p><img src="images/shiny_1_0.PNG" /></p>
+<p><br> </br></p>
+</div>
+<p>Čeprav ukazov iz zgornje skripte še nismo razložili, smo ustvarili našo prvo in najbolj osnovno aplikacijo Shiny. Aplikacija nam izpiše le naslov. V nadaljevanju si bomo podrobneje ogledali, katere gradnike nudi knjižnica Shiny.</p>
+</div>
+<div id="osnovni-sestavni-deli" class="section level2" number="1.3">
+<h2><span class="header-section-number">1.3</span> Osnovni sestavni deli</h2>
+<p>Naša skripta vsebuje vse potrebne sestavne dele za delovanje aplikacije. Kodo znotraj vsake skripte delimo na 3 glavne sestavne dele:</p>
+<ul>
+<li>objekt za izdelavo uporabniškega vmesnika imenovan <code>ui</code>,</li>
+<li>strežniško funkcijo <code>server</code> in</li>
+<li>klic funkcije <code>shinyApp</code>.</li>
+</ul>
+<p>V uporabniškem vmesniku določimo razporeditev uporabljenih komponent in obliko naše aplikacije. Znotraj njega definiramo vse komponente spletne strani, kot so besedilo, polja za vnos besedila, polja za izris grafa, itd. Uporabniški vmesnik definiramo s klicem funkcije Shiny, ki sestavi spletno stran v jeziku HTML (v prejšnjem primeru je to <code>fluidPage()</code>, ki lahko avtomatsko razporeja elemente dashboard-a).</p>
+<p>V strežniški funkciji pripada vsakemu izhodu (izpis teksta, izris grafa…) del kode, ki se izvede ob uporabnikovem dejanju oz. ko pride do spremembe. Strežniško funkcijo definiramo tako, da sprejme dva parametra: vhod in izhod. Ko sta ti dve komponenti pripravljeni, lahko kličemo ukaz <code>shinyApp(ui = &lt; moj_vmesnik &gt;, server = &lt; moj_strežnik &gt;)</code>, ki aplikacijo sestavi in požene.</p>
+<p>Če si predstavljamo uporabniški vmesnik kot komponento, ki naši aplikaciji daje obliko, si lahko strežniško funkcijo predstavimo kot komponento, ki naši aplikaciji daje odzivnost. Znotraj nje definiramo vsa pravila in ukaze, ki so potrebni za interaktivno delovanje aplikacije. Delovanje strežniške funkcije bomo spoznali v naslednjem predavanju, danes pa se posvetimo uporabniškem vmesniku.</p>
+</div>
+<div id="formatiranje-teksta" class="section level2" number="1.4">
+<h2><span class="header-section-number">1.4</span> Formatiranje teksta</h2>
+<p>Preden se naučimo uporabljati bolj zapletene objekte, si oglejmo, kako v aplikacijah Shiny oblikujemo besedilo. Ko poženemo aplikacije, se te prepišejo v jezik HTML. Če želimo besedilo naših aplikacij preoblikovati, moramo navodila za preoblikovanje spremeniti v jezik HTML. Shiny R ponuja vrsto funkcij za oblikovanje besedila, ki se ujemajo z oznakami programskega jezika HTML. Nekaj primerov:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Funkcija v R</th>
+<th align="left">oznaka HTML</th>
+<th align="left">Pomen</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>p()</code></td>
+<td align="left"><code>&lt;p&gt;</code></td>
+<td align="left">Odstavek teksta.</td>
+</tr>
+<tr class="even">
+<td align="left"><code>h1()</code></td>
+<td align="left"><code>&lt;h1&gt;</code></td>
+<td align="left">Naslov prvega nivoja.</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>h2()</code></td>
+<td align="left"><code>&lt;h2&gt;</code></td>
+<td align="left">Naslov drugega nivoja.</td>
+</tr>
+<tr class="even">
+<td align="left">…</td>
+<td align="left">…</td>
+<td align="left">…</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>h6()</code></td>
+<td align="left"><code>&lt;h6&gt;</code></td>
+<td align="left">Naslov šestega nivoja.</td>
+</tr>
+<tr class="even">
+<td align="left"><code>strong()</code></td>
+<td align="left"><code>&lt;strong&gt;</code></td>
+<td align="left">Krepko označeno besedilo.</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>em()</code></td>
+<td align="left"><code>&lt;em&gt;</code></td>
+<td align="left">Ležeče označeno besedilo.</td>
+</tr>
+<tr class="even">
+<td align="left"><code>a()</code></td>
+<td align="left"><code>&lt;a&gt;</code></td>
+<td align="left">Povezava.</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>br()</code></td>
+<td align="left"><code>&lt;br&gt;</code></td>
+<td align="left">Prekinitev vrstice (prazna vrstica).</td>
+</tr>
+<tr class="even">
+<td align="left"><code>code()</code></td>
+<td align="left"><code>&lt;code&gt;</code></td>
+<td align="left">Tekst v obliki kode.</td>
+</tr>
+</tbody>
+</table>
+<p>R funkcije poleg besedila, ki ga želimo izpisati, sprejmejo tudi parametre, ki definirajo slog, bravo… Te definiramo v slogu programskega jezika CSS (Cascading Style Sheet), oziroma tako, da jih podamo v obliki” <code>"&lt;argument1&gt; : &lt;vrednost1&gt;; &lt;argument2&gt; : &lt;vrednost2&gt;; ".."</code>.</p>
+<p>Poglejmo si preprost primer:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="statični-dashboard.html#cb5-1" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(</span>
+<span id="cb5-2"><a href="statični-dashboard.html#cb5-2" aria-hidden="true" tabindex="-1"></a>  titlePan<span class="st">&quot;l(&quot;</span>Moja prva Shiny aplikac<span class="st">&quot;ja&quot;</span>),</span>
+<span id="cb5-3"><a href="statični-dashboard.html#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">h2</span>(<span class="st">&quot;Lorem ipsum&quot;</span>), <span class="co">#podnaslov</span></span>
+<span id="cb5-4"><a href="statični-dashboard.html#cb5-4" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb5-5"><a href="statični-dashboard.html#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="co">#odsek teksta</span></span>
+<span id="cb5-6"><a href="statični-dashboard.html#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="statični-dashboard.html#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">p</span>(<span class="st">&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborem.&quot;</span>),</span>
+<span id="cb5-8"><a href="statični-dashboard.html#cb5-8" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-9"><a href="statični-dashboard.html#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">br</span>(), <span class="co"># prekinitev</span></span>
+<span id="cb5-10"><a href="statični-dashboard.html#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-11"><a href="statični-dashboard.html#cb5-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">strong</span>(<span class="st">&quot;Kerpko označen tekst.&quot;</span>),</span>
+<span id="cb5-12"><a href="statični-dashboard.html#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-13"><a href="statični-dashboard.html#cb5-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">br</span>(), <span class="co"># prekinitev</span></span>
+<span id="cb5-14"><a href="statični-dashboard.html#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-15"><a href="statični-dashboard.html#cb5-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">p</span>(<span class="st">&quot;Odstavek teksta, ki je zeleno obarvan.&quot;</span>, </span>
+<span id="cb5-16"><a href="statični-dashboard.html#cb5-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">style =</span> <span class="st">&quot;color:green; font-size:8pt&quot;</span>) <span class="co">#CSS stil</span></span>
+<span id="cb5-17"><a href="statični-dashboard.html#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="er">)</span></span></code></pre></div>
+<div style="border : 2px solid gray">
+<p><img src="images/shiny_1_1.PNG" /></p>
+</div>
+<p>V prvem primeru smo že spoznali funkcijo <code>titlePanel</code>, ki izpiše naslov aplikacije. Enak napis bi dobili, če bi funkcijo <code>titlePanel</code> zamenjali s funkcijo <code>h2</code>. Vse elemente, ki jih želimo prikazati na strani (<em>fluidPage</em>), podamo kot parametre tej funkciji. V našem primeru smo najprej dodali dva naslova, nato odstavek s tekstom, ki se avtomatsko prilagaja velikosti strani. Temu sledi še odebeljen tekst in na koncu poljubno formatiran tekst z uporabo CSS.</p>
+</div>
+<div id="stranski-pano-in-vnos-slik" class="section level2" number="1.5">
+<h2><span class="header-section-number">1.5</span> Stranski pano in vnos slik</h2>
+<p>Če aplikaciji dodamo različne elemente, se bodo ti prikazali vsak v svoji vrstici. Zato paket Shiny vsebuje funkcije, s katerimi lahko razporejamo objekte. V sklopu tega predavanja bomo spoznali le eno razporeditev, na tretjem predavanju pa bomo spoznali še druge razporeditve.</p>
+<p>Funkcija <code>sidebarLayout</code> razdeli stran na stranski in glavni pano. Funkcija prejme dva vhodna parametra, <code>sidebarPanel</code> in <code>mainPanel</code>, kjer vsak vsebuje svoje komponente (tekst, polja, drsnike, grafe, itd.).</p>
+<p>Poglejmo si najbolj preprosto uporabo tega gradnika:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="statični-dashboard.html#cb6-1" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(</span>
+<span id="cb6-2"><a href="statični-dashboard.html#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">titlePanel</span>(<span class="st">&quot;Moja prva Shiny aplikacja&quot;</span>),</span>
+<span id="cb6-3"><a href="statični-dashboard.html#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="statični-dashboard.html#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Razporediev sidebarLayout</span></span>
+<span id="cb6-5"><a href="statični-dashboard.html#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sidebarLayout</span>(</span>
+<span id="cb6-6"><a href="statični-dashboard.html#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="statični-dashboard.html#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Stranski pano</span></span>
+<span id="cb6-8"><a href="statični-dashboard.html#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sidebarPanel</span>(<span class="st">&quot;Stranski pano&quot;</span>),</span>
+<span id="cb6-9"><a href="statični-dashboard.html#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-10"><a href="statični-dashboard.html#cb6-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Glavni pano</span></span>
+<span id="cb6-11"><a href="statični-dashboard.html#cb6-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mainPanel</span>(<span class="st">&quot;Glavni pano&quot;</span>)</span>
+<span id="cb6-12"><a href="statični-dashboard.html#cb6-12" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb6-13"><a href="statični-dashboard.html#cb6-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-14"><a href="statični-dashboard.html#cb6-14" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<div style="border : 2px solid gray">
+<p><img src="images/shiny_1_1_simple.PNG" /></p>
+</div>
+<p>Prikaže se nam okno z dvema gradnikoma, ki vsebujeta le tekst. Leva tretjina zaslona je privzeto namenjena stranskemu panoju, desni dve tretjini pa glavnemu panoju. V primeru, da je celotno okno preozko, pa se lahko stranski pano premakne tudi na vrh zaslona. Več o ročni nastavitvi postavitve panojev bomo povedali na tretjem predavanju.</p>
+<p>V spodnjem primeru nadgradimo zgornji primer tako, da vsak pano vsebuje več gradnikov in dodamo logotip Data Science:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="statični-dashboard.html#cb7-1" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(</span>
+<span id="cb7-2"><a href="statični-dashboard.html#cb7-2" aria-hidden="true" tabindex="-1"></a>  titlePan<span class="st">&quot;l(&quot;</span>Moja prva Shiny aplikac<span class="st">&quot;ja&quot;</span>),</span>
+<span id="cb7-3"><a href="statični-dashboard.html#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="statični-dashboard.html#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Razporediev sidebarLayout</span></span>
+<span id="cb7-5"><a href="statični-dashboard.html#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sidebarLayout</span>(</span>
+<span id="cb7-6"><a href="statični-dashboard.html#cb7-6" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb7-7"><a href="statični-dashboard.html#cb7-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Stranski pano</span></span>
+<span id="cb7-8"><a href="statični-dashboard.html#cb7-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">sidebarPanel</span>(</span>
+<span id="cb7-9"><a href="statični-dashboard.html#cb7-9" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb7-10"><a href="statični-dashboard.html#cb7-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">h2</span>(<span class="st">&quot;Stranski pano&quot;</span>), <span class="co"># Naslov</span></span>
+<span id="cb7-11"><a href="statični-dashboard.html#cb7-11" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb7-12"><a href="statični-dashboard.html#cb7-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;V stranski pano lahko dodamo podamo poljubno število elementov, \</span></span>
+<span id="cb7-13"><a href="statični-dashboard.html#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="st">kot je na primer ta tekst.&quot;</span>, <span class="co"># Tekst</span></span>
+<span id="cb7-14"><a href="statični-dashboard.html#cb7-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-15"><a href="statični-dashboard.html#cb7-15" aria-hidden="true" tabindex="-1"></a>  ), </span>
+<span id="cb7-16"><a href="statični-dashboard.html#cb7-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-17"><a href="statični-dashboard.html#cb7-17" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Glavni pano</span></span>
+<span id="cb7-18"><a href="statični-dashboard.html#cb7-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-19"><a href="statični-dashboard.html#cb7-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mainPanel</span>(</span>
+<span id="cb7-20"><a href="statični-dashboard.html#cb7-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">h2</span>(<span class="st">&quot;Glavni pano&quot;</span>), <span class="co"># Naslov</span></span>
+<span id="cb7-21"><a href="statični-dashboard.html#cb7-21" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb7-22"><a href="statični-dashboard.html#cb7-22" aria-hidden="true" tabindex="-1"></a>    <span class="fu">p</span>(<span class="st">&quot;V glavni pano ravno tako lahko dodamo poljubno število elementov. \</span></span>
+<span id="cb7-23"><a href="statični-dashboard.html#cb7-23" aria-hidden="true" tabindex="-1"></a><span class="st">    Dodajmo še logotip Data Science:&quot;</span>), <span class="co"># Tekst</span></span>
+<span id="cb7-24"><a href="statični-dashboard.html#cb7-24" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb7-25"><a href="statični-dashboard.html#cb7-25" aria-hidden="true" tabindex="-1"></a>    <span class="fu">br</span>(), <span class="co"># Dodamo malo prostora </span></span>
+<span id="cb7-26"><a href="statični-dashboard.html#cb7-26" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb7-27"><a href="statični-dashboard.html#cb7-27" aria-hidden="true" tabindex="-1"></a>    <span class="fu">img</span>(<span class="at">src =</span> <span class="st">&quot;images</span><span class="sc">\\</span><span class="st">DS_FRI_logo.png&quot;</span>, </span>
+<span id="cb7-28"><a href="statični-dashboard.html#cb7-28" aria-hidden="true" tabindex="-1"></a>        <span class="at">align =</span> <span class="st">&quot;center&quot;</span>), <span class="co"># Slika</span></span>
+<span id="cb7-29"><a href="statični-dashboard.html#cb7-29" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb7-30"><a href="statični-dashboard.html#cb7-30" aria-hidden="true" tabindex="-1"></a>    <span class="fu">p</span>(<span class="st">&quot;Pozor: slike morajo biti znotraj mape www!&quot;</span>)</span>
+<span id="cb7-31"><a href="statični-dashboard.html#cb7-31" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb7-32"><a href="statični-dashboard.html#cb7-32" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb7-33"><a href="statični-dashboard.html#cb7-33" aria-hidden="true" tabindex="-1"></a><span class="er">)</span></span></code></pre></div>
+<div style="border : 2px solid gray">
+<p><img src="images/shiny_1_2.PNG" /></p>
+</div>
+<p>Aplikacija ima na levi strani stranski pano, na desni pa glavnega. Za vsako komponento v panojih smo klicali funkcijo, ki izpiše panoju kodo HTML za dani objekt.</p>
+<p>V tem primeru smo aplikaciji dodali tudi sliko. V aplikacijo Shiny lahko vnesemo sliko s funkcijo <code>img()</code>, vendar se mora v mapi z izvorno skripto nahajati mapa <em>www</em>, v kateri je shranjena slika. Vse poti, ki jih podamo funkciji, so relativne glede na to mapo, zato je v prejšnjem primeru naša slika v mapi <em>www/images</em>. V mapi www poleg slik lahko hranimo tudi datoteke s pravili za oblikovanje, tekste in druge zunanje elemente, ki jih vnašamo v našo spletno aplikacijo.</p>
+</div>
+<div id="kontrolni-widgeti" class="section level2" number="1.6">
+<h2><span class="header-section-number">1.6</span> Kontrolni Widgeti</h2>
+<p><strong>Widget-i</strong> so pomembni elementi uporabniškega vmesnika, ker nam omogočajo interakcijo z aplikacijo. V tem poglavju na kratko pogledamo kateri so osnovni <strong>widget-i</strong> paketa Shiny, kako delujejo, pa bomo pokazali na naslednjem predavanju, saj moramo za to prej predstaviti strežniško funkcijo. Omenimo le, da jim kot prvi argument podamo <strong>identifikacijsko ime</strong> (<em>lahko vsebuje le črke, številke ali podčrtaj</em>), s katerim lahko dostopamo do posameznih vrednosti widget-a.</p>
+<p>V spodnji tabeli so prikazani widgeti paketa Shiny:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">funcija</th>
+<th align="left">opis</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>actionButton</code></td>
+<td align="left">Action Button</td>
+</tr>
+<tr class="even">
+<td align="left"><code>checkboxGroupInput</code></td>
+<td align="left">A group of check boxes</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>checkboxInput</code></td>
+<td align="left">A single check box</td>
+</tr>
+<tr class="even">
+<td align="left"><code>dateInput</code></td>
+<td align="left">A calendar to aid date selection</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>dateRangeInput</code></td>
+<td align="left">A pair of calendars for selecting a date range</td>
+</tr>
+<tr class="even">
+<td align="left"><code>fileInput</code></td>
+<td align="left">A file upload control wizard</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>helpText</code></td>
+<td align="left">Help text that can be added to an input form</td>
+</tr>
+<tr class="even">
+<td align="left"><code>numericInput</code></td>
+<td align="left">A field to enter numbers</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>radioButtons</code></td>
+<td align="left">A set of radio buttons</td>
+</tr>
+<tr class="even">
+<td align="left"><code>selectInput</code></td>
+<td align="left">A box with choices to select from</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>sliderInput</code></td>
+<td align="left">A slider bar</td>
+</tr>
+<tr class="even">
+<td align="left"><code>submitButton</code></td>
+<td align="left">A submit button</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>textInput</code></td>
+<td align="left">A field to enter text</td>
+</tr>
+</tbody>
+</table>
+<p>Poglejmo si, kako definiramo <code>sliderInput</code>, <code>checkboxInput</code>, <code>dateInput</code> in <code>selectInput</code> ter jih dodajmo v naš primer:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="statični-dashboard.html#cb8-1" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(</span>
+<span id="cb8-2"><a href="statični-dashboard.html#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="statični-dashboard.html#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">titlePanel</span>(<span class="st">&quot;Moja prva Shiny aplikacija&quot;</span>),</span>
+<span id="cb8-4"><a href="statični-dashboard.html#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="statični-dashboard.html#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Razporeditev sidebarLayout</span></span>
+<span id="cb8-6"><a href="statični-dashboard.html#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="statični-dashboard.html#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="fu">sidebarLayout</span>(</span>
+<span id="cb8-8"><a href="statični-dashboard.html#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-9"><a href="statični-dashboard.html#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Stranski pano</span></span>
+<span id="cb8-10"><a href="statični-dashboard.html#cb8-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sidebarPanel</span>(</span>
+<span id="cb8-11"><a href="statični-dashboard.html#cb8-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">h2</span>(<span class="st">&quot;Stranski pano&quot;</span>), <span class="co"># Naslov</span></span>
+<span id="cb8-12"><a href="statični-dashboard.html#cb8-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;V stranski pano lahko dodamo podamo poljubno število elementov, \</span></span>
+<span id="cb8-13"><a href="statični-dashboard.html#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="st">    kot je na primer ta tekst.&quot;</span>, <span class="co"># Tekst</span></span>
+<span id="cb8-14"><a href="statični-dashboard.html#cb8-14" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-15"><a href="statični-dashboard.html#cb8-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">sliderInput</span>(</span>
+<span id="cb8-16"><a href="statični-dashboard.html#cb8-16" aria-hidden="true" tabindex="-1"></a>      <span class="at">inputId =</span> <span class="st">&quot;drsnik&quot;</span>, <span class="co"># Identifikacijsko ime</span></span>
+<span id="cb8-17"><a href="statični-dashboard.html#cb8-17" aria-hidden="true" tabindex="-1"></a>      <span class="at">label =</span> <span class="st">&quot;Izberite vrednost:&quot;</span>, <span class="co"># Besedilo na drsniku</span></span>
+<span id="cb8-18"><a href="statični-dashboard.html#cb8-18" aria-hidden="true" tabindex="-1"></a>      <span class="at">min =</span> <span class="dv">0</span>, <span class="co"># Minimalna vrednost</span></span>
+<span id="cb8-19"><a href="statični-dashboard.html#cb8-19" aria-hidden="true" tabindex="-1"></a>      <span class="at">max =</span> <span class="dv">100</span>, <span class="co"># Maksimalna vrednost</span></span>
+<span id="cb8-20"><a href="statični-dashboard.html#cb8-20" aria-hidden="true" tabindex="-1"></a>      <span class="at">value =</span> <span class="dv">50</span>, <span class="co"># Začetna vrednost</span></span>
+<span id="cb8-21"><a href="statični-dashboard.html#cb8-21" aria-hidden="true" tabindex="-1"></a>      <span class="at">step =</span> <span class="dv">2</span> <span class="co"># Velikost koraka po drsniku</span></span>
+<span id="cb8-22"><a href="statični-dashboard.html#cb8-22" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb8-23"><a href="statični-dashboard.html#cb8-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-24"><a href="statični-dashboard.html#cb8-24" aria-hidden="true" tabindex="-1"></a>    <span class="fu">checkboxGroupInput</span>(</span>
+<span id="cb8-25"><a href="statični-dashboard.html#cb8-25" aria-hidden="true" tabindex="-1"></a>      <span class="at">inputId =</span> <span class="st">&quot;checkbox&quot;</span>, <span class="co"># Id. ime</span></span>
+<span id="cb8-26"><a href="statični-dashboard.html#cb8-26" aria-hidden="true" tabindex="-1"></a>      <span class="at">label =</span> <span class="st">&quot;Izberite pravilne vrednosti za x, če \</span></span>
+<span id="cb8-27"><a href="statični-dashboard.html#cb8-27" aria-hidden="true" tabindex="-1"></a><span class="st">          x &gt; -2 in x &lt; 4:&quot;</span>, <span class="co"># Besedilo na checkboxu</span></span>
+<span id="cb8-28"><a href="statični-dashboard.html#cb8-28" aria-hidden="true" tabindex="-1"></a>      <span class="at">choices =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">5</span>, <span class="fl">3.2</span>, <span class="dv">10</span>), <span class="co"># Možne izbire</span></span>
+<span id="cb8-29"><a href="statični-dashboard.html#cb8-29" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb8-30"><a href="statični-dashboard.html#cb8-30" aria-hidden="true" tabindex="-1"></a>    ), </span>
+<span id="cb8-31"><a href="statični-dashboard.html#cb8-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-32"><a href="statični-dashboard.html#cb8-32" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Glavni pano</span></span>
+<span id="cb8-33"><a href="statični-dashboard.html#cb8-33" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mainPanel</span>(</span>
+<span id="cb8-34"><a href="statični-dashboard.html#cb8-34" aria-hidden="true" tabindex="-1"></a>      <span class="fu">h2</span>(<span class="st">&quot;Glavni pano&quot;</span>), <span class="co"># Naslov</span></span>
+<span id="cb8-35"><a href="statični-dashboard.html#cb8-35" aria-hidden="true" tabindex="-1"></a>      <span class="fu">p</span>(<span class="st">&quot;V glavni pano ravno tako lahko dodamo poljubno število elementov. \</span></span>
+<span id="cb8-36"><a href="statični-dashboard.html#cb8-36" aria-hidden="true" tabindex="-1"></a><span class="st">      Dodajmo še logotip Data Science:&quot;</span>), <span class="co"># Tekst</span></span>
+<span id="cb8-37"><a href="statični-dashboard.html#cb8-37" aria-hidden="true" tabindex="-1"></a>      <span class="fu">br</span>(), <span class="co"># Dodamo malo prostora </span></span>
+<span id="cb8-38"><a href="statični-dashboard.html#cb8-38" aria-hidden="true" tabindex="-1"></a>      <span class="fu">img</span>(<span class="at">src =</span> <span class="st">&quot;images</span><span class="sc">\\</span><span class="st">DS_FRI_logo.png&quot;</span>, </span>
+<span id="cb8-39"><a href="statični-dashboard.html#cb8-39" aria-hidden="true" tabindex="-1"></a>      <span class="at">align =</span> <span class="st">&quot;center&quot;</span>), <span class="co"># Slika</span></span>
+<span id="cb8-40"><a href="statični-dashboard.html#cb8-40" aria-hidden="true" tabindex="-1"></a>      <span class="fu">p</span>(<span class="st">&quot;Pozor: slike morajo biti znotraj mape www!&quot;</span>),</span>
+<span id="cb8-41"><a href="statični-dashboard.html#cb8-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-42"><a href="statični-dashboard.html#cb8-42" aria-hidden="true" tabindex="-1"></a>    <span class="fu">dateInput</span>(</span>
+<span id="cb8-43"><a href="statični-dashboard.html#cb8-43" aria-hidden="true" tabindex="-1"></a>      <span class="at">inputId =</span> <span class="st">&quot;vnos_datuma&quot;</span>, <span class="co"># Id. ime</span></span>
+<span id="cb8-44"><a href="statični-dashboard.html#cb8-44" aria-hidden="true" tabindex="-1"></a>      <span class="at">label =</span> <span class="st">&quot;Izberi datum rojstva:&quot;</span>,<span class="co"># Besedilo</span></span>
+<span id="cb8-45"><a href="statični-dashboard.html#cb8-45" aria-hidden="true" tabindex="-1"></a>      <span class="at">language =</span> <span class="st">&quot;sl&quot;</span>, <span class="co"># Jezik izpisa datuma</span></span>
+<span id="cb8-46"><a href="statični-dashboard.html#cb8-46" aria-hidden="true" tabindex="-1"></a>      <span class="at">min =</span> <span class="st">&quot;1900-1-1&quot;</span>, <span class="co"># Minimalna možna vrednost</span></span>
+<span id="cb8-47"><a href="statični-dashboard.html#cb8-47" aria-hidden="true" tabindex="-1"></a>      <span class="at">max =</span> <span class="fu">date</span>() <span class="co"># Maksimalna možna vrednost</span></span>
+<span id="cb8-48"><a href="statični-dashboard.html#cb8-48" aria-hidden="true" tabindex="-1"></a>      ),</span>
+<span id="cb8-49"><a href="statični-dashboard.html#cb8-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-50"><a href="statični-dashboard.html#cb8-50" aria-hidden="true" tabindex="-1"></a>    <span class="fu">selectInput</span>(</span>
+<span id="cb8-51"><a href="statični-dashboard.html#cb8-51" aria-hidden="true" tabindex="-1"></a>      <span class="at">inputId =</span> <span class="st">&quot;izbire&quot;</span>, <span class="co"># Identifikacijsko ime</span></span>
+<span id="cb8-52"><a href="statični-dashboard.html#cb8-52" aria-hidden="true" tabindex="-1"></a>      <span class="at">label =</span> <span class="st">&quot;Izberite možnosti:&quot;</span>, <span class="co"># Besedilo na drsniku</span></span>
+<span id="cb8-53"><a href="statični-dashboard.html#cb8-53" aria-hidden="true" tabindex="-1"></a>      <span class="at">choices =</span> <span class="fu">c</span>(<span class="st">&quot;Plan 1&quot;</span>, <span class="co"># Izbire</span></span>
+<span id="cb8-54"><a href="statični-dashboard.html#cb8-54" aria-hidden="true" tabindex="-1"></a>                <span class="st">&quot;Plan 2&quot;</span>,</span>
+<span id="cb8-55"><a href="statični-dashboard.html#cb8-55" aria-hidden="true" tabindex="-1"></a>                <span class="st">&quot;Plan 3&quot;</span>,</span>
+<span id="cb8-56"><a href="statični-dashboard.html#cb8-56" aria-hidden="true" tabindex="-1"></a>                <span class="st">&quot;Plan 4&quot;</span>),</span>
+<span id="cb8-57"><a href="statični-dashboard.html#cb8-57" aria-hidden="true" tabindex="-1"></a>      <span class="at">selected =</span> <span class="st">&quot;Plan 2&quot;</span>, <span class="co"># Privzeta izbira</span></span>
+<span id="cb8-58"><a href="statični-dashboard.html#cb8-58" aria-hidden="true" tabindex="-1"></a>      <span class="at">multiple =</span> <span class="cn">FALSE</span> <span class="co"># Več izbir</span></span>
+<span id="cb8-59"><a href="statični-dashboard.html#cb8-59" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb8-60"><a href="statični-dashboard.html#cb8-60" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb8-61"><a href="statični-dashboard.html#cb8-61" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb8-62"><a href="statični-dashboard.html#cb8-62" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<div style="border : 2px solid gray">
+<p><img src="images/shiny_1_4.PNG" /></p>
+</div>
+<p>Vsi objekti imajo vsaj dva skupna atributa: <code>input_id</code>, ki določa ime, s katerim dostopamo do vrednosti objekta, in <code>label</code>, ki na objektu izpiše tekst z navodili ali pojasnilom. Nato določimo druge atribute, kot na primer možne izbire, začetno vrednost, zgornje in spodnje meje vrednosti, ki jih objekt lahko zajame… V zgornjem primeru si lahko pomen atributov pogledamo v komentarjih, če pa želimo uporabiti kakšen drug widget, si lahko pomagamo z R-jevim ukazom <code>?</code>, npr. <code>?selectInput</code>. Tako dostopamo do strani za pomoč, ki za vsak gradnik opisujejo uporabo njegovih atributov.</p>
+<p>V tem primeru se drsnik, polje za izbiro datuma in gumbi za izbiro sicer odzivajo, vendar še niso interaktivni, ker ne vplivajo na ostale gradnike.</p>
+<p>Za konec si poglejmo še kako izgledajo widget-i aplikacije Shiny, ki jih še nismo obravnavali:</p>
+<div style="border : 2px solid gray">
+<p><img src="images/shiny_1_3.PNG" /></p>
+</div>
+</div>
+<div id="domača-naloga" class="section level2" number="1.7">
+<h2><span class="header-section-number">1.7</span> Domača naloga</h2>
+<p>Zamislite si, da sestavljate aplikacijo, ki bo beležila nove uporabnike vaših storitev. Vaša naloga je, da sestavite uporabniški vmesnik za dashboard, ki bo beležil:</p>
+<ul>
+<li>ime,</li>
+<li>datum rojstva,</li>
+<li>spol,</li>
+<li>kraj bivanja,</li>
+<li>datum začetka uporabe storitve,</li>
+<li>storitev, na katero se naroča (možnosti A, B, C - ena možna izbira).</li>
+</ul>
+<p>Poleg teh vnosnih polj naj aplikacija vsebuje še naslov “Stranke” in gumb, ki bo potrdil shranjevanje podatkov v datoteko. Vsi vhodi naj bodo v levem stolpcu razporeditve “sidebar” (desnega bomo dopolnili v naslednji domači nalogi). Rešitev naj izgleda približno tako:</p>
+<div style="border : 2px solid gray">
+<p><img src="images/DN1.PNG" /></p>
+</div>
+<hr />
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="odzivni-dashboard-i.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/01-Uvod-v-Shiny-R.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

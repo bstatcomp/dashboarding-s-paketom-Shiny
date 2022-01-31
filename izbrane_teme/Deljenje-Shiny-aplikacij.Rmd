@@ -1,0 +1,43 @@
+
+
+<style>
+.DSout {
+  border: 2px solid gray;
+  padding: 3px
+}
+</style>
+
+
+# Deljenje Shiny poročil in aplikacij
+
+Za branje in uporabo Shiny aplikacij (in poročil) potrebujemo aktivno R sejo. Ko poganjamo Shiny aplikacije lokalno (na našem računalniku), je to kar naša R seja. Težava pa nastane takrat, ko želimo našo aplikacijo deliti z nekom, ki nima nameščenega R-ja, ali pa, ko so podatki preveč občutljivi, da bi jih nekomu poslali skupaj s poročilom. V takem primeru je bolje, da ima uporabnik dostop le do končne aplikacije in ne do vseh datotek, ki jo sestavljajo. V tem poglavju si bomo ogledali oba načina deljenja Shiny aplikacij, to je, deljenje aplikacij kot skripta in deljenje aplikacij kot samostojna spletna aplikacija.
+
+## Deljenje aplikacij kot skripta
+Skripte zelo enostavno delimo, vendar je potrebno, da ima uporabnik nameščen R. Skripte lahko delimo preko maila, USB ključka ali pa preko kakega druga načina preko interneta. V takem primeru si bo uporabnik namestil aplikacijo in jo uporabljal, kot če bi jo ustvaril sam.
+
+Malce bolj napreden način deljenja skript je preko spletnih povezav. Mapo naše Shiny aplikacije stisnemo v .zip format in namestimo naš strežnik. Uporabnikom nato pošljemo povezavo do nje. Uporabniki lahko nato v R-ju kličejo ukaz `runUrl("<spletna_povezava>")`, ki bo skripto naložil v začasno mapo in nato pognal.
+
+Tretji način za deljenje Shiny skript, ki si bomo ogledali, je preko GitHub-a. V tem primeru moramo celotno mapo naše skripte naložiti na GitHub v obliki repozitorija. Nato uporabniki lahko kličejo ukaz `runGitHub("<ime_repozitorija>", "<ime_uporabnika>")`, ki bo samodejno pognal aplikacijo.
+
+## Deljenje aplikacij kot spletna aplikacija
+Shiny aplikacije lahko delimo v obliki spletnih aplikacij na tri načine:
+
+1. Preko platforme _shinyapps.com_.
+2. Preko platforme _RStudio Connect_.
+3. Z uporabo programske opreme _Shiny Server_.
+
+Med tremi, _shinyapps.com_ je verjetno uporabniku najbolj prijazna oblika deljenja, saj zanjo ne potrebujemo dodatnega dela, da namestimo strežnik. Da aplikacijo delimo preko shinyapps.com potrebujemo le račun in nameščeno zadnjo verzijo R paketa "rsconnect". Takoj po aktivaciji računa, se nam bo pod našim uporabniškim imenom ustvarila spletna stran za naše aplikacije. Nato v RStudiu, lahko namestimo naš račun:
+
+```{r eval = F}
+rsconnect::setAccountInfo(name="<ACCOUNT>", token="<TOKEN>", secret="<SECRET>")
+```
+
+Podatke `<ACCOUNT>`, `<TOKEN>` in `<SECRET>` najdemo na začetni spletni strani, ki se pojavi takoj po nastavitvi našega _shinyapps.io_ računa.
+
+Nato lahko kličemo ukaz:
+```{r eval = F}
+rsconnect::deployApp("<mapa_aplikacije>")
+```
+
+Kot smo že omenili moramo za deljenje aplikacij preko RStudio Connect ali Shiny Server prej nastaviti strežnik. Glavna razlika med tema dvema je, da je Shiny Server odprtokodni program, medtem ko je RStudio Connect tržni produkt, zardi česar tudi nudi dodatne strežniške programe, kot na primer avtentifikacijo z geslom, orodja za upravljanje strežnika, SSL podporo, itd. 
+

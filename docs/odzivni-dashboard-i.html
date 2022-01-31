@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Poglavje 2 Odzivni dashboard-i | Dashboarding s paketom Shiny</title>
+  <meta name="description" content="Gradivo za delavnico Dashboarding s paketom Shiny pobude DataScience@UL-FRI." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Poglavje 2 Odzivni dashboard-i | Dashboarding s paketom Shiny" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Gradivo za delavnico Dashboarding s paketom Shiny pobude DataScience@UL-FRI." />
+  <meta name="github-repo" content="patrik-kojanec/dashboarding_v_Shiny_R" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Poglavje 2 Odzivni dashboard-i | Dashboarding s paketom Shiny" />
+  
+  <meta name="twitter:description" content="Gradivo za delavnico Dashboarding s paketom Shiny pobude DataScience@UL-FRI." />
+  
+
+<meta name="author" content="Jana Faganeli Pucer, Patrik Kojanec, Matej Pičulin in Erik Štrumbelj" />
+
+
+<meta name="date" content="2022-01-31" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="statični-dashboard.html"/>
+<link rel="next" href="urejanje-oblike-in-razporeditve-dashboard-a.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Dashboarding v Shiny R</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Uvod</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#motivacija"><i class="fa fa-check"></i>Motivacija</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#struktura-te-knjige"><i class="fa fa-check"></i>Struktura te knjige</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="statični-dashboard.html"><a href="statični-dashboard.html"><i class="fa fa-check"></i><b>1</b> Statični dashboard</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="statični-dashboard.html"><a href="statični-dashboard.html#priprava"><i class="fa fa-check"></i><b>1.1</b> Priprava</a></li>
+<li class="chapter" data-level="1.2" data-path="statični-dashboard.html"><a href="statični-dashboard.html#moja-prva-shiny-aplikacija"><i class="fa fa-check"></i><b>1.2</b> Moja prva Shiny aplikacija</a></li>
+<li class="chapter" data-level="1.3" data-path="statični-dashboard.html"><a href="statični-dashboard.html#osnovni-sestavni-deli"><i class="fa fa-check"></i><b>1.3</b> Osnovni sestavni deli</a></li>
+<li class="chapter" data-level="1.4" data-path="statični-dashboard.html"><a href="statični-dashboard.html#formatiranje-teksta"><i class="fa fa-check"></i><b>1.4</b> Formatiranje teksta</a></li>
+<li class="chapter" data-level="1.5" data-path="statični-dashboard.html"><a href="statični-dashboard.html#stranski-pano-in-vnos-slik"><i class="fa fa-check"></i><b>1.5</b> Stranski pano in vnos slik</a></li>
+<li class="chapter" data-level="1.6" data-path="statični-dashboard.html"><a href="statični-dashboard.html#kontrolni-widgeti"><i class="fa fa-check"></i><b>1.6</b> Kontrolni Widgeti</a></li>
+<li class="chapter" data-level="1.7" data-path="statični-dashboard.html"><a href="statični-dashboard.html#domača-naloga"><i class="fa fa-check"></i><b>1.7</b> Domača naloga</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html"><i class="fa fa-check"></i><b>2</b> Odzivni dashboard-i</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#uvod-1"><i class="fa fa-check"></i><b>2.1</b> Uvod</a></li>
+<li class="chapter" data-level="2.2" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#priprava-1"><i class="fa fa-check"></i><b>2.2</b> Priprava</a>
+<ul>
+<li class="chapter" data-level="" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#vhodi-in-izhodi"><i class="fa fa-check"></i>Vhodi in izhodi</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#strežniška-funkcija"><i class="fa fa-check"></i><b>2.3</b> Strežniška funkcija</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#odzivni-tekst"><i class="fa fa-check"></i><b>2.3.1</b> Odzivni tekst</a></li>
+<li class="chapter" data-level="2.3.2" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#branje-datotek-in-prikaz-tabel"><i class="fa fa-check"></i><b>2.3.2</b> Branje datotek in prikaz tabel</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#odzivni-graf"><i class="fa fa-check"></i><b>2.4</b> Odzivni graf</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#odzivni-widgeti"><i class="fa fa-check"></i><b>2.4.1</b> Odzivni widgeti</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#funkcija-reactive"><i class="fa fa-check"></i><b>2.5</b> Funkcija <code>reactive()</code></a></li>
+<li class="chapter" data-level="2.6" data-path="odzivni-dashboard-i.html"><a href="odzivni-dashboard-i.html#domača-naloga-1"><i class="fa fa-check"></i><b>2.6</b> Domača naloga</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html"><i class="fa fa-check"></i><b>3</b> Urejanje oblike in razporeditve dashboard-a</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#tip-spletnih-strani"><i class="fa fa-check"></i><b>3.1</b> Tip spletnih strani</a></li>
+<li class="chapter" data-level="3.2" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#razporeditve-in-panoji"><i class="fa fa-check"></i><b>3.2</b> Razporeditve in panoji</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#razporeditve"><i class="fa fa-check"></i><b>3.2.1</b> Razporeditve</a></li>
+<li class="chapter" data-level="3.2.2" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#večje-število-hkratnih-prikazov"><i class="fa fa-check"></i><b>3.2.2</b> Večje število hkratnih prikazov</a></li>
+<li class="chapter" data-level="3.2.3" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#pano-z-zavihki"><i class="fa fa-check"></i><b>3.2.3</b> Pano z zavihki</a></li>
+<li class="chapter" data-level="3.2.4" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#stran-z-navigacijo"><i class="fa fa-check"></i><b>3.2.4</b> Stran z navigacijo</a></li>
+<li class="chapter" data-level="3.2.5" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#pano-z-navigacijo"><i class="fa fa-check"></i><b>3.2.5</b> Pano z navigacijo</a></li>
+<li class="chapter" data-level="3.2.6" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#ročno-definirana-razporeditev"><i class="fa fa-check"></i><b>3.2.6</b> Ročno definirana razporeditev</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#barvne-sheme-in-teme"><i class="fa fa-check"></i><b>3.3</b> Barvne sheme in teme</a></li>
+<li class="chapter" data-level="3.4" data-path="urejanje-oblike-in-razporeditve-dashboard-a.html"><a href="urejanje-oblike-in-razporeditve-dashboard-a.html#domača-naloga-2"><i class="fa fa-check"></i><b>3.4</b> Domača naloga</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="napredni-nasveti-za-uporabo-paketa-shiny-r.html"><a href="napredni-nasveti-za-uporabo-paketa-shiny-r.html"><i class="fa fa-check"></i><b>4</b> Napredni nasveti za uporabo paketa Shiny R</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="napredni-nasveti-za-uporabo-paketa-shiny-r.html"><a href="napredni-nasveti-za-uporabo-paketa-shiny-r.html#odvisnosti-widgetov-in-deklarativno-programiranje"><i class="fa fa-check"></i><b>4.1</b> Odvisnosti widgetov in deklarativno programiranje</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Dashboarding s paketom Shiny</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="odzivni-dashboard-i" class="section level1" number="2">
+<h1><span class="header-section-number">Poglavje 2</span> Odzivni dashboard-i</h1>
+<div id="uvod-1" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Uvod</h2>
+<p>V prvem predavanju smo gradili statične aplikacije Shiny. V tem pa bomo pokazali, kako statičnim aplikacijam dodamo interaktivnost oziroma, z drugim izrazom, <strong>odzivnost</strong> na uporabnikove spremembe. Zato bomo danes bolje spoznali strežniško funkcijo <code>server</code>. Najprej pa spoznajmo, kaj so vhodi in izhodi aplikacij Shiny.</p>
+</div>
+<div id="priprava-1" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Priprava</h2>
+<div id="vhodi-in-izhodi" class="section level3 unnumbered">
+<h3>Vhodi in izhodi</h3>
+<p>Aplikacija je <strong>odzivna</strong> , ko ima objekte, ki sprejmejo uporabnikov ukaz ali vnos podatkov (<strong>vhod</strong>) in objekte, ki prikažejo rezultate tega ukaza ali vnosa (<strong>izhod</strong>). Vhode smo delno že obravnavali v prejšnjem predavanju, ko smo govorili o <strong>widget-ih</strong>. Za nekatere <strong>widget-e</strong>, kot so <code>textInput</code>, <code>dateInput</code>, <code>radioButtons</code> in <code>checkboxInput</code>, je očitno, da služijo vnosu.</p>
+<p>Kot smo povedali na prvem predavanju, vsakemu vhodu podamo <em>identifikacijsko ime</em>, ki je lahko sestavljeno le iz črk, številk in podčrtajev. Pomembno je, da se držimo tega pravila, ker bo aplikacija vrednosti vhoda shranila v element seznama <code>input</code> s tem identifikacijskim imenom.</p>
+<p>Na podoben način so definirani tudi izhodi. Obravnavali bomo te tipe izhodov:</p>
+<ul>
+<li><code>textOtput</code>: izpiše besedilo,</li>
+<li><code>plotOutput</code>: prikaže graf,</li>
+<li><code>tableOutput</code>: izpiše tabelo,</li>
+<li><code>uiOutput</code>: prikaže widget,</li>
+<li><code>imageOutput</code> prikaže sliko.</li>
+</ul>
+<p>Spodnji odseku kode prikazuje primer, kako v aplikacijo dodamo izhode:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="odzivni-dashboard-i.html#cb9-1" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(</span>
+<span id="cb9-2"><a href="odzivni-dashboard-i.html#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="odzivni-dashboard-i.html#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">titlePanel</span>(<span class="st">&quot;Primer izhodov&quot;</span>),</span>
+<span id="cb9-4"><a href="odzivni-dashboard-i.html#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plotOutput</span>(<span class="st">&quot;primer_plot&quot;</span>), <span class="co">#primer_plot je identifikacijsko ime</span></span>
+<span id="cb9-5"><a href="odzivni-dashboard-i.html#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">textOutput</span>(<span class="st">&quot;primer_tekst&quot;</span>) <span class="co">#primer_tekst je identifikacijsko ime</span></span>
+<span id="cb9-6"><a href="odzivni-dashboard-i.html#cb9-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb9-7"><a href="odzivni-dashboard-i.html#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-8"><a href="odzivni-dashboard-i.html#cb9-8" aria-hidden="true" tabindex="-1"></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output){}</span>
+<span id="cb9-9"><a href="odzivni-dashboard-i.html#cb9-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-10"><a href="odzivni-dashboard-i.html#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="fu">shinyApp</span>(<span class="at">ui =</span> ui, <span class="at">server =</span> server)</span></code></pre></div>
+<div style="border : 2px solid gray">
+<p><img src="images/shiny_2_1.PNG" /></p>
+</div>
+<p>Čeprav smo v vmesnik vnesli izhode, ob zagonu aplikacije ti niso vidni, saj so prazni. Izhodi se prikažejo le, ko jim priredimo vrednost ali objekt, za kar potrebujemo strežniško funkcijo.</p>
+</div>
+</div>
+<div id="strežniška-funkcija" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Strežniška funkcija</h2>
+<p>Sedaj, ko smo spoznali vhode in izhode, lahko nadaljujemo s spoznavanjem strežniške funkcije. Kot smo že omenili na prvem predavanju, bomo v strežniško funkcijo zapisali vse ukaze, ki so potrebni za pravilen izpis v naši aplikaciji. Ko bo aplikacija zaznala spremembo ali drugo dejanje s strani uporabnika, bo ukaze znotraj strežniške funkcije ponovno izvršila in posodobila prikaz.</p>
+<div id="odzivni-tekst" class="section level3" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> Odzivni tekst</h3>
+<p>Dodajmo prejšnjemu primeru strežniško funkcijo, ki izpiše besedilo:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="odzivni-dashboard-i.html#cb10-1" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(</span>
+<span id="cb10-2"><a href="odzivni-dashboard-i.html#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="odzivni-dashboard-i.html#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">titlePanel</span>(<span class="st">&quot;Primer izhodov&quot;</span>),</span>
+<span id="cb10-4"><a href="odzivni-dashboard-i.html#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-5"><a href="odzivni-dashboard-i.html#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plotOutput</span>(<span class="st">&quot;primer_plot&quot;</span>), <span class="co">#primer_plot je identifikacijsko ime</span></span>
+<span id="cb10-6"><a href="odzivni-dashboard-i.html#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-7"><a href="odzivni-dashboard-i.html#cb10-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">textOutput</span>(<span class="st">&quot;primer_tekst&quot;</span>) <span class="co">#primer_tekst je identifikacijsko ime</span></span>
+<span id="cb10-8"><a href="odzivni-dashboard-i.html#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-9"><a href="odzivni-dashboard-i.html#cb10-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb10-10"><a href="odzivni-dashboard-i.html#cb10-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-11"><a href="odzivni-dashboard-i.html#cb10-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-12"><a href="odzivni-dashboard-i.html#cb10-12" aria-hidden="true" tabindex="-1"></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output){</span>
+<span id="cb10-13"><a href="odzivni-dashboard-i.html#cb10-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-14"><a href="odzivni-dashboard-i.html#cb10-14" aria-hidden="true" tabindex="-1"></a>  output<span class="sc">$</span>primer_tekst <span class="ot">&lt;-</span> <span class="st">&quot;Izhodni tekst!&quot;</span></span>
+<span id="cb10-15"><a href="odzivni-dashboard-i.html#cb10-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-16"><a href="odzivni-dashboard-i.html#cb10-16" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb10-17"><a href="odzivni-dashboard-i.html#cb10-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-18"><a href="odzivni-dashboard-i.html#cb10-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-19"><a href="odzivni-dashboard-i.html#cb10-19" aria-hidden="true" tabindex="-1"></a><span class="fu">shinyApp</span>(<span class="at">ui =</span> ui, <span class="at">server =</span> server)</span></code></pre></div>
+<p>Opazimo, da še ne deluje, saj se nam v konzoli prikaže napaka:</p>
+<p><code>Error : Unexpected character object for output$primer_tekst</code>
+<code>i Did you forget to use a render function?</code></p>
+<p>Napaka nas sprašuje, če smo pozabili uporabiti funkcijo <strong>render</strong>, ki predstavlja odzivno funkcijo. Če želimo, da bo aplikacija odzivna, moramo kodo zapisati v <strong>odzivnem kontekstu</strong> znotraj funkcije <code>renderText()</code>.</p>
+<p>Naši strežniški funkciji dodamo funkcijo <code>renderText()</code>:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="odzivni-dashboard-i.html#cb11-1" aria-hidden="true" tabindex="-1"></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output){</span>
+<span id="cb11-2"><a href="odzivni-dashboard-i.html#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="odzivni-dashboard-i.html#cb11-3" aria-hidden="true" tabindex="-1"></a>output<span class="sc">$</span>primer_tekst <span class="ot">&lt;-</span> <span class="fu">renderText</span>(<span class="st">&quot;Izhodni tekst!&quot;</span>) <span class="co"># odzivni kontekst</span></span>
+<span id="cb11-4"><a href="odzivni-dashboard-i.html#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="odzivni-dashboard-i.html#cb11-5" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div style="border : 2px solid gray">
+<p><img src="images/shiny_2_1_working.PNG" /></p>
+</div>
+<p>Sedaj aplikacija deluje pravilno. Vhod, ki je v tem primeru konstanten, smo podali v odzivni kontekst, funkcija <code>renderText()</code> pa je rezultat tega konteksta predala na izhod. Čeprav je vrednost izhoda <code>primer_plot</code> prazen, imamo na dashboard-u prostor za izris grafa.</p>
+<p>Poskusimo sestaviti aplikacijo, ki vsebuje polje za vnos imena in polje, v katerem nam izpiše pozdrav glede na vnešeno ime.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="odzivni-dashboard-i.html#cb12-1" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(</span>
+<span id="cb12-2"><a href="odzivni-dashboard-i.html#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="odzivni-dashboard-i.html#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">titlePanel</span>(<span class="st">&quot;Primer odzivne aplikacije.&quot;</span>),</span>
+<span id="cb12-4"><a href="odzivni-dashboard-i.html#cb12-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-5"><a href="odzivni-dashboard-i.html#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sidebarLayout</span>(</span>
+<span id="cb12-6"><a href="odzivni-dashboard-i.html#cb12-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">sidebarPanel</span>(</span>
+<span id="cb12-7"><a href="odzivni-dashboard-i.html#cb12-7" aria-hidden="true" tabindex="-1"></a>      <span class="fu">textInput</span>(<span class="st">&quot;ime&quot;</span>, <span class="st">&quot;Vnesite vaše ime: &quot;</span>) <span class="co"># vhod</span></span>
+<span id="cb12-8"><a href="odzivni-dashboard-i.html#cb12-8" aria-hidden="true" tabindex="-1"></a>      ),</span>
+<span id="cb12-9"><a href="odzivni-dashboard-i.html#cb12-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mainPanel</span>(</span>
+<span id="cb12-10"><a href="odzivni-dashboard-i.html#cb12-10" aria-hidden="true" tabindex="-1"></a>      <span class="fu">h3</span>(<span class="st">&quot;Pozdravljen/a, &quot;</span>, </span>
+<span id="cb12-11"><a href="odzivni-dashboard-i.html#cb12-11" aria-hidden="true" tabindex="-1"></a>        <span class="fu">textOutput</span>(<span class="st">&quot;izpis&quot;</span>, <span class="at">inline =</span> T) <span class="co"># izhod</span></span>
+<span id="cb12-12"><a href="odzivni-dashboard-i.html#cb12-12" aria-hidden="true" tabindex="-1"></a>      ),</span>
+<span id="cb12-13"><a href="odzivni-dashboard-i.html#cb12-13" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb12-14"><a href="odzivni-dashboard-i.html#cb12-14" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb12-15"><a href="odzivni-dashboard-i.html#cb12-15" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb12-16"><a href="odzivni-dashboard-i.html#cb12-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-17"><a href="odzivni-dashboard-i.html#cb12-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-18"><a href="odzivni-dashboard-i.html#cb12-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-19"><a href="odzivni-dashboard-i.html#cb12-19" aria-hidden="true" tabindex="-1"></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output) {</span>
+<span id="cb12-20"><a href="odzivni-dashboard-i.html#cb12-20" aria-hidden="true" tabindex="-1"></a>  output<span class="sc">$</span>izpis <span class="ot">&lt;-</span> <span class="fu">renderText</span>(input<span class="sc">$</span>ime)</span>
+<span id="cb12-21"><a href="odzivni-dashboard-i.html#cb12-21" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb12-22"><a href="odzivni-dashboard-i.html#cb12-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-23"><a href="odzivni-dashboard-i.html#cb12-23" aria-hidden="true" tabindex="-1"></a><span class="fu">shinyApp</span>(<span class="at">ui =</span> ui, <span class="at">server =</span> server)</span></code></pre></div>
+<div style="border : 2px solid gray">
+<p><img src="images/shiny_2_2.PNG" /></p>
+</div>
+<p>Če poskusimo vnesti besedilo v aplikacijo, opazimo, da se izpis samodejno posodobi takoj po vnosu nove črke, če za vnosom za trenutek počakamo. Ni pa nujno, da le prepišemo vhod na izhod. Vhod lahko poljubno preoblikujemo kar znotraj odzivnega konteksta tako, da v zavitih oklepajih podamo ukaze, ki preoblikujejo vhod v izhod.</p>
+<p>Oglejmo si posodobljeno strežniško funkcijo, ki polepša naš izpis.</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="odzivni-dashboard-i.html#cb13-1" aria-hidden="true" tabindex="-1"></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output){</span>
+<span id="cb13-2"><a href="odzivni-dashboard-i.html#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="odzivni-dashboard-i.html#cb13-3" aria-hidden="true" tabindex="-1"></a>  output<span class="sc">$</span>izpis <span class="ot">&lt;-</span> <span class="fu">renderText</span>({</span>
+<span id="cb13-4"><a href="odzivni-dashboard-i.html#cb13-4" aria-hidden="true" tabindex="-1"></a>    ime <span class="ot">&lt;-</span> input<span class="sc">$</span>ime</span>
+<span id="cb13-5"><a href="odzivni-dashboard-i.html#cb13-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span>(<span class="fu">nchar</span>(ime) <span class="sc">&lt;</span> <span class="dv">2</span>){ <span class="co">#pri praznem polju ali 1 črki izpiši navodila.</span></span>
+<span id="cb13-6"><a href="odzivni-dashboard-i.html#cb13-6" aria-hidden="true" tabindex="-1"></a>      ime <span class="ot">&lt;-</span> <span class="st">&quot;prosim vnesi svoje ime.&quot;</span></span>
+<span id="cb13-7"><a href="odzivni-dashboard-i.html#cb13-7" aria-hidden="true" tabindex="-1"></a>    }<span class="cf">else</span>{</span>
+<span id="cb13-8"><a href="odzivni-dashboard-i.html#cb13-8" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span>(ime <span class="sc">==</span> <span class="st">&quot;datascience&quot;</span>){</span>
+<span id="cb13-9"><a href="odzivni-dashboard-i.html#cb13-9" aria-hidden="true" tabindex="-1"></a>        ime <span class="ot">&lt;-</span> <span class="st">&quot;DataScience@UL-FRI&quot;</span></span>
+<span id="cb13-10"><a href="odzivni-dashboard-i.html#cb13-10" aria-hidden="true" tabindex="-1"></a>      }<span class="cf">else</span>{</span>
+<span id="cb13-11"><a href="odzivni-dashboard-i.html#cb13-11" aria-hidden="true" tabindex="-1"></a>        ime <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="fu">toupper</span>(<span class="fu">substr</span>(ime, <span class="dv">1</span>, <span class="dv">1</span>)), <span class="co">#prva črka naj bo velika</span></span>
+<span id="cb13-12"><a href="odzivni-dashboard-i.html#cb13-12" aria-hidden="true" tabindex="-1"></a>                     <span class="fu">substr</span>(ime, <span class="dv">2</span>, <span class="fu">nchar</span>(ime)), <span class="co">#ostale črke skopiramo</span></span>
+<span id="cb13-13"><a href="odzivni-dashboard-i.html#cb13-13" aria-hidden="true" tabindex="-1"></a>                     <span class="st">&quot;!&quot;</span>, <span class="co">#dodamo še klicaj</span></span>
+<span id="cb13-14"><a href="odzivni-dashboard-i.html#cb13-14" aria-hidden="true" tabindex="-1"></a>                     <span class="at">sep =</span> <span class="st">&quot;&quot;</span>)</span>
+<span id="cb13-15"><a href="odzivni-dashboard-i.html#cb13-15" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb13-16"><a href="odzivni-dashboard-i.html#cb13-16" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb13-17"><a href="odzivni-dashboard-i.html#cb13-17" aria-hidden="true" tabindex="-1"></a>    ime</span>
+<span id="cb13-18"><a href="odzivni-dashboard-i.html#cb13-18" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb13-19"><a href="odzivni-dashboard-i.html#cb13-19" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div style="border : 2px solid gray">
+<p><img src="images/shiny_2_2_updated.png" /></p>
+</div>
+<p>Na zgornji sliki nam aplikacija olajša vnos logotipa <a href="mailto:DataScience@UL-FRI" class="email">DataScience@UL-FRI</a> in polepša izpis imen.</p>
+</div>
+<div id="branje-datotek-in-prikaz-tabel" class="section level3" number="2.3.2">
+<h3><span class="header-section-number">2.3.2</span> Branje datotek in prikaz tabel</h3>
+<p>Sedaj si poglejmo, kako lahko z aplikacijo Shiny preberemo datoteko. Uporabili bomo podatkovno zbirko <em>osebe8.csv</em>, ki vsebuje izmišljene podatke o višini, teži, spolu in imenih oseb. Aplikacija vsebuje polje za vnos poti do datoteke, drsnik, ki določi maksimalno dolžino izpisane tabele, in polje za izpis tabele.</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="odzivni-dashboard-i.html#cb14-1" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(<span class="fu">sidebarLayout</span>(</span>
+<span id="cb14-2"><a href="odzivni-dashboard-i.html#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sidebarPanel</span>(</span>
+<span id="cb14-3"><a href="odzivni-dashboard-i.html#cb14-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Polje za vnos datoteke</span></span>
+<span id="cb14-4"><a href="odzivni-dashboard-i.html#cb14-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">fileInput</span>(</span>
+<span id="cb14-5"><a href="odzivni-dashboard-i.html#cb14-5" aria-hidden="true" tabindex="-1"></a>      <span class="at">inputId =</span> <span class="st">&quot;dat&quot;</span>,</span>
+<span id="cb14-6"><a href="odzivni-dashboard-i.html#cb14-6" aria-hidden="true" tabindex="-1"></a>      <span class="at">label =</span> <span class="st">&quot;Izberi datoteko:&quot;</span>,</span>
+<span id="cb14-7"><a href="odzivni-dashboard-i.html#cb14-7" aria-hidden="true" tabindex="-1"></a>      <span class="at">buttonLabel =</span> <span class="st">&quot;Brskaj&quot;</span>,</span>
+<span id="cb14-8"><a href="odzivni-dashboard-i.html#cb14-8" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb14-9"><a href="odzivni-dashboard-i.html#cb14-9" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb14-10"><a href="odzivni-dashboard-i.html#cb14-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Drsnik</span></span>
+<span id="cb14-11"><a href="odzivni-dashboard-i.html#cb14-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">sliderInput</span>(</span>
+<span id="cb14-12"><a href="odzivni-dashboard-i.html#cb14-12" aria-hidden="true" tabindex="-1"></a>      <span class="at">inputId =</span> <span class="st">&quot;dol&quot;</span>,</span>
+<span id="cb14-13"><a href="odzivni-dashboard-i.html#cb14-13" aria-hidden="true" tabindex="-1"></a>      <span class="at">label =</span> <span class="st">&quot;Maksimalna dolžina izpisa:&quot;</span>,</span>
+<span id="cb14-14"><a href="odzivni-dashboard-i.html#cb14-14" aria-hidden="true" tabindex="-1"></a>      <span class="at">min =</span> <span class="dv">1</span>,</span>
+<span id="cb14-15"><a href="odzivni-dashboard-i.html#cb14-15" aria-hidden="true" tabindex="-1"></a>      <span class="at">max =</span> <span class="dv">10</span>,</span>
+<span id="cb14-16"><a href="odzivni-dashboard-i.html#cb14-16" aria-hidden="true" tabindex="-1"></a>      <span class="at">value =</span> <span class="dv">3</span></span>
+<span id="cb14-17"><a href="odzivni-dashboard-i.html#cb14-17" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb14-18"><a href="odzivni-dashboard-i.html#cb14-18" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb14-19"><a href="odzivni-dashboard-i.html#cb14-19" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb14-20"><a href="odzivni-dashboard-i.html#cb14-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mainPanel</span>(<span class="fu">tableOutput</span>(<span class="st">&quot;tabela&quot;</span>))</span>
+<span id="cb14-21"><a href="odzivni-dashboard-i.html#cb14-21" aria-hidden="true" tabindex="-1"></a>))</span>
+<span id="cb14-22"><a href="odzivni-dashboard-i.html#cb14-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-23"><a href="odzivni-dashboard-i.html#cb14-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-24"><a href="odzivni-dashboard-i.html#cb14-24" aria-hidden="true" tabindex="-1"></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output) {</span>
+<span id="cb14-25"><a href="odzivni-dashboard-i.html#cb14-25" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Izpis tabele</span></span>
+<span id="cb14-26"><a href="odzivni-dashboard-i.html#cb14-26" aria-hidden="true" tabindex="-1"></a>  output<span class="sc">$</span>tabela <span class="ot">&lt;-</span> <span class="fu">renderTable</span>({</span>
+<span id="cb14-27"><a href="odzivni-dashboard-i.html#cb14-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.null</span>(input<span class="sc">$</span>dat)) {</span>
+<span id="cb14-28"><a href="odzivni-dashboard-i.html#cb14-28" aria-hidden="true" tabindex="-1"></a>      <span class="fu">head</span>(<span class="fu">read.csv</span>(input<span class="sc">$</span>dat<span class="sc">$</span>datapath), input<span class="sc">$</span>dol)</span>
+<span id="cb14-29"><a href="odzivni-dashboard-i.html#cb14-29" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb14-30"><a href="odzivni-dashboard-i.html#cb14-30" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb14-31"><a href="odzivni-dashboard-i.html#cb14-31" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb14-32"><a href="odzivni-dashboard-i.html#cb14-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-33"><a href="odzivni-dashboard-i.html#cb14-33" aria-hidden="true" tabindex="-1"></a><span class="fu">shinyApp</span>(<span class="at">ui =</span> ui, <span class="at">server =</span> server)</span></code></pre></div>
+<div style="border : 2px solid gray">
+<p><img src="images/shiny_2_3.PNG" /></p>
+</div>
+<p>Naša aplikacija lahko prikaže katerekoli podatke v obliki .csv, ki jih prebermo s funkcijo <code>read.csv</code>. Izpiše pa lahko največ 10 vrstic. V zgornji aplikaciji opazimo, da funkcija <code>fileInput</code> prebere le metapodatke datoteke, dejanske podatke pa nato naložimo v strežniški funkciji. Metapodatki, ki so na voljo:</p>
+<ul>
+<li>name: ime datoteke</li>
+<li>size: velikost datoteke v bajtih</li>
+<li>type: MIME tip datoteke</li>
+<li>datapath: pot do začasnih podatkov</li>
+</ul>
+</div>
+</div>
+<div id="odzivni-graf" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> Odzivni graf</h2>
+<p>Sedaj si oglejmo zahtevnejši primer aplikacije, ki vsebuje odzivni graf. Tokrat bo aplikacija samodejno brala podatke, zato morajo biti shranjeni znotraj mape aplikacije. Aplikacija naj prikaže graf teže v odvisnosti od višine in naj daje uporabniku možnost, da filtrira podatke po spolu in prikaže trendno črto.</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="odzivni-dashboard-i.html#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(shiny)</span>
+<span id="cb15-2"><a href="odzivni-dashboard-i.html#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb15-3"><a href="odzivni-dashboard-i.html#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-4"><a href="odzivni-dashboard-i.html#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Naložimo in pripravimo podatke</span></span>
+<span id="cb15-5"><a href="odzivni-dashboard-i.html#cb15-5" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;osebe8.csv&quot;</span>, <span class="at">stringsAsFactors =</span> T)</span>
+<span id="cb15-6"><a href="odzivni-dashboard-i.html#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(df<span class="sc">$</span>Spol) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Ženske&quot;</span>, <span class="st">&quot;Moški&quot;</span>)</span>
+<span id="cb15-7"><a href="odzivni-dashboard-i.html#cb15-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-8"><a href="odzivni-dashboard-i.html#cb15-8" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(<span class="fu">titlePanel</span>(<span class="st">&quot;Primer odzivnega grafa:&quot;</span>),</span>
+<span id="cb15-9"><a href="odzivni-dashboard-i.html#cb15-9" aria-hidden="true" tabindex="-1"></a>                <span class="fu">sidebarLayout</span>(</span>
+<span id="cb15-10"><a href="odzivni-dashboard-i.html#cb15-10" aria-hidden="true" tabindex="-1"></a>                  <span class="fu">sidebarPanel</span>(</span>
+<span id="cb15-11"><a href="odzivni-dashboard-i.html#cb15-11" aria-hidden="true" tabindex="-1"></a>                    </span>
+<span id="cb15-12"><a href="odzivni-dashboard-i.html#cb15-12" aria-hidden="true" tabindex="-1"></a>                    <span class="co"># Filter za spol</span></span>
+<span id="cb15-13"><a href="odzivni-dashboard-i.html#cb15-13" aria-hidden="true" tabindex="-1"></a>                    <span class="fu">selectInput</span>(</span>
+<span id="cb15-14"><a href="odzivni-dashboard-i.html#cb15-14" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;select_spol&quot;</span>,</span>
+<span id="cb15-15"><a href="odzivni-dashboard-i.html#cb15-15" aria-hidden="true" tabindex="-1"></a>                      <span class="at">label =</span> <span class="st">&quot;Izberite spol:&quot;</span>,</span>
+<span id="cb15-16"><a href="odzivni-dashboard-i.html#cb15-16" aria-hidden="true" tabindex="-1"></a>                      <span class="at">choices =</span> <span class="fu">c</span>(<span class="st">&quot;Vsi&quot;</span>,</span>
+<span id="cb15-17"><a href="odzivni-dashboard-i.html#cb15-17" aria-hidden="true" tabindex="-1"></a>                                  <span class="st">&quot;Moški&quot;</span>,</span>
+<span id="cb15-18"><a href="odzivni-dashboard-i.html#cb15-18" aria-hidden="true" tabindex="-1"></a>                                  <span class="st">&quot;Ženske&quot;</span>),</span>
+<span id="cb15-19"><a href="odzivni-dashboard-i.html#cb15-19" aria-hidden="true" tabindex="-1"></a>                      <span class="at">selected =</span> <span class="st">&#39;Vsi&#39;</span>,</span>
+<span id="cb15-20"><a href="odzivni-dashboard-i.html#cb15-20" aria-hidden="true" tabindex="-1"></a>                    ),</span>
+<span id="cb15-21"><a href="odzivni-dashboard-i.html#cb15-21" aria-hidden="true" tabindex="-1"></a>                    </span>
+<span id="cb15-22"><a href="odzivni-dashboard-i.html#cb15-22" aria-hidden="true" tabindex="-1"></a>                    <span class="co"># Opcija za prikaz trendne črte</span></span>
+<span id="cb15-23"><a href="odzivni-dashboard-i.html#cb15-23" aria-hidden="true" tabindex="-1"></a>                    <span class="fu">checkboxInput</span>(<span class="st">&quot;trend_l&quot;</span>,</span>
+<span id="cb15-24"><a href="odzivni-dashboard-i.html#cb15-24" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">label =</span> <span class="st">&quot;Trendna črta&quot;</span>,</span>
+<span id="cb15-25"><a href="odzivni-dashboard-i.html#cb15-25" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">value =</span> F)</span>
+<span id="cb15-26"><a href="odzivni-dashboard-i.html#cb15-26" aria-hidden="true" tabindex="-1"></a>                  ),</span>
+<span id="cb15-27"><a href="odzivni-dashboard-i.html#cb15-27" aria-hidden="true" tabindex="-1"></a>                  <span class="fu">mainPanel</span>(<span class="co"># Graf</span></span>
+<span id="cb15-28"><a href="odzivni-dashboard-i.html#cb15-28" aria-hidden="true" tabindex="-1"></a>                    <span class="fu">plotOutput</span>(<span class="st">&quot;graf&quot;</span>))</span>
+<span id="cb15-29"><a href="odzivni-dashboard-i.html#cb15-29" aria-hidden="true" tabindex="-1"></a>                ))</span>
+<span id="cb15-30"><a href="odzivni-dashboard-i.html#cb15-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-31"><a href="odzivni-dashboard-i.html#cb15-31" aria-hidden="true" tabindex="-1"></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output) {</span>
+<span id="cb15-32"><a href="odzivni-dashboard-i.html#cb15-32" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb15-33"><a href="odzivni-dashboard-i.html#cb15-33" aria-hidden="true" tabindex="-1"></a>  <span class="co"># koda za izris grafa</span></span>
+<span id="cb15-34"><a href="odzivni-dashboard-i.html#cb15-34" aria-hidden="true" tabindex="-1"></a>  output<span class="sc">$</span>graf <span class="ot">&lt;-</span> <span class="fu">renderPlot</span>({</span>
+<span id="cb15-35"><a href="odzivni-dashboard-i.html#cb15-35" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Apliciramo filter</span></span>
+<span id="cb15-36"><a href="odzivni-dashboard-i.html#cb15-36" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (input<span class="sc">$</span>select_spol <span class="sc">!=</span> <span class="st">&#39;Vsi&#39;</span>) {</span>
+<span id="cb15-37"><a href="odzivni-dashboard-i.html#cb15-37" aria-hidden="true" tabindex="-1"></a>      df <span class="ot">&lt;-</span> df[df<span class="sc">$</span>Spol <span class="sc">==</span> input<span class="sc">$</span>select_spol,]</span>
+<span id="cb15-38"><a href="odzivni-dashboard-i.html#cb15-38" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb15-39"><a href="odzivni-dashboard-i.html#cb15-39" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb15-40"><a href="odzivni-dashboard-i.html#cb15-40" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Izrišemo graf</span></span>
+<span id="cb15-41"><a href="odzivni-dashboard-i.html#cb15-41" aria-hidden="true" tabindex="-1"></a>    pl <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(df, <span class="fu">aes</span>(<span class="at">x =</span> Visina, <span class="at">y =</span> Teza, <span class="at">color =</span> Spol)) <span class="sc">+</span></span>
+<span id="cb15-42"><a href="odzivni-dashboard-i.html#cb15-42" aria-hidden="true" tabindex="-1"></a>      <span class="fu">geom_point</span>()</span>
+<span id="cb15-43"><a href="odzivni-dashboard-i.html#cb15-43" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb15-44"><a href="odzivni-dashboard-i.html#cb15-44" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Grafu dodamo trendno črto, če je tako označeno</span></span>
+<span id="cb15-45"><a href="odzivni-dashboard-i.html#cb15-45" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (input<span class="sc">$</span>trend_l) {</span>
+<span id="cb15-46"><a href="odzivni-dashboard-i.html#cb15-46" aria-hidden="true" tabindex="-1"></a>      pl <span class="ot">&lt;-</span> pl <span class="sc">+</span> <span class="fu">geom_smooth</span>(</span>
+<span id="cb15-47"><a href="odzivni-dashboard-i.html#cb15-47" aria-hidden="true" tabindex="-1"></a>        <span class="fu">aes</span>(<span class="at">x =</span> Visina, <span class="at">y =</span> Teza),</span>
+<span id="cb15-48"><a href="odzivni-dashboard-i.html#cb15-48" aria-hidden="true" tabindex="-1"></a>        <span class="at">method =</span> <span class="st">&#39;lm&#39;</span>,</span>
+<span id="cb15-49"><a href="odzivni-dashboard-i.html#cb15-49" aria-hidden="true" tabindex="-1"></a>        <span class="at">formula =</span> y <span class="sc">~</span> x,</span>
+<span id="cb15-50"><a href="odzivni-dashboard-i.html#cb15-50" aria-hidden="true" tabindex="-1"></a>        <span class="at">inherit.aes =</span> F</span>
+<span id="cb15-51"><a href="odzivni-dashboard-i.html#cb15-51" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb15-52"><a href="odzivni-dashboard-i.html#cb15-52" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb15-53"><a href="odzivni-dashboard-i.html#cb15-53" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb15-54"><a href="odzivni-dashboard-i.html#cb15-54" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Vrnemo končni graf</span></span>
+<span id="cb15-55"><a href="odzivni-dashboard-i.html#cb15-55" aria-hidden="true" tabindex="-1"></a>    pl</span>
+<span id="cb15-56"><a href="odzivni-dashboard-i.html#cb15-56" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb15-57"><a href="odzivni-dashboard-i.html#cb15-57" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb15-58"><a href="odzivni-dashboard-i.html#cb15-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-59"><a href="odzivni-dashboard-i.html#cb15-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-60"><a href="odzivni-dashboard-i.html#cb15-60" aria-hidden="true" tabindex="-1"></a><span class="fu">shinyApp</span>(<span class="at">ui =</span> ui, <span class="at">server =</span> server)</span></code></pre></div>
+<div style="border : 2px solid gray">
+<p><img src="images/shiny_2_4.PNG" /></p>
+</div>
+<p>V zgorjni kodi vidimo, da potrebujemo dva vhoda, <em>select_spol</em> in <em>trend_l</em>. Z vhodom <em>select_spol</em> iz tabele izberemo le vrstice, ki nas zanimajo, z uporabo <em>trend_l</em>, pa s pomočjo linearnega modela na grafu narišemo linearni trend teže v odvisnosti od višine višine.</p>
+<div id="odzivni-widgeti" class="section level3" number="2.4.1">
+<h3><span class="header-section-number">2.4.1</span> Odzivni widgeti</h3>
+<p>V prejšnjem primeru, kjer smo izpisovali tabelo, smo imeli drsnik, ki je določal maksimalno število izpisanih vrstic. Mejni vrednosti drsnika sta bili 1 in 10. Če želimo zgornjo mejo drsnika nastaviti na število vseh prebranih vrstic v tabeli s podatki, lahko ustvarimo odziven drsnik s pomočjo funkcije <code>outputUI()</code>. Tak drsnik se bo posodobil vsakič, ko bomo prebrali datoteko:</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="odzivni-dashboard-i.html#cb16-1" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(<span class="fu">sidebarLayout</span>(<span class="fu">sidebarPanel</span>(</span>
+<span id="cb16-2"><a href="odzivni-dashboard-i.html#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Polje za vnos datoteke</span></span>
+<span id="cb16-3"><a href="odzivni-dashboard-i.html#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fileInput</span>(</span>
+<span id="cb16-4"><a href="odzivni-dashboard-i.html#cb16-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">inputId =</span> <span class="st">&quot;datoteka&quot;</span>,</span>
+<span id="cb16-5"><a href="odzivni-dashboard-i.html#cb16-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">label =</span> <span class="st">&quot;Izberi datoteko:&quot;</span>,</span>
+<span id="cb16-6"><a href="odzivni-dashboard-i.html#cb16-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">buttonLabel =</span> <span class="st">&quot;Brskaj...&quot;</span>,</span>
+<span id="cb16-7"><a href="odzivni-dashboard-i.html#cb16-7" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb16-8"><a href="odzivni-dashboard-i.html#cb16-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Odzivni widget</span></span>
+<span id="cb16-9"><a href="odzivni-dashboard-i.html#cb16-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">uiOutput</span>(<span class="st">&quot;odzivni_drsnik&quot;</span>)</span>
+<span id="cb16-10"><a href="odzivni-dashboard-i.html#cb16-10" aria-hidden="true" tabindex="-1"></a>),</span>
+<span id="cb16-11"><a href="odzivni-dashboard-i.html#cb16-11" aria-hidden="true" tabindex="-1"></a><span class="fu">mainPanel</span>(<span class="fu">tableOutput</span>(<span class="st">&quot;tabela&quot;</span>))))</span>
+<span id="cb16-12"><a href="odzivni-dashboard-i.html#cb16-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-13"><a href="odzivni-dashboard-i.html#cb16-13" aria-hidden="true" tabindex="-1"></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output) {</span>
+<span id="cb16-14"><a href="odzivni-dashboard-i.html#cb16-14" aria-hidden="true" tabindex="-1"></a>  output<span class="sc">$</span>odzivni_drsnik <span class="ot">&lt;-</span> <span class="fu">renderUI</span>({</span>
+<span id="cb16-15"><a href="odzivni-dashboard-i.html#cb16-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.null</span>(input<span class="sc">$</span>datoteka)) {</span>
+<span id="cb16-16"><a href="odzivni-dashboard-i.html#cb16-16" aria-hidden="true" tabindex="-1"></a>      podatki <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(input<span class="sc">$</span>datoteka<span class="sc">$</span>datapath)</span>
+<span id="cb16-17"><a href="odzivni-dashboard-i.html#cb16-17" aria-hidden="true" tabindex="-1"></a>      <span class="fu">sliderInput</span>(</span>
+<span id="cb16-18"><a href="odzivni-dashboard-i.html#cb16-18" aria-hidden="true" tabindex="-1"></a>        <span class="at">inputId =</span> <span class="st">&quot;drsnik_dolzina&quot;</span>,</span>
+<span id="cb16-19"><a href="odzivni-dashboard-i.html#cb16-19" aria-hidden="true" tabindex="-1"></a>        <span class="at">label =</span> <span class="st">&quot;Dolžina izpisa:&quot;</span>,</span>
+<span id="cb16-20"><a href="odzivni-dashboard-i.html#cb16-20" aria-hidden="true" tabindex="-1"></a>        <span class="at">min =</span> <span class="dv">1</span>,</span>
+<span id="cb16-21"><a href="odzivni-dashboard-i.html#cb16-21" aria-hidden="true" tabindex="-1"></a>        <span class="at">max =</span> <span class="fu">nrow</span>(podatki),</span>
+<span id="cb16-22"><a href="odzivni-dashboard-i.html#cb16-22" aria-hidden="true" tabindex="-1"></a>        <span class="at">value =</span> <span class="fu">min</span>(<span class="dv">5</span>, <span class="fu">nrow</span>(podatki), <span class="at">na.rm =</span> T),</span>
+<span id="cb16-23"><a href="odzivni-dashboard-i.html#cb16-23" aria-hidden="true" tabindex="-1"></a>        <span class="at">step =</span> <span class="dv">1</span></span>
+<span id="cb16-24"><a href="odzivni-dashboard-i.html#cb16-24" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb16-25"><a href="odzivni-dashboard-i.html#cb16-25" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb16-26"><a href="odzivni-dashboard-i.html#cb16-26" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb16-27"><a href="odzivni-dashboard-i.html#cb16-27" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb16-28"><a href="odzivni-dashboard-i.html#cb16-28" aria-hidden="true" tabindex="-1"></a>  output<span class="sc">$</span>tabela <span class="ot">&lt;-</span> <span class="fu">renderTable</span>({</span>
+<span id="cb16-29"><a href="odzivni-dashboard-i.html#cb16-29" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.null</span>(input<span class="sc">$</span>datoteka)) {</span>
+<span id="cb16-30"><a href="odzivni-dashboard-i.html#cb16-30" aria-hidden="true" tabindex="-1"></a>      <span class="fu">head</span>(<span class="fu">read.csv</span>(input<span class="sc">$</span>datoteka<span class="sc">$</span>datapath),</span>
+<span id="cb16-31"><a href="odzivni-dashboard-i.html#cb16-31" aria-hidden="true" tabindex="-1"></a>           input<span class="sc">$</span>drsnik_dolzina)</span>
+<span id="cb16-32"><a href="odzivni-dashboard-i.html#cb16-32" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb16-33"><a href="odzivni-dashboard-i.html#cb16-33" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb16-34"><a href="odzivni-dashboard-i.html#cb16-34" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div style="border : 2px solid gray">
+<p><img src="images/shiny_2_4_odzivni_drsnik.png" /></p>
+</div>
+<p>Podobno, kot smo to naredili za besedilo, tabele in graf, lahko spremenljivki v <strong>output-u</strong> priredimo drsnik. Ta mora biti definiran znotraj odzivnega konteksta v funkciji <code>renderUI()</code>. V tem primeru dodamo pogoj, da se drsnik prikaže samo, če izberemo datoteko.</p>
+<p>Bodimo pozorni, da je <code>odzivni_drsnik</code> <strong>izhod</strong>, <code>drsnik_dolzina</code> pa <strong>vhodna</strong> vrednost za njegov parameter <code>max</code>. Kot vidimo, imajo lahko tudi izhodi svoje vhode.</p>
+</div>
+</div>
+<div id="funkcija-reactive" class="section level2" number="2.5">
+<h2><span class="header-section-number">2.5</span> Funkcija <code>reactive()</code></h2>
+<p>Pogosto želimo podatke preoblikovati na način, ki se ne spreminja, nato pa prikazati na več različnih načinov. Recimo, da bi želeli podatkom oseb spremeniti vrednosti v stolpcu spol tako, da bi bil spol zapisan s celo besedo. To bi želeli spremeniti v tabeli in v grafu. Vrednosti vhodov lahko beremo in spreminjamo le v odzivnem kontekstu znotraj funkcij <code>renderPlot</code> in <code>renderTable</code>. V tem primeru bi morali v izraz za izpis vsakega izhoda posebej napisati iste ukaze, ki posodobijo stolpec spol. Temu se izognemo z uporabo funkcije <code>reactive()</code>, ki ustvari odzivni izraz, ki ga lahko ponovno uporabimo. Odzivni izraz si lahko predstavljamo kot pomožno funkcijo za obdelavo “vhoda-izhoda,” ki v aplikaciji ni viden. Njegova vrednost se, tako kot pri ostali vhodih in izhodih, spremeni ob vsaki spremembi. Tu je primer, ki združuje prejšnje primere:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="odzivni-dashboard-i.html#cb17-1" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(<span class="fu">sidebarLayout</span>(</span>
+<span id="cb17-2"><a href="odzivni-dashboard-i.html#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sidebarPanel</span>(</span>
+<span id="cb17-3"><a href="odzivni-dashboard-i.html#cb17-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">fileInput</span>(</span>
+<span id="cb17-4"><a href="odzivni-dashboard-i.html#cb17-4" aria-hidden="true" tabindex="-1"></a>      <span class="at">inputId =</span> <span class="st">&quot;datoteka&quot;</span>,</span>
+<span id="cb17-5"><a href="odzivni-dashboard-i.html#cb17-5" aria-hidden="true" tabindex="-1"></a>      <span class="at">label =</span> <span class="st">&quot;Izberi datoteko:&quot;</span>,</span>
+<span id="cb17-6"><a href="odzivni-dashboard-i.html#cb17-6" aria-hidden="true" tabindex="-1"></a>      <span class="at">buttonLabel =</span> <span class="st">&quot;Brskaj...&quot;</span>,</span>
+<span id="cb17-7"><a href="odzivni-dashboard-i.html#cb17-7" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb17-8"><a href="odzivni-dashboard-i.html#cb17-8" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb17-9"><a href="odzivni-dashboard-i.html#cb17-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Filter za spol</span></span>
+<span id="cb17-10"><a href="odzivni-dashboard-i.html#cb17-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">selectInput</span>(</span>
+<span id="cb17-11"><a href="odzivni-dashboard-i.html#cb17-11" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;select_spol&quot;</span>,</span>
+<span id="cb17-12"><a href="odzivni-dashboard-i.html#cb17-12" aria-hidden="true" tabindex="-1"></a>      <span class="at">label =</span> <span class="st">&quot;Izberite spol:&quot;</span>,</span>
+<span id="cb17-13"><a href="odzivni-dashboard-i.html#cb17-13" aria-hidden="true" tabindex="-1"></a>      <span class="at">choices =</span> <span class="fu">c</span>(<span class="st">&quot;Vsi&quot;</span>,</span>
+<span id="cb17-14"><a href="odzivni-dashboard-i.html#cb17-14" aria-hidden="true" tabindex="-1"></a>                  <span class="st">&quot;Moški&quot;</span>,</span>
+<span id="cb17-15"><a href="odzivni-dashboard-i.html#cb17-15" aria-hidden="true" tabindex="-1"></a>                  <span class="st">&quot;Ženske&quot;</span>),</span>
+<span id="cb17-16"><a href="odzivni-dashboard-i.html#cb17-16" aria-hidden="true" tabindex="-1"></a>      <span class="at">selected =</span> <span class="st">&#39;Vsi&#39;</span>,</span>
+<span id="cb17-17"><a href="odzivni-dashboard-i.html#cb17-17" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb17-18"><a href="odzivni-dashboard-i.html#cb17-18" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb17-19"><a href="odzivni-dashboard-i.html#cb17-19" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Opcija za prikaz trendne črte</span></span>
+<span id="cb17-20"><a href="odzivni-dashboard-i.html#cb17-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">checkboxInput</span>(<span class="st">&quot;trend_l&quot;</span>,</span>
+<span id="cb17-21"><a href="odzivni-dashboard-i.html#cb17-21" aria-hidden="true" tabindex="-1"></a>                  <span class="at">label =</span> <span class="st">&quot;Trendna črta&quot;</span>,</span>
+<span id="cb17-22"><a href="odzivni-dashboard-i.html#cb17-22" aria-hidden="true" tabindex="-1"></a>                  <span class="at">value =</span> F),</span>
+<span id="cb17-23"><a href="odzivni-dashboard-i.html#cb17-23" aria-hidden="true" tabindex="-1"></a>    <span class="fu">uiOutput</span>(<span class="st">&quot;odzivni_drsnik&quot;</span>)</span>
+<span id="cb17-24"><a href="odzivni-dashboard-i.html#cb17-24" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb17-25"><a href="odzivni-dashboard-i.html#cb17-25" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb17-26"><a href="odzivni-dashboard-i.html#cb17-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mainPanel</span>(<span class="fu">plotOutput</span>(<span class="st">&quot;graf&quot;</span>),</span>
+<span id="cb17-27"><a href="odzivni-dashboard-i.html#cb17-27" aria-hidden="true" tabindex="-1"></a>            <span class="fu">tableOutput</span>(<span class="st">&quot;tabela&quot;</span>))</span>
+<span id="cb17-28"><a href="odzivni-dashboard-i.html#cb17-28" aria-hidden="true" tabindex="-1"></a>))</span>
+<span id="cb17-29"><a href="odzivni-dashboard-i.html#cb17-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-30"><a href="odzivni-dashboard-i.html#cb17-30" aria-hidden="true" tabindex="-1"></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output) {</span>
+<span id="cb17-31"><a href="odzivni-dashboard-i.html#cb17-31" aria-hidden="true" tabindex="-1"></a>  <span class="co"># odzivni izraz</span></span>
+<span id="cb17-32"><a href="odzivni-dashboard-i.html#cb17-32" aria-hidden="true" tabindex="-1"></a>  osebe <span class="ot">&lt;-</span> <span class="fu">reactive</span>({</span>
+<span id="cb17-33"><a href="odzivni-dashboard-i.html#cb17-33" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.null</span>(input<span class="sc">$</span>datoteka)) {</span>
+<span id="cb17-34"><a href="odzivni-dashboard-i.html#cb17-34" aria-hidden="true" tabindex="-1"></a>      df <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(input<span class="sc">$</span>datoteka<span class="sc">$</span>datapath, <span class="at">stringsAsFactors =</span> T)</span>
+<span id="cb17-35"><a href="odzivni-dashboard-i.html#cb17-35" aria-hidden="true" tabindex="-1"></a>      <span class="fu">levels</span>(df<span class="sc">$</span>Spol) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Ženske&quot;</span>, <span class="st">&quot;Moški&quot;</span>)</span>
+<span id="cb17-36"><a href="odzivni-dashboard-i.html#cb17-36" aria-hidden="true" tabindex="-1"></a>      df</span>
+<span id="cb17-37"><a href="odzivni-dashboard-i.html#cb17-37" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb17-38"><a href="odzivni-dashboard-i.html#cb17-38" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb17-39"><a href="odzivni-dashboard-i.html#cb17-39" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb17-40"><a href="odzivni-dashboard-i.html#cb17-40" aria-hidden="true" tabindex="-1"></a>  output<span class="sc">$</span>odzivni_drsnik <span class="ot">&lt;-</span> <span class="fu">renderUI</span>({</span>
+<span id="cb17-41"><a href="odzivni-dashboard-i.html#cb17-41" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.null</span>(input<span class="sc">$</span>datoteka)) {</span>
+<span id="cb17-42"><a href="odzivni-dashboard-i.html#cb17-42" aria-hidden="true" tabindex="-1"></a>      <span class="fu">sliderInput</span>(</span>
+<span id="cb17-43"><a href="odzivni-dashboard-i.html#cb17-43" aria-hidden="true" tabindex="-1"></a>        <span class="at">inputId =</span> <span class="st">&quot;drsnik_dolzina&quot;</span>,</span>
+<span id="cb17-44"><a href="odzivni-dashboard-i.html#cb17-44" aria-hidden="true" tabindex="-1"></a>        <span class="at">label =</span> <span class="st">&quot;Dolžina izpisa:&quot;</span>,</span>
+<span id="cb17-45"><a href="odzivni-dashboard-i.html#cb17-45" aria-hidden="true" tabindex="-1"></a>        <span class="at">min =</span> <span class="dv">1</span>,</span>
+<span id="cb17-46"><a href="odzivni-dashboard-i.html#cb17-46" aria-hidden="true" tabindex="-1"></a>        <span class="at">max =</span> <span class="fu">nrow</span>(<span class="fu">osebe</span>()),</span>
+<span id="cb17-47"><a href="odzivni-dashboard-i.html#cb17-47" aria-hidden="true" tabindex="-1"></a>        <span class="at">value =</span> <span class="dv">5</span>,</span>
+<span id="cb17-48"><a href="odzivni-dashboard-i.html#cb17-48" aria-hidden="true" tabindex="-1"></a>        <span class="at">step =</span> <span class="dv">1</span></span>
+<span id="cb17-49"><a href="odzivni-dashboard-i.html#cb17-49" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb17-50"><a href="odzivni-dashboard-i.html#cb17-50" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb17-51"><a href="odzivni-dashboard-i.html#cb17-51" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb17-52"><a href="odzivni-dashboard-i.html#cb17-52" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb17-53"><a href="odzivni-dashboard-i.html#cb17-53" aria-hidden="true" tabindex="-1"></a>  output<span class="sc">$</span>tabela <span class="ot">&lt;-</span> <span class="fu">renderTable</span>({</span>
+<span id="cb17-54"><a href="odzivni-dashboard-i.html#cb17-54" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.null</span>(input<span class="sc">$</span>drsnik_dolzina)) {</span>
+<span id="cb17-55"><a href="odzivni-dashboard-i.html#cb17-55" aria-hidden="true" tabindex="-1"></a>      <span class="fu">head</span>(<span class="fu">osebe</span>(), input<span class="sc">$</span>drsnik_dolzina) <span class="co"># kličemo reaktivni izraz</span></span>
+<span id="cb17-56"><a href="odzivni-dashboard-i.html#cb17-56" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb17-57"><a href="odzivni-dashboard-i.html#cb17-57" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb17-58"><a href="odzivni-dashboard-i.html#cb17-58" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb17-59"><a href="odzivni-dashboard-i.html#cb17-59" aria-hidden="true" tabindex="-1"></a>  <span class="co"># koda za izris grafa</span></span>
+<span id="cb17-60"><a href="odzivni-dashboard-i.html#cb17-60" aria-hidden="true" tabindex="-1"></a>  output<span class="sc">$</span>graf <span class="ot">&lt;-</span> <span class="fu">renderPlot</span>({</span>
+<span id="cb17-61"><a href="odzivni-dashboard-i.html#cb17-61" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.null</span>(input<span class="sc">$</span>datoteka)) {</span>
+<span id="cb17-62"><a href="odzivni-dashboard-i.html#cb17-62" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb17-63"><a href="odzivni-dashboard-i.html#cb17-63" aria-hidden="true" tabindex="-1"></a>      <span class="co">#Apliciramo filter</span></span>
+<span id="cb17-64"><a href="odzivni-dashboard-i.html#cb17-64" aria-hidden="true" tabindex="-1"></a>      df <span class="ot">&lt;-</span> <span class="fu">osebe</span>()</span>
+<span id="cb17-65"><a href="odzivni-dashboard-i.html#cb17-65" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (input<span class="sc">$</span>select_spol <span class="sc">!=</span> <span class="st">&#39;Vsi&#39;</span>) {</span>
+<span id="cb17-66"><a href="odzivni-dashboard-i.html#cb17-66" aria-hidden="true" tabindex="-1"></a>        df <span class="ot">&lt;-</span> df[df<span class="sc">$</span>Spol <span class="sc">==</span> input<span class="sc">$</span>select_spol,]</span>
+<span id="cb17-67"><a href="odzivni-dashboard-i.html#cb17-67" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb17-68"><a href="odzivni-dashboard-i.html#cb17-68" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb17-69"><a href="odzivni-dashboard-i.html#cb17-69" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Izrišemo graf</span></span>
+<span id="cb17-70"><a href="odzivni-dashboard-i.html#cb17-70" aria-hidden="true" tabindex="-1"></a>      pl <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(df, <span class="fu">aes</span>(<span class="at">x =</span> Visina, <span class="at">y =</span> Teza, <span class="at">color =</span> Spol)) <span class="sc">+</span></span>
+<span id="cb17-71"><a href="odzivni-dashboard-i.html#cb17-71" aria-hidden="true" tabindex="-1"></a>        <span class="fu">geom_point</span>()</span>
+<span id="cb17-72"><a href="odzivni-dashboard-i.html#cb17-72" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb17-73"><a href="odzivni-dashboard-i.html#cb17-73" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Grafu dodamo trendno črto, če je tako označeno</span></span>
+<span id="cb17-74"><a href="odzivni-dashboard-i.html#cb17-74" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (input<span class="sc">$</span>trend_l) {</span>
+<span id="cb17-75"><a href="odzivni-dashboard-i.html#cb17-75" aria-hidden="true" tabindex="-1"></a>        pl <span class="ot">&lt;-</span> pl <span class="sc">+</span> <span class="fu">geom_smooth</span>(</span>
+<span id="cb17-76"><a href="odzivni-dashboard-i.html#cb17-76" aria-hidden="true" tabindex="-1"></a>          <span class="fu">aes</span>(<span class="at">x =</span> Visina, <span class="at">y =</span> Teza),</span>
+<span id="cb17-77"><a href="odzivni-dashboard-i.html#cb17-77" aria-hidden="true" tabindex="-1"></a>          <span class="at">method =</span> <span class="st">&#39;lm&#39;</span>,</span>
+<span id="cb17-78"><a href="odzivni-dashboard-i.html#cb17-78" aria-hidden="true" tabindex="-1"></a>          <span class="at">formula =</span> y <span class="sc">~</span> x,</span>
+<span id="cb17-79"><a href="odzivni-dashboard-i.html#cb17-79" aria-hidden="true" tabindex="-1"></a>          <span class="at">inherit.aes =</span> F</span>
+<span id="cb17-80"><a href="odzivni-dashboard-i.html#cb17-80" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb17-81"><a href="odzivni-dashboard-i.html#cb17-81" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb17-82"><a href="odzivni-dashboard-i.html#cb17-82" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Vrnemo končni graf</span></span>
+<span id="cb17-83"><a href="odzivni-dashboard-i.html#cb17-83" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(pl)</span>
+<span id="cb17-84"><a href="odzivni-dashboard-i.html#cb17-84" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb17-85"><a href="odzivni-dashboard-i.html#cb17-85" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb17-86"><a href="odzivni-dashboard-i.html#cb17-86" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb17-87"><a href="odzivni-dashboard-i.html#cb17-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-88"><a href="odzivni-dashboard-i.html#cb17-88" aria-hidden="true" tabindex="-1"></a><span class="fu">shinyApp</span>(<span class="at">ui =</span> ui, <span class="at">server =</span> server)</span></code></pre></div>
+<div style="border : 2px solid gray">
+<p><img src="images/shiny_2_5.PNG" /></p>
+</div>
+<p>Ko uporabljamo odzivne izraze, moramo paziti, da jih kličemo z oklepaji. Tabelo oseb obdelamo le enkrat znotraj odzivnega izraza. Tako lahko pohitrimo posodobitve naših dashboard-ov , predvsem ko imamo več izhodov, ki zahtevajo podobno obdelavo obsežnih podatkov. V našem primeru opazimo tudi, da za izris grafa vrnjene podatke iz funkcije <code>reactive()</code> preprosto filtriramo.</p>
+</div>
+<div id="domača-naloga-1" class="section level2" number="2.6">
+<h2><span class="header-section-number">2.6</span> Domača naloga</h2>
+<p>Uporabite uporabniški vmesnik, ki ste ga sestavili pri prejšnji domači nalogi. V desnem stolpcu, ki smo ga namenoma pustili praznega, prikažite z razpredelnico zadnjih pet prijavljenih strank. Pod tabelo dodajte graf, ki prikazuje število novih strank skozi čas.</p>
+<div style="border : 2px solid gray">
+<p><img src="images/DN2.PNG" /></p>
+</div>
+<hr />
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="statični-dashboard.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="urejanje-oblike-in-razporeditve-dashboard-a.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-Reaktivni-dashboardi.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

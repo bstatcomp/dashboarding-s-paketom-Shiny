@@ -1,0 +1,940 @@
+product_id,product_name,brand_id,category_id,model_year,list_price,prod_cost,brand_name,category_name,store_id,quantity,store_name,phone,email,street,city,state,zip_code
+1,Trek 820 - 2016,9,6,2016,379.99,251.16970409699996,Trek,Mountain Bikes,1,27,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+1,Trek 820 - 2016,9,6,2016,379.99,251.16970409699996,Trek,Mountain Bikes,2,14,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+1,Trek 820 - 2016,9,6,2016,379.99,251.16970409699996,Trek,Mountain Bikes,3,14,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+2,Ritchey Timberwolf Frameset - 2016,5,6,2016,749.99,486.99895659399994,Ritchey,Mountain Bikes,1,5,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+2,Ritchey Timberwolf Frameset - 2016,5,6,2016,749.99,486.99895659399994,Ritchey,Mountain Bikes,2,16,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+2,Ritchey Timberwolf Frameset - 2016,5,6,2016,749.99,486.99895659399994,Ritchey,Mountain Bikes,3,24,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+3,Surly Wednesday Frameset - 2016,8,6,2016,999.99,912.1634082747,Surly,Mountain Bikes,1,6,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+3,Surly Wednesday Frameset - 2016,8,6,2016,999.99,912.1634082747,Surly,Mountain Bikes,2,28,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+3,Surly Wednesday Frameset - 2016,8,6,2016,999.99,912.1634082747,Surly,Mountain Bikes,3,0,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+4,Trek Fuel EX 8 29 - 2016,9,6,2016,2899.99,1916.8652600969997,Trek,Mountain Bikes,1,23,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+4,Trek Fuel EX 8 29 - 2016,9,6,2016,2899.99,1916.8652600969997,Trek,Mountain Bikes,2,2,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+4,Trek Fuel EX 8 29 - 2016,9,6,2016,2899.99,1916.8652600969997,Trek,Mountain Bikes,3,11,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+5,Heller Shagamaw Frame - 2016,3,6,2016,1320.99,873.2141517990001,Heller,Mountain Bikes,1,22,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+5,Heller Shagamaw Frame - 2016,3,6,2016,1320.99,873.2141517990001,Heller,Mountain Bikes,2,1,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+5,Heller Shagamaw Frame - 2016,3,6,2016,1320.99,873.2141517990001,Heller,Mountain Bikes,3,3,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+6,Surly Ice Cream Truck Frameset - 2016,8,6,2016,469.99,428.7119673747,Surly,Mountain Bikes,1,0,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+6,Surly Ice Cream Truck Frameset - 2016,8,6,2016,469.99,428.7119673747,Surly,Mountain Bikes,2,11,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+6,Surly Ice Cream Truck Frameset - 2016,8,6,2016,469.99,428.7119673747,Surly,Mountain Bikes,3,27,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+7,Trek Slash 8 27.5 - 2016,9,6,2016,3999.99,2643.9545900969997,Trek,Mountain Bikes,1,8,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+7,Trek Slash 8 27.5 - 2016,9,6,2016,3999.99,2643.9545900969997,Trek,Mountain Bikes,2,8,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+7,Trek Slash 8 27.5 - 2016,9,6,2016,3999.99,2643.9545900969997,Trek,Mountain Bikes,3,12,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+8,Trek Remedy 29 Carbon Frameset - 2016,9,6,2016,1799.99,1189.775930097,Trek,Mountain Bikes,1,0,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+8,Trek Remedy 29 Carbon Frameset - 2016,9,6,2016,1799.99,1189.775930097,Trek,Mountain Bikes,2,1,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+8,Trek Remedy 29 Carbon Frameset - 2016,9,6,2016,1799.99,1189.775930097,Trek,Mountain Bikes,3,12,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+9,Trek Conduit+ - 2016,9,5,2016,2999.99,1982.9642900969995,Trek,Electric Bikes,1,11,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+9,Trek Conduit+ - 2016,9,5,2016,2999.99,1982.9642900969995,Trek,Electric Bikes,2,17,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+9,Trek Conduit+ - 2016,9,5,2016,2999.99,1982.9642900969995,Trek,Electric Bikes,3,23,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+10,Surly Straggler - 2016,8,4,2016,1549,1412.95524897,Surly,Cyclocross Bicycles,1,15,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+10,Surly Straggler - 2016,8,4,2016,1549,1412.95524897,Surly,Cyclocross Bicycles,2,13,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+10,Surly Straggler - 2016,8,4,2016,1549,1412.95524897,Surly,Cyclocross Bicycles,3,21,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+11,Surly Straggler 650b - 2016,8,4,2016,1680.99,1533.3529012047,Surly,Cyclocross Bicycles,1,8,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+11,Surly Straggler 650b - 2016,8,4,2016,1680.99,1533.3529012047,Surly,Cyclocross Bicycles,2,21,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+11,Surly Straggler 650b - 2016,8,4,2016,1680.99,1533.3529012047,Surly,Cyclocross Bicycles,3,30,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+12,Electra Townie Original 21D - 2016,1,3,2016,549.99,385.40147757299997,Electra,Cruisers Bicycles,1,16,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+12,Electra Townie Original 21D - 2016,1,3,2016,549.99,385.40147757299997,Electra,Cruisers Bicycles,2,2,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+12,Electra Townie Original 21D - 2016,1,3,2016,549.99,385.40147757299997,Electra,Cruisers Bicycles,3,30,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+13,Electra Cruiser 1 (24-Inch) - 2016,1,3,2016,269.99,189.193521573,Electra,Cruisers Bicycles,1,13,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+13,Electra Cruiser 1 (24-Inch) - 2016,1,3,2016,269.99,189.193521573,Electra,Cruisers Bicycles,2,1,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+13,Electra Cruiser 1 (24-Inch) - 2016,1,3,2016,269.99,189.193521573,Electra,Cruisers Bicycles,3,19,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+14,Electra Girl's Hawaii 1 (16-inch) - 2015/2016,1,3,2016,269.99,189.193521573,Electra,Cruisers Bicycles,1,8,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+14,Electra Girl's Hawaii 1 (16-inch) - 2015/2016,1,3,2016,269.99,189.193521573,Electra,Cruisers Bicycles,2,18,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+14,Electra Girl's Hawaii 1 (16-inch) - 2015/2016,1,3,2016,269.99,189.193521573,Electra,Cruisers Bicycles,3,4,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+15,Electra Moto 1 - 2016,1,3,2016,529.99,371.38662357299995,Electra,Cruisers Bicycles,1,3,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+15,Electra Moto 1 - 2016,1,3,2016,529.99,371.38662357299995,Electra,Cruisers Bicycles,2,6,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+15,Electra Moto 1 - 2016,1,3,2016,529.99,371.38662357299995,Electra,Cruisers Bicycles,3,22,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+16,Electra Townie Original 7D EQ - 2016,1,3,2016,599.99,420.43861257299994,Electra,Cruisers Bicycles,1,4,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+16,Electra Townie Original 7D EQ - 2016,1,3,2016,599.99,420.43861257299994,Electra,Cruisers Bicycles,2,20,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+16,Electra Townie Original 7D EQ - 2016,1,3,2016,599.99,420.43861257299994,Electra,Cruisers Bicycles,3,19,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+17,Pure Cycles Vine 8-Speed - 2016,4,3,2016,429,371.2967544,Pure Cycles,Cruisers Bicycles,1,2,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+17,Pure Cycles Vine 8-Speed - 2016,4,3,2016,429,371.2967544,Pure Cycles,Cruisers Bicycles,2,3,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+17,Pure Cycles Vine 8-Speed - 2016,4,3,2016,429,371.2967544,Pure Cycles,Cruisers Bicycles,3,22,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+18,Pure Cycles Western 3-Speed - Women's - 2015/2016,4,3,2016,449,388.6066264,Pure Cycles,Cruisers Bicycles,1,16,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+18,Pure Cycles Western 3-Speed - Women's - 2015/2016,4,3,2016,449,388.6066264,Pure Cycles,Cruisers Bicycles,2,13,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+18,Pure Cycles Western 3-Speed - Women's - 2015/2016,4,3,2016,449,388.6066264,Pure Cycles,Cruisers Bicycles,3,5,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+19,Pure Cycles William 3-Speed - 2016,4,3,2016,449,388.6066264,Pure Cycles,Cruisers Bicycles,1,4,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+19,Pure Cycles William 3-Speed - 2016,4,3,2016,449,388.6066264,Pure Cycles,Cruisers Bicycles,2,15,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+19,Pure Cycles William 3-Speed - 2016,4,3,2016,449,388.6066264,Pure Cycles,Cruisers Bicycles,3,24,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+20,Electra Townie Original 7D EQ - Women's - 2016,1,3,2016,599.99,420.43861257299994,Electra,Cruisers Bicycles,1,26,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+20,Electra Townie Original 7D EQ - Women's - 2016,1,3,2016,599.99,420.43861257299994,Electra,Cruisers Bicycles,2,20,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+20,Electra Townie Original 7D EQ - Women's - 2016,1,3,2016,599.99,420.43861257299994,Electra,Cruisers Bicycles,3,19,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+21,Electra Cruiser 1 (24-Inch) - 2016,1,1,2016,269.99,189.193521573,Electra,Children Bicycles,1,24,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+21,Electra Cruiser 1 (24-Inch) - 2016,1,1,2016,269.99,189.193521573,Electra,Children Bicycles,2,16,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+21,Electra Cruiser 1 (24-Inch) - 2016,1,1,2016,269.99,189.193521573,Electra,Children Bicycles,3,8,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+22,Electra Girl's Hawaii 1 (16-inch) - 2015/2016,1,1,2016,269.99,189.193521573,Electra,Children Bicycles,1,29,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+22,Electra Girl's Hawaii 1 (16-inch) - 2015/2016,1,1,2016,269.99,189.193521573,Electra,Children Bicycles,2,0,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+22,Electra Girl's Hawaii 1 (16-inch) - 2015/2016,1,1,2016,269.99,189.193521573,Electra,Children Bicycles,3,20,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+23,Electra Girl's Hawaii 1 (20-inch) - 2015/2016,1,1,2016,299.99,210.215802573,Electra,Children Bicycles,1,9,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+23,Electra Girl's Hawaii 1 (20-inch) - 2015/2016,1,1,2016,299.99,210.215802573,Electra,Children Bicycles,2,12,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+23,Electra Girl's Hawaii 1 (20-inch) - 2015/2016,1,1,2016,299.99,210.215802573,Electra,Children Bicycles,3,8,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+24,Electra Townie Original 21D - 2016,1,2,2016,549.99,385.40147757299997,Electra,Comfort Bicycles,1,10,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+24,Electra Townie Original 21D - 2016,1,2,2016,549.99,385.40147757299997,Electra,Comfort Bicycles,2,16,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+24,Electra Townie Original 21D - 2016,1,2,2016,549.99,385.40147757299997,Electra,Comfort Bicycles,3,18,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+25,Electra Townie Original 7D - 2015/2016,1,2,2016,499.99,350.364342573,Electra,Comfort Bicycles,1,10,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+25,Electra Townie Original 7D - 2015/2016,1,2,2016,499.99,350.364342573,Electra,Comfort Bicycles,2,18,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+25,Electra Townie Original 7D - 2015/2016,1,2,2016,499.99,350.364342573,Electra,Comfort Bicycles,3,15,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+26,Electra Townie Original 7D EQ - 2016,1,2,2016,599.99,420.43861257299994,Electra,Comfort Bicycles,1,16,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+26,Electra Townie Original 7D EQ - 2016,1,2,2016,599.99,420.43861257299994,Electra,Comfort Bicycles,2,2,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+26,Electra Townie Original 7D EQ - 2016,1,2,2016,599.99,420.43861257299994,Electra,Comfort Bicycles,3,27,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+27,Surly Big Dummy Frameset - 2017,8,6,2017,999.99,912.1634082747,Surly,Mountain Bikes,1,21,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+27,Surly Big Dummy Frameset - 2017,8,6,2017,999.99,912.1634082747,Surly,Mountain Bikes,2,10,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+27,Surly Big Dummy Frameset - 2017,8,6,2017,999.99,912.1634082747,Surly,Mountain Bikes,3,21,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+28,Surly Karate Monkey 27.5+ Frameset - 2017,8,6,2017,2499.99,2280.4222032746998,Surly,Mountain Bikes,1,20,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+28,Surly Karate Monkey 27.5+ Frameset - 2017,8,6,2017,2499.99,2280.4222032746998,Surly,Mountain Bikes,2,25,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+28,Surly Karate Monkey 27.5+ Frameset - 2017,8,6,2017,2499.99,2280.4222032746998,Surly,Mountain Bikes,3,20,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+29,Trek X-Caliber 8 - 2017,9,6,2017,999.99,660.9836900969999,Trek,Mountain Bikes,1,13,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+29,Trek X-Caliber 8 - 2017,9,6,2017,999.99,660.9836900969999,Trek,Mountain Bikes,2,29,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+29,Trek X-Caliber 8 - 2017,9,6,2017,999.99,660.9836900969999,Trek,Mountain Bikes,3,11,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+30,Surly Ice Cream Truck Frameset - 2017,8,6,2017,999.99,912.1634082747,Surly,Mountain Bikes,1,30,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+30,Surly Ice Cream Truck Frameset - 2017,8,6,2017,999.99,912.1634082747,Surly,Mountain Bikes,2,17,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+30,Surly Ice Cream Truck Frameset - 2017,8,6,2017,999.99,912.1634082747,Surly,Mountain Bikes,3,23,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+31,Surly Wednesday - 2017,8,6,2017,1632.99,1489.5686197647,Surly,Mountain Bikes,1,2,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+31,Surly Wednesday - 2017,8,6,2017,1632.99,1489.5686197647,Surly,Mountain Bikes,2,10,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+31,Surly Wednesday - 2017,8,6,2017,1632.99,1489.5686197647,Surly,Mountain Bikes,3,10,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+32,Trek Farley Alloy Frameset - 2017,9,6,2017,469.99,310.65883109699996,Trek,Mountain Bikes,1,0,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+32,Trek Farley Alloy Frameset - 2017,9,6,2017,469.99,310.65883109699996,Trek,Mountain Bikes,2,13,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+32,Trek Farley Alloy Frameset - 2017,9,6,2017,469.99,310.65883109699996,Trek,Mountain Bikes,3,14,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+33,Surly Wednesday Frameset - 2017,8,6,2017,469.99,428.7119673747,Surly,Mountain Bikes,1,10,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+33,Surly Wednesday Frameset - 2017,8,6,2017,469.99,428.7119673747,Surly,Mountain Bikes,2,8,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+33,Surly Wednesday Frameset - 2017,8,6,2017,469.99,428.7119673747,Surly,Mountain Bikes,3,14,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+34,Trek Session DH 27.5 Carbon Frameset - 2017,9,6,2017,469.99,310.65883109699996,Trek,Mountain Bikes,1,2,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+34,Trek Session DH 27.5 Carbon Frameset - 2017,9,6,2017,469.99,310.65883109699996,Trek,Mountain Bikes,2,24,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+34,Trek Session DH 27.5 Carbon Frameset - 2017,9,6,2017,469.99,310.65883109699996,Trek,Mountain Bikes,3,6,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+35,Sun Bicycles Spider 3i - 2017,7,6,2017,832.99,490.4554324090001,Sun Bicycles,Mountain Bikes,1,18,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+35,Sun Bicycles Spider 3i - 2017,7,6,2017,832.99,490.4554324090001,Sun Bicycles,Mountain Bikes,2,25,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+35,Sun Bicycles Spider 3i - 2017,7,6,2017,832.99,490.4554324090001,Sun Bicycles,Mountain Bikes,3,3,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+36,Surly Troll Frameset - 2017,8,6,2017,832.99,759.8305957647,Surly,Mountain Bikes,1,26,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+36,Surly Troll Frameset - 2017,8,6,2017,832.99,759.8305957647,Surly,Mountain Bikes,2,15,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+36,Surly Troll Frameset - 2017,8,6,2017,832.99,759.8305957647,Surly,Mountain Bikes,3,28,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+37,Haro Flightline One ST - 2017,2,6,2017,379.99,246.574029039,Haro,Mountain Bikes,1,12,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+37,Haro Flightline One ST - 2017,2,6,2017,379.99,246.574029039,Haro,Mountain Bikes,2,5,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+37,Haro Flightline One ST - 2017,2,6,2017,379.99,246.574029039,Haro,Mountain Bikes,3,30,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+38,Haro Flightline Two 26 Plus - 2017,2,6,2017,549.99,356.886366039,Haro,Mountain Bikes,1,13,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+38,Haro Flightline Two 26 Plus - 2017,2,6,2017,549.99,356.886366039,Haro,Mountain Bikes,2,18,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+38,Haro Flightline Two 26 Plus - 2017,2,6,2017,549.99,356.886366039,Haro,Mountain Bikes,3,23,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+39,Trek Stache 5 - 2017,9,6,2017,1499.99,991.4788400969999,Trek,Mountain Bikes,1,2,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+39,Trek Stache 5 - 2017,9,6,2017,1499.99,991.4788400969999,Trek,Mountain Bikes,2,28,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+39,Trek Stache 5 - 2017,9,6,2017,1499.99,991.4788400969999,Trek,Mountain Bikes,3,22,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+40,Trek Fuel EX 9.8 29 - 2017,9,6,2017,4999.99,3304.9448900969996,Trek,Mountain Bikes,1,24,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+40,Trek Fuel EX 9.8 29 - 2017,9,6,2017,4999.99,3304.9448900969996,Trek,Mountain Bikes,2,15,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+40,Trek Fuel EX 9.8 29 - 2017,9,6,2017,4999.99,3304.9448900969996,Trek,Mountain Bikes,3,2,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+41,Haro Shift R3 - 2017,2,6,2017,1469.99,953.870778039,Haro,Mountain Bikes,1,10,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+41,Haro Shift R3 - 2017,2,6,2017,1469.99,953.870778039,Haro,Mountain Bikes,2,6,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+41,Haro Shift R3 - 2017,2,6,2017,1469.99,953.870778039,Haro,Mountain Bikes,3,25,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+42,Trek Fuel EX 5 27.5 Plus - 2017,9,6,2017,2299.99,1520.2710800969996,Trek,Mountain Bikes,1,0,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+42,Trek Fuel EX 5 27.5 Plus - 2017,9,6,2017,2299.99,1520.2710800969996,Trek,Mountain Bikes,2,16,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+42,Trek Fuel EX 5 27.5 Plus - 2017,9,6,2017,2299.99,1520.2710800969996,Trek,Mountain Bikes,3,9,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+43,Trek Fuel EX 9.8 27.5 Plus - 2017,9,6,2017,5299.99,3503.241980096999,Trek,Mountain Bikes,1,2,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+43,Trek Fuel EX 9.8 27.5 Plus - 2017,9,6,2017,5299.99,3503.241980096999,Trek,Mountain Bikes,2,2,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+43,Trek Fuel EX 9.8 27.5 Plus - 2017,9,6,2017,5299.99,3503.241980096999,Trek,Mountain Bikes,3,26,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+44,Haro SR 1.1 - 2017,2,6,2017,539.99,350.397405039,Haro,Mountain Bikes,1,1,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+44,Haro SR 1.1 - 2017,2,6,2017,539.99,350.397405039,Haro,Mountain Bikes,2,24,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+44,Haro SR 1.1 - 2017,2,6,2017,539.99,350.397405039,Haro,Mountain Bikes,3,26,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+45,Haro SR 1.2 - 2017,2,6,2017,869.99,564.533118039,Haro,Mountain Bikes,1,15,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+45,Haro SR 1.2 - 2017,2,6,2017,869.99,564.533118039,Haro,Mountain Bikes,2,13,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+45,Haro SR 1.2 - 2017,2,6,2017,869.99,564.533118039,Haro,Mountain Bikes,3,1,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+46,Haro SR 1.3 - 2017,2,6,2017,1409.99,914.937012039,Haro,Mountain Bikes,1,19,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+46,Haro SR 1.3 - 2017,2,6,2017,1409.99,914.937012039,Haro,Mountain Bikes,2,18,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+46,Haro SR 1.3 - 2017,2,6,2017,1409.99,914.937012039,Haro,Mountain Bikes,3,16,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+47,Trek Remedy 9.8 - 2017,9,6,2017,5299.99,3503.241980096999,Trek,Mountain Bikes,1,21,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+47,Trek Remedy 9.8 - 2017,9,6,2017,5299.99,3503.241980096999,Trek,Mountain Bikes,2,0,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+47,Trek Remedy 9.8 - 2017,9,6,2017,5299.99,3503.241980096999,Trek,Mountain Bikes,3,14,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+48,Trek Emonda S 4 - 2017,9,7,2017,1499.99,991.4788400969999,Trek,Road Bikes,1,5,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+48,Trek Emonda S 4 - 2017,9,7,2017,1499.99,991.4788400969999,Trek,Road Bikes,2,20,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+48,Trek Emonda S 4 - 2017,9,7,2017,1499.99,991.4788400969999,Trek,Road Bikes,3,2,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+49,Trek Domane SL 6 - 2017,9,7,2017,3499.99,2313.4594400969995,Trek,Road Bikes,1,8,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+49,Trek Domane SL 6 - 2017,9,7,2017,3499.99,2313.4594400969995,Trek,Road Bikes,2,4,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+49,Trek Domane SL 6 - 2017,9,7,2017,3499.99,2313.4594400969995,Trek,Road Bikes,3,4,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+50,Trek Silque SLR 7 Women's - 2017,9,7,2017,5999.99,3965.9351900969996,Trek,Road Bikes,1,29,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+50,Trek Silque SLR 7 Women's - 2017,9,7,2017,5999.99,3965.9351900969996,Trek,Road Bikes,2,7,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+50,Trek Silque SLR 7 Women's - 2017,9,7,2017,5999.99,3965.9351900969996,Trek,Road Bikes,3,25,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+51,Trek Silque SLR 8 Women's - 2017,9,7,2017,6499.99,4296.430340096999,Trek,Road Bikes,1,2,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+51,Trek Silque SLR 8 Women's - 2017,9,7,2017,6499.99,4296.430340096999,Trek,Road Bikes,2,8,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+51,Trek Silque SLR 8 Women's - 2017,9,7,2017,6499.99,4296.430340096999,Trek,Road Bikes,3,2,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+52,Surly Steamroller - 2017,8,7,2017,875.99,799.0540145547,Surly,Road Bikes,1,18,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+52,Surly Steamroller - 2017,8,7,2017,875.99,799.0540145547,Surly,Road Bikes,2,23,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+52,Surly Steamroller - 2017,8,7,2017,875.99,799.0540145547,Surly,Road Bikes,3,8,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+53,Surly Ogre Frameset - 2017,8,7,2017,749.99,684.1202757747,Surly,Road Bikes,1,17,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+53,Surly Ogre Frameset - 2017,8,7,2017,749.99,684.1202757747,Surly,Road Bikes,2,19,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+53,Surly Ogre Frameset - 2017,8,7,2017,749.99,684.1202757747,Surly,Road Bikes,3,6,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+54,Trek Domane SL Disc Frameset - 2017,9,7,2017,3199.99,2115.1623500969995,Trek,Road Bikes,1,11,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+54,Trek Domane SL Disc Frameset - 2017,9,7,2017,3199.99,2115.1623500969995,Trek,Road Bikes,2,6,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+54,Trek Domane SL Disc Frameset - 2017,9,7,2017,3199.99,2115.1623500969995,Trek,Road Bikes,3,13,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+55,Trek Domane S 6 - 2017,9,7,2017,2699.99,1784.6672000969997,Trek,Road Bikes,1,11,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+55,Trek Domane S 6 - 2017,9,7,2017,2699.99,1784.6672000969997,Trek,Road Bikes,2,5,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+55,Trek Domane S 6 - 2017,9,7,2017,2699.99,1784.6672000969997,Trek,Road Bikes,3,5,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+56,Trek Domane SLR 6 Disc - 2017,9,7,2017,5499.99,3635.4400400969994,Trek,Road Bikes,1,15,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+56,Trek Domane SLR 6 Disc - 2017,9,7,2017,5499.99,3635.4400400969994,Trek,Road Bikes,2,20,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+56,Trek Domane SLR 6 Disc - 2017,9,7,2017,5499.99,3635.4400400969994,Trek,Road Bikes,3,19,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+57,Trek Emonda S 5 - 2017,9,7,2017,1999.99,1321.9739900969998,Trek,Road Bikes,1,1,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+57,Trek Emonda S 5 - 2017,9,7,2017,1999.99,1321.9739900969998,Trek,Road Bikes,2,27,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+57,Trek Emonda S 5 - 2017,9,7,2017,1999.99,1321.9739900969998,Trek,Road Bikes,3,9,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+58,Trek Madone 9.2 - 2017,9,7,2017,4999.99,3304.9448900969996,Trek,Road Bikes,1,1,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+58,Trek Madone 9.2 - 2017,9,7,2017,4999.99,3304.9448900969996,Trek,Road Bikes,2,15,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+58,Trek Madone 9.2 - 2017,9,7,2017,4999.99,3304.9448900969996,Trek,Road Bikes,3,27,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+59,Trek Domane S 5 Disc - 2017,9,7,2017,2599.99,1718.5681700969997,Trek,Road Bikes,1,22,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+59,Trek Domane S 5 Disc - 2017,9,7,2017,2599.99,1718.5681700969997,Trek,Road Bikes,2,17,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+59,Trek Domane S 5 Disc - 2017,9,7,2017,2599.99,1718.5681700969997,Trek,Road Bikes,3,0,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+60,Sun Bicycles ElectroLite - 2017,7,5,2017,1559.99,918.5051081090002,Sun Bicycles,Electric Bikes,1,19,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+60,Sun Bicycles ElectroLite - 2017,7,5,2017,1559.99,918.5051081090002,Sun Bicycles,Electric Bikes,2,1,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+60,Sun Bicycles ElectroLite - 2017,7,5,2017,1559.99,918.5051081090002,Sun Bicycles,Electric Bikes,3,7,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+61,Trek Powerfly 8 FS Plus - 2017,9,5,2017,4999.99,3304.9448900969996,Trek,Electric Bikes,1,30,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+61,Trek Powerfly 8 FS Plus - 2017,9,5,2017,4999.99,3304.9448900969996,Trek,Electric Bikes,2,20,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+61,Trek Powerfly 8 FS Plus - 2017,9,5,2017,4999.99,3304.9448900969996,Trek,Electric Bikes,3,28,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+62,Trek Boone 7 - 2017,9,4,2017,3499.99,2313.4594400969995,Trek,Cyclocross Bicycles,1,21,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+62,Trek Boone 7 - 2017,9,4,2017,3499.99,2313.4594400969995,Trek,Cyclocross Bicycles,2,4,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+62,Trek Boone 7 - 2017,9,4,2017,3499.99,2313.4594400969995,Trek,Cyclocross Bicycles,3,4,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+63,Trek Boone Race Shop Limited - 2017,9,4,2017,3499.99,2313.4594400969995,Trek,Cyclocross Bicycles,1,4,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+63,Trek Boone Race Shop Limited - 2017,9,4,2017,3499.99,2313.4594400969995,Trek,Cyclocross Bicycles,2,5,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+63,Trek Boone Race Shop Limited - 2017,9,4,2017,3499.99,2313.4594400969995,Trek,Cyclocross Bicycles,3,8,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+64,Electra Townie Original 7D - 2017,1,3,2017,489.99,343.356915573,Electra,Cruisers Bicycles,1,30,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+64,Electra Townie Original 7D - 2017,1,3,2017,489.99,343.356915573,Electra,Cruisers Bicycles,2,30,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+64,Electra Townie Original 7D - 2017,1,3,2017,489.99,343.356915573,Electra,Cruisers Bicycles,3,22,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+65,Sun Bicycles Lil Bolt Type-R - 2017,7,3,2017,346.99,204.30392980900004,Sun Bicycles,Cruisers Bicycles,1,10,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+65,Sun Bicycles Lil Bolt Type-R - 2017,7,3,2017,346.99,204.30392980900004,Sun Bicycles,Cruisers Bicycles,2,16,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+65,Sun Bicycles Lil Bolt Type-R - 2017,7,3,2017,346.99,204.30392980900004,Sun Bicycles,Cruisers Bicycles,3,1,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+66,Sun Bicycles Revolutions 24 - 2017,7,3,2017,250.99,147.78017620900002,Sun Bicycles,Cruisers Bicycles,1,12,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+66,Sun Bicycles Revolutions 24 - 2017,7,3,2017,250.99,147.78017620900002,Sun Bicycles,Cruisers Bicycles,2,22,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+66,Sun Bicycles Revolutions 24 - 2017,7,3,2017,250.99,147.78017620900002,Sun Bicycles,Cruisers Bicycles,3,3,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+67,Sun Bicycles Revolutions 24 - Girl's - 2017,7,3,2017,250.99,147.78017620900002,Sun Bicycles,Cruisers Bicycles,1,19,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+67,Sun Bicycles Revolutions 24 - Girl's - 2017,7,3,2017,250.99,147.78017620900002,Sun Bicycles,Cruisers Bicycles,2,8,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+67,Sun Bicycles Revolutions 24 - Girl's - 2017,7,3,2017,250.99,147.78017620900002,Sun Bicycles,Cruisers Bicycles,3,6,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+68,Sun Bicycles Cruz 3 - 2017,7,3,2017,449.99,264.94920710900004,Sun Bicycles,Cruisers Bicycles,1,30,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+68,Sun Bicycles Cruz 3 - 2017,7,3,2017,449.99,264.94920710900004,Sun Bicycles,Cruisers Bicycles,2,23,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+68,Sun Bicycles Cruz 3 - 2017,7,3,2017,449.99,264.94920710900004,Sun Bicycles,Cruisers Bicycles,3,18,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+69,Sun Bicycles Cruz 7 - 2017,7,3,2017,416.99,245.51916680900004,Sun Bicycles,Cruisers Bicycles,1,4,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+69,Sun Bicycles Cruz 7 - 2017,7,3,2017,416.99,245.51916680900004,Sun Bicycles,Cruisers Bicycles,2,22,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+69,Sun Bicycles Cruz 7 - 2017,7,3,2017,416.99,245.51916680900004,Sun Bicycles,Cruisers Bicycles,3,29,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+70,Electra Amsterdam Original 3i - 2015/2017,1,3,2017,659.99,462.483174573,Electra,Cruisers Bicycles,1,3,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+70,Electra Amsterdam Original 3i - 2015/2017,1,3,2017,659.99,462.483174573,Electra,Cruisers Bicycles,2,6,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+70,Electra Amsterdam Original 3i - 2015/2017,1,3,2017,659.99,462.483174573,Electra,Cruisers Bicycles,3,2,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+71,Sun Bicycles Atlas X-Type - 2017,7,3,2017,416.99,245.51916680900004,Sun Bicycles,Cruisers Bicycles,1,25,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+71,Sun Bicycles Atlas X-Type - 2017,7,3,2017,416.99,245.51916680900004,Sun Bicycles,Cruisers Bicycles,2,30,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+71,Sun Bicycles Atlas X-Type - 2017,7,3,2017,416.99,245.51916680900004,Sun Bicycles,Cruisers Bicycles,3,13,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+72,Sun Bicycles Biscayne Tandem 7 - 2017,7,3,2017,619.99,365.04335410900006,Sun Bicycles,Cruisers Bicycles,1,9,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+72,Sun Bicycles Biscayne Tandem 7 - 2017,7,3,2017,619.99,365.04335410900006,Sun Bicycles,Cruisers Bicycles,2,1,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+72,Sun Bicycles Biscayne Tandem 7 - 2017,7,3,2017,619.99,365.04335410900006,Sun Bicycles,Cruisers Bicycles,3,6,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+73,Sun Bicycles Brickell Tandem 7 - 2017,7,3,2017,749.99,441.58593710900004,Sun Bicycles,Cruisers Bicycles,1,7,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+73,Sun Bicycles Brickell Tandem 7 - 2017,7,3,2017,749.99,441.58593710900004,Sun Bicycles,Cruisers Bicycles,2,20,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+73,Sun Bicycles Brickell Tandem 7 - 2017,7,3,2017,749.99,441.58593710900004,Sun Bicycles,Cruisers Bicycles,3,3,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+74,Electra Cruiser Lux 1 - 2017,1,3,2017,439.99,308.319780573,Electra,Cruisers Bicycles,1,9,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+74,Electra Cruiser Lux 1 - 2017,1,3,2017,439.99,308.319780573,Electra,Cruisers Bicycles,2,23,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+74,Electra Cruiser Lux 1 - 2017,1,3,2017,439.99,308.319780573,Electra,Cruisers Bicycles,3,17,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+75,Electra Cruiser Lux Fat Tire 1 Ladies - 2017,1,3,2017,599.99,420.43861257299994,Electra,Cruisers Bicycles,1,23,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+75,Electra Cruiser Lux Fat Tire 1 Ladies - 2017,1,3,2017,599.99,420.43861257299994,Electra,Cruisers Bicycles,2,11,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+75,Electra Cruiser Lux Fat Tire 1 Ladies - 2017,1,3,2017,599.99,420.43861257299994,Electra,Cruisers Bicycles,3,29,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+76,"Electra Girl's Hawaii 1 16"" - 2017",1,3,2017,299.99,210.215802573,Electra,Cruisers Bicycles,1,15,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+76,"Electra Girl's Hawaii 1 16"" - 2017",1,3,2017,299.99,210.215802573,Electra,Cruisers Bicycles,2,20,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+76,"Electra Girl's Hawaii 1 16"" - 2017",1,3,2017,299.99,210.215802573,Electra,Cruisers Bicycles,3,23,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+77,Electra Glam Punk 3i Ladies' - 2017,1,3,2017,799.99,560.5871525729999,Electra,Cruisers Bicycles,1,16,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+77,Electra Glam Punk 3i Ladies' - 2017,1,3,2017,799.99,560.5871525729999,Electra,Cruisers Bicycles,2,25,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+77,Electra Glam Punk 3i Ladies' - 2017,1,3,2017,799.99,560.5871525729999,Electra,Cruisers Bicycles,3,23,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+78,Sun Bicycles Biscayne Tandem CB - 2017,7,3,2017,647.99,381.52944890900005,Sun Bicycles,Cruisers Bicycles,1,13,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+78,Sun Bicycles Biscayne Tandem CB - 2017,7,3,2017,647.99,381.52944890900005,Sun Bicycles,Cruisers Bicycles,2,4,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+78,Sun Bicycles Biscayne Tandem CB - 2017,7,3,2017,647.99,381.52944890900005,Sun Bicycles,Cruisers Bicycles,3,19,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+79,Sun Bicycles Boardwalk (24-inch Wheels) - 2017,7,3,2017,402.99,237.27611940900005,Sun Bicycles,Cruisers Bicycles,1,13,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+79,Sun Bicycles Boardwalk (24-inch Wheels) - 2017,7,3,2017,402.99,237.27611940900005,Sun Bicycles,Cruisers Bicycles,2,29,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+79,Sun Bicycles Boardwalk (24-inch Wheels) - 2017,7,3,2017,402.99,237.27611940900005,Sun Bicycles,Cruisers Bicycles,3,29,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+80,Sun Bicycles Brickell Tandem CB - 2017,7,3,2017,761.99,448.65140630900004,Sun Bicycles,Cruisers Bicycles,1,11,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+80,Sun Bicycles Brickell Tandem CB - 2017,7,3,2017,761.99,448.65140630900004,Sun Bicycles,Cruisers Bicycles,2,27,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+80,Sun Bicycles Brickell Tandem CB - 2017,7,3,2017,761.99,448.65140630900004,Sun Bicycles,Cruisers Bicycles,3,22,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+81,Electra Amsterdam Fashion 7i Ladies' - 2017,1,3,2017,1099.99,770.8099625729999,Electra,Cruisers Bicycles,1,25,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+81,Electra Amsterdam Fashion 7i Ladies' - 2017,1,3,2017,1099.99,770.8099625729999,Electra,Cruisers Bicycles,2,19,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+81,Electra Amsterdam Fashion 7i Ladies' - 2017,1,3,2017,1099.99,770.8099625729999,Electra,Cruisers Bicycles,3,18,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+82,Electra Amsterdam Original 3i Ladies' - 2017,1,3,2017,659.99,462.483174573,Electra,Cruisers Bicycles,1,1,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+82,Electra Amsterdam Original 3i Ladies' - 2017,1,3,2017,659.99,462.483174573,Electra,Cruisers Bicycles,2,4,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+82,Electra Amsterdam Original 3i Ladies' - 2017,1,3,2017,659.99,462.483174573,Electra,Cruisers Bicycles,3,7,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+83,Trek Boy's Kickster - 2015/2017,9,1,2017,149.99,99.14193509699999,Trek,Children Bicycles,1,13,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+83,Trek Boy's Kickster - 2015/2017,9,1,2017,149.99,99.14193509699999,Trek,Children Bicycles,2,21,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+83,Trek Boy's Kickster - 2015/2017,9,1,2017,149.99,99.14193509699999,Trek,Children Bicycles,3,23,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+84,Sun Bicycles Lil Kitt'n - 2017,7,1,2017,109.99,64.760913109,Sun Bicycles,Children Bicycles,1,11,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+84,Sun Bicycles Lil Kitt'n - 2017,7,1,2017,109.99,64.760913109,Sun Bicycles,Children Bicycles,2,22,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+84,Sun Bicycles Lil Kitt'n - 2017,7,1,2017,109.99,64.760913109,Sun Bicycles,Children Bicycles,3,15,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+85,Haro Downtown 16 - 2017,2,1,2017,329.99,214.129224039,Haro,Children Bicycles,1,23,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+85,Haro Downtown 16 - 2017,2,1,2017,329.99,214.129224039,Haro,Children Bicycles,2,6,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+85,Haro Downtown 16 - 2017,2,1,2017,329.99,214.129224039,Haro,Children Bicycles,3,15,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+86,Trek Girl's Kickster - 2017,9,1,2017,149.99,99.14193509699999,Trek,Children Bicycles,1,19,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+86,Trek Girl's Kickster - 2017,9,1,2017,149.99,99.14193509699999,Trek,Children Bicycles,2,24,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+86,Trek Girl's Kickster - 2017,9,1,2017,149.99,99.14193509699999,Trek,Children Bicycles,3,27,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+87,Trek Precaliber 12 Boys - 2017,9,1,2017,189.99,125.58154709699998,Trek,Children Bicycles,1,27,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+87,Trek Precaliber 12 Boys - 2017,9,1,2017,189.99,125.58154709699998,Trek,Children Bicycles,2,14,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+87,Trek Precaliber 12 Boys - 2017,9,1,2017,189.99,125.58154709699998,Trek,Children Bicycles,3,16,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+88,Trek Precaliber 12 Girls - 2017,9,1,2017,189.99,125.58154709699998,Trek,Children Bicycles,1,7,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+88,Trek Precaliber 12 Girls - 2017,9,1,2017,189.99,125.58154709699998,Trek,Children Bicycles,2,8,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+88,Trek Precaliber 12 Girls - 2017,9,1,2017,189.99,125.58154709699998,Trek,Children Bicycles,3,28,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+89,Trek Precaliber 16 Boys - 2017,9,1,2017,209.99,138.80135309699997,Trek,Children Bicycles,1,9,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+89,Trek Precaliber 16 Boys - 2017,9,1,2017,209.99,138.80135309699997,Trek,Children Bicycles,2,8,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+89,Trek Precaliber 16 Boys - 2017,9,1,2017,209.99,138.80135309699997,Trek,Children Bicycles,3,22,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+90,Trek Precaliber 16 Girls - 2017,9,1,2017,209.99,138.80135309699997,Trek,Children Bicycles,1,4,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+90,Trek Precaliber 16 Girls - 2017,9,1,2017,209.99,138.80135309699997,Trek,Children Bicycles,2,26,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+90,Trek Precaliber 16 Girls - 2017,9,1,2017,209.99,138.80135309699997,Trek,Children Bicycles,3,9,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+91,Trek Precaliber 24 (21-Speed) - Girls - 2017,9,1,2017,349.99,231.33999509699998,Trek,Children Bicycles,1,8,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+91,Trek Precaliber 24 (21-Speed) - Girls - 2017,9,1,2017,349.99,231.33999509699998,Trek,Children Bicycles,2,0,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+91,Trek Precaliber 24 (21-Speed) - Girls - 2017,9,1,2017,349.99,231.33999509699998,Trek,Children Bicycles,3,8,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+92,Haro Shredder 20 - 2017,2,1,2017,209.99,136.261692039,Haro,Children Bicycles,1,0,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+92,Haro Shredder 20 - 2017,2,1,2017,209.99,136.261692039,Haro,Children Bicycles,2,22,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+92,Haro Shredder 20 - 2017,2,1,2017,209.99,136.261692039,Haro,Children Bicycles,3,28,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+93,Haro Shredder 20 Girls - 2017,2,1,2017,209.99,136.261692039,Haro,Children Bicycles,1,22,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+93,Haro Shredder 20 Girls - 2017,2,1,2017,209.99,136.261692039,Haro,Children Bicycles,2,22,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+93,Haro Shredder 20 Girls - 2017,2,1,2017,209.99,136.261692039,Haro,Children Bicycles,3,18,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+94,Haro Shredder Pro 20 - 2017,2,1,2017,249.99,162.217536039,Haro,Children Bicycles,1,6,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+94,Haro Shredder Pro 20 - 2017,2,1,2017,249.99,162.217536039,Haro,Children Bicycles,2,2,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+94,Haro Shredder Pro 20 - 2017,2,1,2017,249.99,162.217536039,Haro,Children Bicycles,3,15,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+95,"Electra Girl's Hawaii 1 16"" - 2017",1,1,2017,299.99,210.215802573,Electra,Children Bicycles,1,25,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+95,"Electra Girl's Hawaii 1 16"" - 2017",1,1,2017,299.99,210.215802573,Electra,Children Bicycles,2,10,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+95,"Electra Girl's Hawaii 1 16"" - 2017",1,1,2017,299.99,210.215802573,Electra,Children Bicycles,3,14,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+96,Electra Moto 3i (20-inch) - Boy's - 2017,1,1,2017,349.99,245.252937573,Electra,Children Bicycles,1,20,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+96,Electra Moto 3i (20-inch) - Boy's - 2017,1,1,2017,349.99,245.252937573,Electra,Children Bicycles,2,22,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+96,Electra Moto 3i (20-inch) - Boy's - 2017,1,1,2017,349.99,245.252937573,Electra,Children Bicycles,3,1,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+97,Electra Savannah 3i (20-inch) - Girl's - 2017,1,1,2017,349.99,245.252937573,Electra,Children Bicycles,1,20,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+97,Electra Savannah 3i (20-inch) - Girl's - 2017,1,1,2017,349.99,245.252937573,Electra,Children Bicycles,2,15,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+97,Electra Savannah 3i (20-inch) - Girl's - 2017,1,1,2017,349.99,245.252937573,Electra,Children Bicycles,3,28,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+98,Electra Straight 8 3i (20-inch) - Boy's - 2017,1,1,2017,489.99,343.356915573,Electra,Children Bicycles,1,28,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+98,Electra Straight 8 3i (20-inch) - Boy's - 2017,1,1,2017,489.99,343.356915573,Electra,Children Bicycles,2,14,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+98,Electra Straight 8 3i (20-inch) - Boy's - 2017,1,1,2017,489.99,343.356915573,Electra,Children Bicycles,3,5,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+99,Electra Sugar Skulls 1 (20-inch) - Girl's - 2017,1,1,2017,299.99,210.215802573,Electra,Children Bicycles,1,28,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+99,Electra Sugar Skulls 1 (20-inch) - Girl's - 2017,1,1,2017,299.99,210.215802573,Electra,Children Bicycles,2,24,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+99,Electra Sugar Skulls 1 (20-inch) - Girl's - 2017,1,1,2017,299.99,210.215802573,Electra,Children Bicycles,3,19,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+100,Electra Townie 3i EQ (20-inch) - Boys' - 2017,1,1,2017,489.99,343.356915573,Electra,Children Bicycles,1,15,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+100,Electra Townie 3i EQ (20-inch) - Boys' - 2017,1,1,2017,489.99,343.356915573,Electra,Children Bicycles,2,12,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+100,Electra Townie 3i EQ (20-inch) - Boys' - 2017,1,1,2017,489.99,343.356915573,Electra,Children Bicycles,3,28,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+101,Electra Townie 7D (20-inch) - Boys' - 2017,1,1,2017,339.99,238.245510573,Electra,Children Bicycles,1,17,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+101,Electra Townie 7D (20-inch) - Boys' - 2017,1,1,2017,339.99,238.245510573,Electra,Children Bicycles,2,4,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+101,Electra Townie 7D (20-inch) - Boys' - 2017,1,1,2017,339.99,238.245510573,Electra,Children Bicycles,3,17,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+102,Electra Townie Original 7D - 2017,1,2,2017,489.99,343.356915573,Electra,Comfort Bicycles,1,9,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+102,Electra Townie Original 7D - 2017,1,2,2017,489.99,343.356915573,Electra,Comfort Bicycles,2,12,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+102,Electra Townie Original 7D - 2017,1,2,2017,489.99,343.356915573,Electra,Comfort Bicycles,3,22,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+103,Sun Bicycles Streamway 3 - 2017,7,2,2017,551.99,325.00569530900003,Sun Bicycles,Comfort Bicycles,1,13,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+103,Sun Bicycles Streamway 3 - 2017,7,2,2017,551.99,325.00569530900003,Sun Bicycles,Comfort Bicycles,2,1,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+103,Sun Bicycles Streamway 3 - 2017,7,2,2017,551.99,325.00569530900003,Sun Bicycles,Comfort Bicycles,3,10,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+104,Sun Bicycles Streamway - 2017,7,2,2017,481.99,283.79045830900003,Sun Bicycles,Comfort Bicycles,1,25,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+104,Sun Bicycles Streamway - 2017,7,2,2017,481.99,283.79045830900003,Sun Bicycles,Comfort Bicycles,2,26,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+104,Sun Bicycles Streamway - 2017,7,2,2017,481.99,283.79045830900003,Sun Bicycles,Comfort Bicycles,3,22,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+105,Sun Bicycles Streamway 7 - 2017,7,2,2017,533.99,314.40749150900007,Sun Bicycles,Comfort Bicycles,1,7,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+105,Sun Bicycles Streamway 7 - 2017,7,2,2017,533.99,314.40749150900007,Sun Bicycles,Comfort Bicycles,2,3,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+105,Sun Bicycles Streamway 7 - 2017,7,2,2017,533.99,314.40749150900007,Sun Bicycles,Comfort Bicycles,3,1,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+106,Sun Bicycles Cruz 3 - 2017,7,2,2017,449.99,264.94920710900004,Sun Bicycles,Comfort Bicycles,1,30,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+106,Sun Bicycles Cruz 3 - 2017,7,2,2017,449.99,264.94920710900004,Sun Bicycles,Comfort Bicycles,2,7,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+106,Sun Bicycles Cruz 3 - 2017,7,2,2017,449.99,264.94920710900004,Sun Bicycles,Comfort Bicycles,3,1,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+107,Sun Bicycles Cruz 7 - 2017,7,2,2017,416.99,245.51916680900004,Sun Bicycles,Comfort Bicycles,1,20,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+107,Sun Bicycles Cruz 7 - 2017,7,2,2017,416.99,245.51916680900004,Sun Bicycles,Comfort Bicycles,2,29,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+107,Sun Bicycles Cruz 7 - 2017,7,2,2017,416.99,245.51916680900004,Sun Bicycles,Comfort Bicycles,3,11,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+108,Sun Bicycles Cruz 3 - Women's - 2017,7,2,2017,449.99,264.94920710900004,Sun Bicycles,Comfort Bicycles,1,15,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+108,Sun Bicycles Cruz 3 - Women's - 2017,7,2,2017,449.99,264.94920710900004,Sun Bicycles,Comfort Bicycles,2,29,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+108,Sun Bicycles Cruz 3 - Women's - 2017,7,2,2017,449.99,264.94920710900004,Sun Bicycles,Comfort Bicycles,3,23,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+109,Sun Bicycles Cruz 7 - Women's - 2017,7,2,2017,416.99,245.51916680900004,Sun Bicycles,Comfort Bicycles,1,30,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+109,Sun Bicycles Cruz 7 - Women's - 2017,7,2,2017,416.99,245.51916680900004,Sun Bicycles,Comfort Bicycles,2,25,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+109,Sun Bicycles Cruz 7 - Women's - 2017,7,2,2017,416.99,245.51916680900004,Sun Bicycles,Comfort Bicycles,3,24,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+110,Sun Bicycles Drifter 7 - 2017,7,2,2017,470.99,277.313778209,Sun Bicycles,Comfort Bicycles,1,1,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+110,Sun Bicycles Drifter 7 - 2017,7,2,2017,470.99,277.313778209,Sun Bicycles,Comfort Bicycles,2,7,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+110,Sun Bicycles Drifter 7 - 2017,7,2,2017,470.99,277.313778209,Sun Bicycles,Comfort Bicycles,3,11,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+111,Sun Bicycles Drifter 7 - Women's - 2017,7,2,2017,470.99,277.313778209,Sun Bicycles,Comfort Bicycles,1,11,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+111,Sun Bicycles Drifter 7 - Women's - 2017,7,2,2017,470.99,277.313778209,Sun Bicycles,Comfort Bicycles,2,6,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+111,Sun Bicycles Drifter 7 - Women's - 2017,7,2,2017,470.99,277.313778209,Sun Bicycles,Comfort Bicycles,3,29,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+112,Trek 820 - 2018,9,6,2018,379.99,251.16970409699996,Trek,Mountain Bikes,1,17,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+112,Trek 820 - 2018,9,6,2018,379.99,251.16970409699996,Trek,Mountain Bikes,2,1,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+112,Trek 820 - 2018,9,6,2018,379.99,251.16970409699996,Trek,Mountain Bikes,3,24,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+113,Trek Marlin 5 - 2018,9,6,2018,489.99,323.87863709699997,Trek,Mountain Bikes,1,24,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+113,Trek Marlin 5 - 2018,9,6,2018,489.99,323.87863709699997,Trek,Mountain Bikes,2,7,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+113,Trek Marlin 5 - 2018,9,6,2018,489.99,323.87863709699997,Trek,Mountain Bikes,3,23,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+114,Trek Marlin 6 - 2018,9,6,2018,579.99,383.36776409699996,Trek,Mountain Bikes,1,3,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+114,Trek Marlin 6 - 2018,9,6,2018,579.99,383.36776409699996,Trek,Mountain Bikes,2,12,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+114,Trek Marlin 6 - 2018,9,6,2018,579.99,383.36776409699996,Trek,Mountain Bikes,3,12,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+115,Trek Fuel EX 8 29 - 2018,9,6,2018,3199.99,2115.1623500969995,Trek,Mountain Bikes,1,10,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+115,Trek Fuel EX 8 29 - 2018,9,6,2018,3199.99,2115.1623500969995,Trek,Mountain Bikes,2,19,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+115,Trek Fuel EX 8 29 - 2018,9,6,2018,3199.99,2115.1623500969995,Trek,Mountain Bikes,3,25,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+116,Trek Marlin 7 - 2017/2018,9,6,2018,749.99,495.7361150969999,Trek,Mountain Bikes,1,24,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+116,Trek Marlin 7 - 2017/2018,9,6,2018,749.99,495.7361150969999,Trek,Mountain Bikes,2,17,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+116,Trek Marlin 7 - 2017/2018,9,6,2018,749.99,495.7361150969999,Trek,Mountain Bikes,3,30,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+117,Trek Ticket S Frame - 2018,9,6,2018,1469.99,971.6491310969999,Trek,Mountain Bikes,1,15,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+117,Trek Ticket S Frame - 2018,9,6,2018,1469.99,971.6491310969999,Trek,Mountain Bikes,2,18,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+117,Trek Ticket S Frame - 2018,9,6,2018,1469.99,971.6491310969999,Trek,Mountain Bikes,3,23,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+118,Trek X-Caliber 8 - 2018,9,6,2018,999.99,660.9836900969999,Trek,Mountain Bikes,1,12,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+118,Trek X-Caliber 8 - 2018,9,6,2018,999.99,660.9836900969999,Trek,Mountain Bikes,2,25,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+118,Trek X-Caliber 8 - 2018,9,6,2018,999.99,660.9836900969999,Trek,Mountain Bikes,3,9,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+119,Trek Kids' Neko - 2018,9,6,2018,469.99,310.65883109699996,Trek,Mountain Bikes,1,17,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+119,Trek Kids' Neko - 2018,9,6,2018,469.99,310.65883109699996,Trek,Mountain Bikes,2,23,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+119,Trek Kids' Neko - 2018,9,6,2018,469.99,310.65883109699996,Trek,Mountain Bikes,3,29,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+120,Trek Fuel EX 7 29 - 2018,9,6,2018,2499.99,1652.4691400969996,Trek,Mountain Bikes,1,23,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+120,Trek Fuel EX 7 29 - 2018,9,6,2018,2499.99,1652.4691400969996,Trek,Mountain Bikes,2,16,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+120,Trek Fuel EX 7 29 - 2018,9,6,2018,2499.99,1652.4691400969996,Trek,Mountain Bikes,3,25,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+121,Surly Krampus Frameset - 2018,8,6,2018,2499.99,2280.4222032746998,Surly,Mountain Bikes,1,19,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+121,Surly Krampus Frameset - 2018,8,6,2018,2499.99,2280.4222032746998,Surly,Mountain Bikes,2,3,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+121,Surly Krampus Frameset - 2018,8,6,2018,2499.99,2280.4222032746998,Surly,Mountain Bikes,3,4,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+122,Surly Troll Frameset - 2018,8,6,2018,2499.99,2280.4222032746998,Surly,Mountain Bikes,1,22,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+122,Surly Troll Frameset - 2018,8,6,2018,2499.99,2280.4222032746998,Surly,Mountain Bikes,2,11,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+122,Surly Troll Frameset - 2018,8,6,2018,2499.99,2280.4222032746998,Surly,Mountain Bikes,3,8,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+123,Trek Farley Carbon Frameset - 2018,9,6,2018,999.99,660.9836900969999,Trek,Mountain Bikes,1,8,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+123,Trek Farley Carbon Frameset - 2018,9,6,2018,999.99,660.9836900969999,Trek,Mountain Bikes,2,18,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+123,Trek Farley Carbon Frameset - 2018,9,6,2018,999.99,660.9836900969999,Trek,Mountain Bikes,3,15,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+124,Surly Krampus - 2018,8,6,2018,1499,1367.34662247,Surly,Mountain Bikes,1,23,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+124,Surly Krampus - 2018,8,6,2018,1499,1367.34662247,Surly,Mountain Bikes,2,4,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+124,Surly Krampus - 2018,8,6,2018,1499,1367.34662247,Surly,Mountain Bikes,3,11,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+125,Trek Kids' Dual Sport - 2018,9,6,2018,469.99,310.65883109699996,Trek,Mountain Bikes,1,22,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+125,Trek Kids' Dual Sport - 2018,9,6,2018,469.99,310.65883109699996,Trek,Mountain Bikes,2,10,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+125,Trek Kids' Dual Sport - 2018,9,6,2018,469.99,310.65883109699996,Trek,Mountain Bikes,3,2,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+126,Surly Big Fat Dummy Frameset - 2018,8,6,2018,469.99,428.7119673747,Surly,Mountain Bikes,1,28,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+126,Surly Big Fat Dummy Frameset - 2018,8,6,2018,469.99,428.7119673747,Surly,Mountain Bikes,2,13,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+126,Surly Big Fat Dummy Frameset - 2018,8,6,2018,469.99,428.7119673747,Surly,Mountain Bikes,3,5,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+127,Surly Pack Rat Frameset - 2018,8,6,2018,469.99,428.7119673747,Surly,Mountain Bikes,1,12,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+127,Surly Pack Rat Frameset - 2018,8,6,2018,469.99,428.7119673747,Surly,Mountain Bikes,2,12,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+127,Surly Pack Rat Frameset - 2018,8,6,2018,469.99,428.7119673747,Surly,Mountain Bikes,3,4,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+128,Surly ECR 27.5 - 2018,8,6,2018,1899,1732.21563447,Surly,Mountain Bikes,1,11,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+128,Surly ECR 27.5 - 2018,8,6,2018,1899,1732.21563447,Surly,Mountain Bikes,2,28,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+128,Surly ECR 27.5 - 2018,8,6,2018,1899,1732.21563447,Surly,Mountain Bikes,3,20,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+129,Trek X-Caliber 7 - 2018,9,6,2018,919.99,608.1044660969999,Trek,Mountain Bikes,1,21,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+129,Trek X-Caliber 7 - 2018,9,6,2018,919.99,608.1044660969999,Trek,Mountain Bikes,2,21,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+129,Trek X-Caliber 7 - 2018,9,6,2018,919.99,608.1044660969999,Trek,Mountain Bikes,3,10,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+130,Trek Stache Carbon Frameset - 2018,9,6,2018,919.99,608.1044660969999,Trek,Mountain Bikes,1,22,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+130,Trek Stache Carbon Frameset - 2018,9,6,2018,919.99,608.1044660969999,Trek,Mountain Bikes,2,17,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+130,Trek Stache Carbon Frameset - 2018,9,6,2018,919.99,608.1044660969999,Trek,Mountain Bikes,3,20,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+131,Heller Bloodhound Trail - 2018,3,6,2018,2599,1718.0172299,Heller,Mountain Bikes,1,20,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+131,Heller Bloodhound Trail - 2018,3,6,2018,2599,1718.0172299,Heller,Mountain Bikes,2,9,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+131,Heller Bloodhound Trail - 2018,3,6,2018,2599,1718.0172299,Heller,Mountain Bikes,3,23,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+132,Trek Procal AL Frameset - 2018,9,6,2018,1499.99,991.4788400969999,Trek,Mountain Bikes,1,1,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+132,Trek Procal AL Frameset - 2018,9,6,2018,1499.99,991.4788400969999,Trek,Mountain Bikes,2,6,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+132,Trek Procal AL Frameset - 2018,9,6,2018,1499.99,991.4788400969999,Trek,Mountain Bikes,3,16,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+133,Trek Procaliber Frameset - 2018,9,6,2018,1499.99,991.4788400969999,Trek,Mountain Bikes,1,9,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+133,Trek Procaliber Frameset - 2018,9,6,2018,1499.99,991.4788400969999,Trek,Mountain Bikes,2,28,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+133,Trek Procaliber Frameset - 2018,9,6,2018,1499.99,991.4788400969999,Trek,Mountain Bikes,3,16,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+134,Trek Remedy 27.5 C Frameset - 2018,9,6,2018,1499.99,991.4788400969999,Trek,Mountain Bikes,1,26,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+134,Trek Remedy 27.5 C Frameset - 2018,9,6,2018,1499.99,991.4788400969999,Trek,Mountain Bikes,2,13,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+134,Trek Remedy 27.5 C Frameset - 2018,9,6,2018,1499.99,991.4788400969999,Trek,Mountain Bikes,3,17,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+135,Trek X-Caliber Frameset - 2018,9,6,2018,1499.99,991.4788400969999,Trek,Mountain Bikes,1,15,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+135,Trek X-Caliber Frameset - 2018,9,6,2018,1499.99,991.4788400969999,Trek,Mountain Bikes,2,30,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+135,Trek X-Caliber Frameset - 2018,9,6,2018,1499.99,991.4788400969999,Trek,Mountain Bikes,3,15,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+136,Trek Procaliber 6 - 2018,9,6,2018,1799.99,1189.775930097,Trek,Mountain Bikes,1,12,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+136,Trek Procaliber 6 - 2018,9,6,2018,1799.99,1189.775930097,Trek,Mountain Bikes,2,8,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+136,Trek Procaliber 6 - 2018,9,6,2018,1799.99,1189.775930097,Trek,Mountain Bikes,3,4,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+137,Heller Shagamaw GX1 - 2018,3,6,2018,2599,1718.0172299,Heller,Mountain Bikes,1,12,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+137,Heller Shagamaw GX1 - 2018,3,6,2018,2599,1718.0172299,Heller,Mountain Bikes,2,1,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+137,Heller Shagamaw GX1 - 2018,3,6,2018,2599,1718.0172299,Heller,Mountain Bikes,3,17,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+138,Trek Fuel EX 5 Plus - 2018,9,6,2018,2249.99,1487.2215650969997,Trek,Mountain Bikes,1,6,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+138,Trek Fuel EX 5 Plus - 2018,9,6,2018,2249.99,1487.2215650969997,Trek,Mountain Bikes,2,16,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+138,Trek Fuel EX 5 Plus - 2018,9,6,2018,2249.99,1487.2215650969997,Trek,Mountain Bikes,3,17,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+139,Trek Remedy 7 27.5 - 2018,9,6,2018,2999.99,1982.9642900969995,Trek,Mountain Bikes,1,17,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+139,Trek Remedy 7 27.5 - 2018,9,6,2018,2999.99,1982.9642900969995,Trek,Mountain Bikes,2,24,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+139,Trek Remedy 7 27.5 - 2018,9,6,2018,2999.99,1982.9642900969995,Trek,Mountain Bikes,3,21,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+140,Trek Remedy 9.8 27.5 - 2018,9,6,2018,4999.99,3304.9448900969996,Trek,Mountain Bikes,1,3,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+140,Trek Remedy 9.8 27.5 - 2018,9,6,2018,4999.99,3304.9448900969996,Trek,Mountain Bikes,2,13,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+140,Trek Remedy 9.8 27.5 - 2018,9,6,2018,4999.99,3304.9448900969996,Trek,Mountain Bikes,3,3,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+141,Trek Stache 5 - 2018,9,6,2018,1599.99,1057.577870097,Trek,Mountain Bikes,1,21,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+141,Trek Stache 5 - 2018,9,6,2018,1599.99,1057.577870097,Trek,Mountain Bikes,2,28,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+141,Trek Stache 5 - 2018,9,6,2018,1599.99,1057.577870097,Trek,Mountain Bikes,3,4,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+142,Trek Fuel EX 8 29 XT - 2018,9,6,2018,3199.99,2115.1623500969995,Trek,Mountain Bikes,1,22,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+142,Trek Fuel EX 8 29 XT - 2018,9,6,2018,3199.99,2115.1623500969995,Trek,Mountain Bikes,2,24,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+142,Trek Fuel EX 8 29 XT - 2018,9,6,2018,3199.99,2115.1623500969995,Trek,Mountain Bikes,3,29,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+143,Trek Domane ALR 3 - 2018,9,7,2018,1099.99,727.0827200969999,Trek,Road Bikes,1,19,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+143,Trek Domane ALR 3 - 2018,9,7,2018,1099.99,727.0827200969999,Trek,Road Bikes,2,12,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+143,Trek Domane ALR 3 - 2018,9,7,2018,1099.99,727.0827200969999,Trek,Road Bikes,3,9,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+144,Trek Domane ALR 4 Disc - 2018,9,7,2018,1549.99,1024.5283550969998,Trek,Road Bikes,1,7,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+144,Trek Domane ALR 4 Disc - 2018,9,7,2018,1549.99,1024.5283550969998,Trek,Road Bikes,2,4,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+144,Trek Domane ALR 4 Disc - 2018,9,7,2018,1549.99,1024.5283550969998,Trek,Road Bikes,3,9,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+145,Trek Domane ALR 5 Disc - 2018,9,7,2018,1799.99,1189.775930097,Trek,Road Bikes,1,5,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+145,Trek Domane ALR 5 Disc - 2018,9,7,2018,1799.99,1189.775930097,Trek,Road Bikes,2,23,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+145,Trek Domane ALR 5 Disc - 2018,9,7,2018,1799.99,1189.775930097,Trek,Road Bikes,3,11,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+146,Trek Domane SLR 6 - 2018,9,7,2018,4999.99,3304.9448900969996,Trek,Road Bikes,1,6,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+146,Trek Domane SLR 6 - 2018,9,7,2018,4999.99,3304.9448900969996,Trek,Road Bikes,2,3,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+146,Trek Domane SLR 6 - 2018,9,7,2018,4999.99,3304.9448900969996,Trek,Road Bikes,3,9,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+147,Trek Domane ALR 5 Gravel - 2018,9,7,2018,1799.99,1189.775930097,Trek,Road Bikes,1,8,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+147,Trek Domane ALR 5 Gravel - 2018,9,7,2018,1799.99,1189.775930097,Trek,Road Bikes,2,13,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+147,Trek Domane ALR 5 Gravel - 2018,9,7,2018,1799.99,1189.775930097,Trek,Road Bikes,3,3,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+148,Trek Domane SL 8 Disc - 2018,9,7,2018,5499.99,3635.4400400969994,Trek,Road Bikes,1,6,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+148,Trek Domane SL 8 Disc - 2018,9,7,2018,5499.99,3635.4400400969994,Trek,Road Bikes,2,27,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+148,Trek Domane SL 8 Disc - 2018,9,7,2018,5499.99,3635.4400400969994,Trek,Road Bikes,3,6,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+149,Trek Domane SLR 8 Disc - 2018,9,7,2018,7499.99,4957.420640097,Trek,Road Bikes,1,1,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+149,Trek Domane SLR 8 Disc - 2018,9,7,2018,7499.99,4957.420640097,Trek,Road Bikes,2,22,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+149,Trek Domane SLR 8 Disc - 2018,9,7,2018,7499.99,4957.420640097,Trek,Road Bikes,3,1,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+150,Trek Emonda SL 7 - 2018,9,7,2018,4499.99,2974.4497400969994,Trek,Road Bikes,1,22,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+150,Trek Emonda SL 7 - 2018,9,7,2018,4499.99,2974.4497400969994,Trek,Road Bikes,2,7,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+150,Trek Emonda SL 7 - 2018,9,7,2018,4499.99,2974.4497400969994,Trek,Road Bikes,3,21,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+151,Trek Domane ALR 4 Disc Women's - 2018,9,7,2018,1549.99,1024.5283550969998,Trek,Road Bikes,1,24,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+151,Trek Domane ALR 4 Disc Women's - 2018,9,7,2018,1549.99,1024.5283550969998,Trek,Road Bikes,2,2,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+151,Trek Domane ALR 4 Disc Women's - 2018,9,7,2018,1549.99,1024.5283550969998,Trek,Road Bikes,3,1,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+152,Trek Domane SL 5 Disc Women's - 2018,9,7,2018,2499.99,1652.4691400969996,Trek,Road Bikes,1,12,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+152,Trek Domane SL 5 Disc Women's - 2018,9,7,2018,2499.99,1652.4691400969996,Trek,Road Bikes,2,21,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+152,Trek Domane SL 5 Disc Women's - 2018,9,7,2018,2499.99,1652.4691400969996,Trek,Road Bikes,3,1,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+153,Trek Domane SL 7 Women's - 2018,9,7,2018,4999.99,3304.9448900969996,Trek,Road Bikes,1,25,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+153,Trek Domane SL 7 Women's - 2018,9,7,2018,4999.99,3304.9448900969996,Trek,Road Bikes,2,21,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+153,Trek Domane SL 7 Women's - 2018,9,7,2018,4999.99,3304.9448900969996,Trek,Road Bikes,3,7,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+154,Trek Domane SLR 6 Disc Women's - 2018,9,7,2018,5499.99,3635.4400400969994,Trek,Road Bikes,1,13,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+154,Trek Domane SLR 6 Disc Women's - 2018,9,7,2018,5499.99,3635.4400400969994,Trek,Road Bikes,2,9,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+154,Trek Domane SLR 6 Disc Women's - 2018,9,7,2018,5499.99,3635.4400400969994,Trek,Road Bikes,3,22,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+155,Trek Domane SLR 9 Disc - 2018,9,7,2018,11999.99,7931.876990096999,Trek,Road Bikes,1,8,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+155,Trek Domane SLR 9 Disc - 2018,9,7,2018,11999.99,7931.876990096999,Trek,Road Bikes,2,21,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+155,Trek Domane SLR 9 Disc - 2018,9,7,2018,11999.99,7931.876990096999,Trek,Road Bikes,3,25,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+156,Trek Domane SL Frameset - 2018,9,7,2018,6499.99,4296.430340096999,Trek,Road Bikes,1,13,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+156,Trek Domane SL Frameset - 2018,9,7,2018,6499.99,4296.430340096999,Trek,Road Bikes,2,8,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+156,Trek Domane SL Frameset - 2018,9,7,2018,6499.99,4296.430340096999,Trek,Road Bikes,3,14,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+157,Trek Domane SL Frameset Women's - 2018,9,7,2018,6499.99,4296.430340096999,Trek,Road Bikes,1,25,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+157,Trek Domane SL Frameset Women's - 2018,9,7,2018,6499.99,4296.430340096999,Trek,Road Bikes,2,28,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+157,Trek Domane SL Frameset Women's - 2018,9,7,2018,6499.99,4296.430340096999,Trek,Road Bikes,3,12,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+158,Trek CrossRip 1 - 2018,9,7,2018,959.99,634.5440780969999,Trek,Road Bikes,1,11,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+158,Trek CrossRip 1 - 2018,9,7,2018,959.99,634.5440780969999,Trek,Road Bikes,2,0,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+158,Trek CrossRip 1 - 2018,9,7,2018,959.99,634.5440780969999,Trek,Road Bikes,3,17,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+159,Trek Emonda ALR 6 - 2018,9,7,2018,2299.99,1520.2710800969996,Trek,Road Bikes,1,18,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+159,Trek Emonda ALR 6 - 2018,9,7,2018,2299.99,1520.2710800969996,Trek,Road Bikes,2,30,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+159,Trek Emonda ALR 6 - 2018,9,7,2018,2299.99,1520.2710800969996,Trek,Road Bikes,3,6,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+160,Trek Emonda SLR 6 - 2018,9,7,2018,4499.99,2974.4497400969994,Trek,Road Bikes,1,0,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+160,Trek Emonda SLR 6 - 2018,9,7,2018,4499.99,2974.4497400969994,Trek,Road Bikes,2,4,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+160,Trek Emonda SLR 6 - 2018,9,7,2018,4499.99,2974.4497400969994,Trek,Road Bikes,3,27,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+161,Surly ECR - 2018,8,7,2018,1899,1732.21563447,Surly,Road Bikes,1,17,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+161,Surly ECR - 2018,8,7,2018,1899,1732.21563447,Surly,Road Bikes,2,9,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+161,Surly ECR - 2018,8,7,2018,1899,1732.21563447,Surly,Road Bikes,3,11,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+162,Trek Emonda SL 6 Disc - 2018,9,7,2018,2999.99,1982.9642900969995,Trek,Road Bikes,1,14,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+162,Trek Emonda SL 6 Disc - 2018,9,7,2018,2999.99,1982.9642900969995,Trek,Road Bikes,2,18,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+162,Trek Emonda SL 6 Disc - 2018,9,7,2018,2999.99,1982.9642900969995,Trek,Road Bikes,3,11,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+163,Surly Pack Rat - 2018,8,7,2018,1349,1230.52074297,Surly,Road Bikes,1,0,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+163,Surly Pack Rat - 2018,8,7,2018,1349,1230.52074297,Surly,Road Bikes,2,30,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+163,Surly Pack Rat - 2018,8,7,2018,1349,1230.52074297,Surly,Road Bikes,3,11,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+164,Surly Straggler 650b - 2018,8,7,2018,1549,1412.95524897,Surly,Road Bikes,1,15,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+164,Surly Straggler 650b - 2018,8,7,2018,1549,1412.95524897,Surly,Road Bikes,2,9,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+164,Surly Straggler 650b - 2018,8,7,2018,1549,1412.95524897,Surly,Road Bikes,3,18,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+165,Trek 1120 - 2018,9,7,2018,2499.99,1652.4691400969996,Trek,Road Bikes,1,16,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+165,Trek 1120 - 2018,9,7,2018,2499.99,1652.4691400969996,Trek,Road Bikes,2,6,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+165,Trek 1120 - 2018,9,7,2018,2499.99,1652.4691400969996,Trek,Road Bikes,3,19,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+166,Trek Domane AL 2 Women's - 2018,9,7,2018,749.99,495.7361150969999,Trek,Road Bikes,1,23,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+166,Trek Domane AL 2 Women's - 2018,9,7,2018,749.99,495.7361150969999,Trek,Road Bikes,2,27,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+166,Trek Domane AL 2 Women's - 2018,9,7,2018,749.99,495.7361150969999,Trek,Road Bikes,3,27,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+167,Surly ECR Frameset - 2018,8,7,2018,749.99,684.1202757747,Surly,Road Bikes,1,28,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+167,Surly ECR Frameset - 2018,8,7,2018,749.99,684.1202757747,Surly,Road Bikes,2,1,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+167,Surly ECR Frameset - 2018,8,7,2018,749.99,684.1202757747,Surly,Road Bikes,3,8,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+168,Surly Straggler - 2018,8,7,2018,1549,1412.95524897,Surly,Road Bikes,1,0,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+168,Surly Straggler - 2018,8,7,2018,1549,1412.95524897,Surly,Road Bikes,2,29,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+168,Surly Straggler - 2018,8,7,2018,1549,1412.95524897,Surly,Road Bikes,3,23,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+169,Trek Emonda SLR 8 - 2018,9,7,2018,6499.99,4296.430340096999,Trek,Road Bikes,1,25,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+169,Trek Emonda SLR 8 - 2018,9,7,2018,6499.99,4296.430340096999,Trek,Road Bikes,2,1,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+169,Trek Emonda SLR 8 - 2018,9,7,2018,6499.99,4296.430340096999,Trek,Road Bikes,3,3,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+170,Trek CrossRip 2 - 2018,9,7,2018,1299.99,859.2807800969999,Trek,Road Bikes,1,14,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+170,Trek CrossRip 2 - 2018,9,7,2018,1299.99,859.2807800969999,Trek,Road Bikes,2,2,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+170,Trek CrossRip 2 - 2018,9,7,2018,1299.99,859.2807800969999,Trek,Road Bikes,3,13,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+171,Trek Domane SL 6 - 2018,9,7,2018,3199.99,2115.1623500969995,Trek,Road Bikes,1,3,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+171,Trek Domane SL 6 - 2018,9,7,2018,3199.99,2115.1623500969995,Trek,Road Bikes,2,28,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+171,Trek Domane SL 6 - 2018,9,7,2018,3199.99,2115.1623500969995,Trek,Road Bikes,3,11,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+172,Trek Domane ALR Disc Frameset - 2018,9,7,2018,3199.99,2115.1623500969995,Trek,Road Bikes,1,3,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+172,Trek Domane ALR Disc Frameset - 2018,9,7,2018,3199.99,2115.1623500969995,Trek,Road Bikes,2,16,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+172,Trek Domane ALR Disc Frameset - 2018,9,7,2018,3199.99,2115.1623500969995,Trek,Road Bikes,3,22,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+173,Trek Domane ALR Frameset - 2018,9,7,2018,3199.99,2115.1623500969995,Trek,Road Bikes,1,2,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+173,Trek Domane ALR Frameset - 2018,9,7,2018,3199.99,2115.1623500969995,Trek,Road Bikes,2,17,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+173,Trek Domane ALR Frameset - 2018,9,7,2018,3199.99,2115.1623500969995,Trek,Road Bikes,3,15,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+174,Trek Domane SLR Disc Frameset - 2018,9,7,2018,3199.99,2115.1623500969995,Trek,Road Bikes,1,26,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+174,Trek Domane SLR Disc Frameset - 2018,9,7,2018,3199.99,2115.1623500969995,Trek,Road Bikes,2,8,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+174,Trek Domane SLR Disc Frameset - 2018,9,7,2018,3199.99,2115.1623500969995,Trek,Road Bikes,3,1,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+175,Trek Domane SLR Frameset - 2018,9,7,2018,3199.99,2115.1623500969995,Trek,Road Bikes,1,2,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+175,Trek Domane SLR Frameset - 2018,9,7,2018,3199.99,2115.1623500969995,Trek,Road Bikes,2,0,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+175,Trek Domane SLR Frameset - 2018,9,7,2018,3199.99,2115.1623500969995,Trek,Road Bikes,3,3,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+176,Trek Madone 9 Frameset - 2018,9,7,2018,3199.99,2115.1623500969995,Trek,Road Bikes,1,11,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+176,Trek Madone 9 Frameset - 2018,9,7,2018,3199.99,2115.1623500969995,Trek,Road Bikes,2,26,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+176,Trek Madone 9 Frameset - 2018,9,7,2018,3199.99,2115.1623500969995,Trek,Road Bikes,3,6,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+177,Trek Domane SLR 6 Disc - 2018,9,7,2018,5499.99,3635.4400400969994,Trek,Road Bikes,1,19,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+177,Trek Domane SLR 6 Disc - 2018,9,7,2018,5499.99,3635.4400400969994,Trek,Road Bikes,2,9,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+177,Trek Domane SLR 6 Disc - 2018,9,7,2018,5499.99,3635.4400400969994,Trek,Road Bikes,3,2,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+178,Trek Domane AL 2 - 2018,9,7,2018,749.99,495.7361150969999,Trek,Road Bikes,1,23,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+178,Trek Domane AL 2 - 2018,9,7,2018,749.99,495.7361150969999,Trek,Road Bikes,2,1,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+178,Trek Domane AL 2 - 2018,9,7,2018,749.99,495.7361150969999,Trek,Road Bikes,3,12,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+179,Trek Domane AL 3 - 2018,9,7,2018,919.99,608.1044660969999,Trek,Road Bikes,1,16,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+179,Trek Domane AL 3 - 2018,9,7,2018,919.99,608.1044660969999,Trek,Road Bikes,2,16,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+179,Trek Domane AL 3 - 2018,9,7,2018,919.99,608.1044660969999,Trek,Road Bikes,3,20,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+180,Trek Domane AL 3 Women's - 2018,9,7,2018,919.99,608.1044660969999,Trek,Road Bikes,1,5,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+180,Trek Domane AL 3 Women's - 2018,9,7,2018,919.99,608.1044660969999,Trek,Road Bikes,2,3,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+180,Trek Domane AL 3 Women's - 2018,9,7,2018,919.99,608.1044660969999,Trek,Road Bikes,3,6,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+181,Trek Domane SL 5 - 2018,9,7,2018,2199.99,1454.1720500969998,Trek,Road Bikes,1,19,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+181,Trek Domane SL 5 - 2018,9,7,2018,2199.99,1454.1720500969998,Trek,Road Bikes,2,29,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+181,Trek Domane SL 5 - 2018,9,7,2018,2199.99,1454.1720500969998,Trek,Road Bikes,3,8,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+182,Trek Domane SL 5 Disc - 2018,9,7,2018,2499.99,1652.4691400969996,Trek,Road Bikes,1,28,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+182,Trek Domane SL 5 Disc - 2018,9,7,2018,2499.99,1652.4691400969996,Trek,Road Bikes,2,21,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+182,Trek Domane SL 5 Disc - 2018,9,7,2018,2499.99,1652.4691400969996,Trek,Road Bikes,3,28,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+183,Trek Domane SL 5 Women's - 2018,9,7,2018,2199.99,1454.1720500969998,Trek,Road Bikes,1,11,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+183,Trek Domane SL 5 Women's - 2018,9,7,2018,2199.99,1454.1720500969998,Trek,Road Bikes,2,26,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+183,Trek Domane SL 5 Women's - 2018,9,7,2018,2199.99,1454.1720500969998,Trek,Road Bikes,3,26,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+184,Trek Domane SL 6 Disc - 2018,9,7,2018,3499.99,2313.4594400969995,Trek,Road Bikes,1,4,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+184,Trek Domane SL 6 Disc - 2018,9,7,2018,3499.99,2313.4594400969995,Trek,Road Bikes,2,0,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+184,Trek Domane SL 6 Disc - 2018,9,7,2018,3499.99,2313.4594400969995,Trek,Road Bikes,3,21,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+185,Trek Conduit+ - 2018,9,5,2018,2799.99,1850.7662300969996,Trek,Electric Bikes,1,3,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+185,Trek Conduit+ - 2018,9,5,2018,2799.99,1850.7662300969996,Trek,Electric Bikes,2,4,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+185,Trek Conduit+ - 2018,9,5,2018,2799.99,1850.7662300969996,Trek,Electric Bikes,3,15,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+186,Trek CrossRip+ - 2018,9,5,2018,4499.99,2974.4497400969994,Trek,Electric Bikes,1,1,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+186,Trek CrossRip+ - 2018,9,5,2018,4499.99,2974.4497400969994,Trek,Electric Bikes,2,16,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+186,Trek CrossRip+ - 2018,9,5,2018,4499.99,2974.4497400969994,Trek,Electric Bikes,3,30,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+187,Trek Neko+ - 2018,9,5,2018,2799.99,1850.7662300969996,Trek,Electric Bikes,1,16,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+187,Trek Neko+ - 2018,9,5,2018,2799.99,1850.7662300969996,Trek,Electric Bikes,2,10,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+187,Trek Neko+ - 2018,9,5,2018,2799.99,1850.7662300969996,Trek,Electric Bikes,3,2,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+188,Trek XM700+ Lowstep - 2018,9,5,2018,3499.99,2313.4594400969995,Trek,Electric Bikes,1,30,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+188,Trek XM700+ Lowstep - 2018,9,5,2018,3499.99,2313.4594400969995,Trek,Electric Bikes,2,27,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+188,Trek XM700+ Lowstep - 2018,9,5,2018,3499.99,2313.4594400969995,Trek,Electric Bikes,3,29,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+189,Trek Lift+ Lowstep - 2018,9,5,2018,2799.99,1850.7662300969996,Trek,Electric Bikes,1,6,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+189,Trek Lift+ Lowstep - 2018,9,5,2018,2799.99,1850.7662300969996,Trek,Electric Bikes,2,13,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+189,Trek Lift+ Lowstep - 2018,9,5,2018,2799.99,1850.7662300969996,Trek,Electric Bikes,3,20,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+190,Trek Dual Sport+ - 2018,9,5,2018,2799.99,1850.7662300969996,Trek,Electric Bikes,1,21,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+190,Trek Dual Sport+ - 2018,9,5,2018,2799.99,1850.7662300969996,Trek,Electric Bikes,2,18,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+190,Trek Dual Sport+ - 2018,9,5,2018,2799.99,1850.7662300969996,Trek,Electric Bikes,3,20,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+191,Electra Loft Go! 8i - 2018,1,5,2018,2799.99,1962.0725525729997,Electra,Electric Bikes,1,21,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+191,Electra Loft Go! 8i - 2018,1,5,2018,2799.99,1962.0725525729997,Electra,Electric Bikes,2,15,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+191,Electra Loft Go! 8i - 2018,1,5,2018,2799.99,1962.0725525729997,Electra,Electric Bikes,3,23,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+192,Electra Townie Go! 8i - 2017/2018,1,5,2018,2599.99,1821.9240125729998,Electra,Electric Bikes,1,20,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+192,Electra Townie Go! 8i - 2017/2018,1,5,2018,2599.99,1821.9240125729998,Electra,Electric Bikes,2,0,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+192,Electra Townie Go! 8i - 2017/2018,1,5,2018,2599.99,1821.9240125729998,Electra,Electric Bikes,3,10,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+193,Trek Lift+ - 2018,9,5,2018,2799.99,1850.7662300969996,Trek,Electric Bikes,1,30,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+193,Trek Lift+ - 2018,9,5,2018,2799.99,1850.7662300969996,Trek,Electric Bikes,2,21,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+193,Trek Lift+ - 2018,9,5,2018,2799.99,1850.7662300969996,Trek,Electric Bikes,3,5,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+194,Trek XM700+ - 2018,9,5,2018,3499.99,2313.4594400969995,Trek,Electric Bikes,1,24,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+194,Trek XM700+ - 2018,9,5,2018,3499.99,2313.4594400969995,Trek,Electric Bikes,2,15,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+194,Trek XM700+ - 2018,9,5,2018,3499.99,2313.4594400969995,Trek,Electric Bikes,3,20,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+195,Electra Townie Go! 8i Ladies' - 2018,1,5,2018,2599.99,1821.9240125729998,Electra,Electric Bikes,1,1,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+195,Electra Townie Go! 8i Ladies' - 2018,1,5,2018,2599.99,1821.9240125729998,Electra,Electric Bikes,2,19,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+195,Electra Townie Go! 8i Ladies' - 2018,1,5,2018,2599.99,1821.9240125729998,Electra,Electric Bikes,3,20,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+196,Trek Verve+ - 2018,9,5,2018,2299.99,1520.2710800969996,Trek,Electric Bikes,1,26,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+196,Trek Verve+ - 2018,9,5,2018,2299.99,1520.2710800969996,Trek,Electric Bikes,2,28,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+196,Trek Verve+ - 2018,9,5,2018,2299.99,1520.2710800969996,Trek,Electric Bikes,3,25,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+197,Trek Verve+ Lowstep - 2018,9,5,2018,2299.99,1520.2710800969996,Trek,Electric Bikes,1,22,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+197,Trek Verve+ Lowstep - 2018,9,5,2018,2299.99,1520.2710800969996,Trek,Electric Bikes,2,10,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+197,Trek Verve+ Lowstep - 2018,9,5,2018,2299.99,1520.2710800969996,Trek,Electric Bikes,3,8,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+198,Electra Townie Commute Go! - 2018,1,5,2018,2999.99,2102.2210925729996,Electra,Electric Bikes,1,1,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+198,Electra Townie Commute Go! - 2018,1,5,2018,2999.99,2102.2210925729996,Electra,Electric Bikes,2,0,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+198,Electra Townie Commute Go! - 2018,1,5,2018,2999.99,2102.2210925729996,Electra,Electric Bikes,3,27,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+199,Electra Townie Commute Go! Ladies' - 2018,1,5,2018,2999.99,2102.2210925729996,Electra,Electric Bikes,1,2,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+199,Electra Townie Commute Go! Ladies' - 2018,1,5,2018,2999.99,2102.2210925729996,Electra,Electric Bikes,2,13,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+199,Electra Townie Commute Go! Ladies' - 2018,1,5,2018,2999.99,2102.2210925729996,Electra,Electric Bikes,3,5,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+200,Trek Powerfly 5 - 2018,9,5,2018,3499.99,2313.4594400969995,Trek,Electric Bikes,1,27,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+200,Trek Powerfly 5 - 2018,9,5,2018,3499.99,2313.4594400969995,Trek,Electric Bikes,2,11,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+200,Trek Powerfly 5 - 2018,9,5,2018,3499.99,2313.4594400969995,Trek,Electric Bikes,3,29,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+201,Trek Powerfly 5 FS - 2018,9,5,2018,4499.99,2974.4497400969994,Trek,Electric Bikes,1,16,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+201,Trek Powerfly 5 FS - 2018,9,5,2018,4499.99,2974.4497400969994,Trek,Electric Bikes,2,24,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+201,Trek Powerfly 5 FS - 2018,9,5,2018,4499.99,2974.4497400969994,Trek,Electric Bikes,3,30,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+202,Trek Powerfly 5 Women's - 2018,9,5,2018,3499.99,2313.4594400969995,Trek,Electric Bikes,1,5,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+202,Trek Powerfly 5 Women's - 2018,9,5,2018,3499.99,2313.4594400969995,Trek,Electric Bikes,2,1,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+202,Trek Powerfly 5 Women's - 2018,9,5,2018,3499.99,2313.4594400969995,Trek,Electric Bikes,3,11,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+203,Trek Powerfly 7 FS - 2018,9,5,2018,4999.99,3304.9448900969996,Trek,Electric Bikes,1,4,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+203,Trek Powerfly 7 FS - 2018,9,5,2018,4999.99,3304.9448900969996,Trek,Electric Bikes,2,7,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+203,Trek Powerfly 7 FS - 2018,9,5,2018,4999.99,3304.9448900969996,Trek,Electric Bikes,3,6,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+204,Trek Super Commuter+ 7 - 2018,9,5,2018,3599.99,2379.5584700969994,Trek,Electric Bikes,1,23,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+204,Trek Super Commuter+ 7 - 2018,9,5,2018,3599.99,2379.5584700969994,Trek,Electric Bikes,2,25,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+204,Trek Super Commuter+ 7 - 2018,9,5,2018,3599.99,2379.5584700969994,Trek,Electric Bikes,3,16,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+205,Trek Super Commuter+ 8S - 2018,9,5,2018,4999.99,3304.9448900969996,Trek,Electric Bikes,1,9,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+205,Trek Super Commuter+ 8S - 2018,9,5,2018,4999.99,3304.9448900969996,Trek,Electric Bikes,2,13,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+205,Trek Super Commuter+ 8S - 2018,9,5,2018,4999.99,3304.9448900969996,Trek,Electric Bikes,3,3,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+206,Trek Boone 5 Disc - 2018,9,4,2018,3299.99,2181.261380097,Trek,Cyclocross Bicycles,1,10,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+206,Trek Boone 5 Disc - 2018,9,4,2018,3299.99,2181.261380097,Trek,Cyclocross Bicycles,2,9,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+206,Trek Boone 5 Disc - 2018,9,4,2018,3299.99,2181.261380097,Trek,Cyclocross Bicycles,3,29,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+207,Trek Boone 7 Disc - 2018,9,4,2018,3999.99,2643.9545900969997,Trek,Cyclocross Bicycles,1,27,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+207,Trek Boone 7 Disc - 2018,9,4,2018,3999.99,2643.9545900969997,Trek,Cyclocross Bicycles,2,8,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+207,Trek Boone 7 Disc - 2018,9,4,2018,3999.99,2643.9545900969997,Trek,Cyclocross Bicycles,3,29,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+208,Trek Crockett 5 Disc - 2018,9,4,2018,1799.99,1189.775930097,Trek,Cyclocross Bicycles,1,13,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+208,Trek Crockett 5 Disc - 2018,9,4,2018,1799.99,1189.775930097,Trek,Cyclocross Bicycles,2,12,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+208,Trek Crockett 5 Disc - 2018,9,4,2018,1799.99,1189.775930097,Trek,Cyclocross Bicycles,3,12,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+209,Trek Crockett 7 Disc - 2018,9,4,2018,2999.99,1982.9642900969995,Trek,Cyclocross Bicycles,1,22,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+209,Trek Crockett 7 Disc - 2018,9,4,2018,2999.99,1982.9642900969995,Trek,Cyclocross Bicycles,2,11,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+209,Trek Crockett 7 Disc - 2018,9,4,2018,2999.99,1982.9642900969995,Trek,Cyclocross Bicycles,3,1,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+210,Surly Straggler - 2018,8,4,2018,1549,1412.95524897,Surly,Cyclocross Bicycles,1,25,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+210,Surly Straggler - 2018,8,4,2018,1549,1412.95524897,Surly,Cyclocross Bicycles,2,10,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+210,Surly Straggler - 2018,8,4,2018,1549,1412.95524897,Surly,Cyclocross Bicycles,3,22,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+211,Surly Straggler 650b - 2018,8,4,2018,1549,1412.95524897,Surly,Cyclocross Bicycles,1,13,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+211,Surly Straggler 650b - 2018,8,4,2018,1549,1412.95524897,Surly,Cyclocross Bicycles,2,4,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+211,Surly Straggler 650b - 2018,8,4,2018,1549,1412.95524897,Surly,Cyclocross Bicycles,3,3,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+212,Electra Townie Original 21D - 2018,1,3,2018,559.99,392.408904573,Electra,Cruisers Bicycles,1,17,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+212,Electra Townie Original 21D - 2018,1,3,2018,559.99,392.408904573,Electra,Cruisers Bicycles,2,22,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+212,Electra Townie Original 21D - 2018,1,3,2018,559.99,392.408904573,Electra,Cruisers Bicycles,3,23,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+213,Electra Cruiser 1 - 2016/2017/2018,1,3,2018,269.99,189.193521573,Electra,Cruisers Bicycles,1,14,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+213,Electra Cruiser 1 - 2016/2017/2018,1,3,2018,269.99,189.193521573,Electra,Cruisers Bicycles,2,10,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+213,Electra Cruiser 1 - 2016/2017/2018,1,3,2018,269.99,189.193521573,Electra,Cruisers Bicycles,3,10,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+214,Electra Tiger Shark 3i - 2018,1,3,2018,899.99,630.661422573,Electra,Cruisers Bicycles,1,4,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+214,Electra Tiger Shark 3i - 2018,1,3,2018,899.99,630.661422573,Electra,Cruisers Bicycles,2,7,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+214,Electra Tiger Shark 3i - 2018,1,3,2018,899.99,630.661422573,Electra,Cruisers Bicycles,3,30,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+215,Electra Queen of Hearts 3i - 2018,1,3,2018,749.99,525.550017573,Electra,Cruisers Bicycles,1,1,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+215,Electra Queen of Hearts 3i - 2018,1,3,2018,749.99,525.550017573,Electra,Cruisers Bicycles,2,11,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+215,Electra Queen of Hearts 3i - 2018,1,3,2018,749.99,525.550017573,Electra,Cruisers Bicycles,3,12,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+216,Electra Super Moto 8i - 2018,1,3,2018,899.99,630.661422573,Electra,Cruisers Bicycles,1,11,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+216,Electra Super Moto 8i - 2018,1,3,2018,899.99,630.661422573,Electra,Cruisers Bicycles,2,19,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+216,Electra Super Moto 8i - 2018,1,3,2018,899.99,630.661422573,Electra,Cruisers Bicycles,3,5,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+217,Electra Straight 8 3i - 2018,1,3,2018,909.99,637.668849573,Electra,Cruisers Bicycles,1,11,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+217,Electra Straight 8 3i - 2018,1,3,2018,909.99,637.668849573,Electra,Cruisers Bicycles,2,22,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+217,Electra Straight 8 3i - 2018,1,3,2018,909.99,637.668849573,Electra,Cruisers Bicycles,3,4,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+218,Electra Cruiser 7D - 2016/2017/2018,1,3,2018,319.99,224.23065657299998,Electra,Cruisers Bicycles,1,27,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+218,Electra Cruiser 7D - 2016/2017/2018,1,3,2018,319.99,224.23065657299998,Electra,Cruisers Bicycles,2,26,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+218,Electra Cruiser 7D - 2016/2017/2018,1,3,2018,319.99,224.23065657299998,Electra,Cruisers Bicycles,3,21,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+219,Electra Moto 3i - 2018,1,3,2018,639.99,448.46832057299997,Electra,Cruisers Bicycles,1,30,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+219,Electra Moto 3i - 2018,1,3,2018,639.99,448.46832057299997,Electra,Cruisers Bicycles,2,16,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+219,Electra Moto 3i - 2018,1,3,2018,639.99,448.46832057299997,Electra,Cruisers Bicycles,3,29,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+220,Electra Cruiser 1 Ladies' - 2018,1,3,2018,269.99,189.193521573,Electra,Cruisers Bicycles,1,4,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+220,Electra Cruiser 1 Ladies' - 2018,1,3,2018,269.99,189.193521573,Electra,Cruisers Bicycles,2,6,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+220,Electra Cruiser 1 Ladies' - 2018,1,3,2018,269.99,189.193521573,Electra,Cruisers Bicycles,3,0,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+221,Electra Cruiser 7D Ladies' - 2016/2018,1,3,2018,319.99,224.23065657299998,Electra,Cruisers Bicycles,1,7,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+221,Electra Cruiser 7D Ladies' - 2016/2018,1,3,2018,319.99,224.23065657299998,Electra,Cruisers Bicycles,2,12,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+221,Electra Cruiser 7D Ladies' - 2016/2018,1,3,2018,319.99,224.23065657299998,Electra,Cruisers Bicycles,3,25,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+222,Electra Cruiser 1 Tall - 2016/2018,1,3,2018,269.99,189.193521573,Electra,Cruisers Bicycles,1,12,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+222,Electra Cruiser 1 Tall - 2016/2018,1,3,2018,269.99,189.193521573,Electra,Cruisers Bicycles,2,30,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+222,Electra Cruiser 1 Tall - 2016/2018,1,3,2018,269.99,189.193521573,Electra,Cruisers Bicycles,3,12,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+223,Electra Cruiser Lux 3i - 2018,1,3,2018,529.99,371.38662357299995,Electra,Cruisers Bicycles,1,3,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+223,Electra Cruiser Lux 3i - 2018,1,3,2018,529.99,371.38662357299995,Electra,Cruisers Bicycles,2,7,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+223,Electra Cruiser Lux 3i - 2018,1,3,2018,529.99,371.38662357299995,Electra,Cruisers Bicycles,3,29,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+224,Electra Cruiser Lux 7D - 2018,1,3,2018,479.99,336.349488573,Electra,Cruisers Bicycles,1,16,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+224,Electra Cruiser Lux 7D - 2018,1,3,2018,479.99,336.349488573,Electra,Cruisers Bicycles,2,4,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+224,Electra Cruiser Lux 7D - 2018,1,3,2018,479.99,336.349488573,Electra,Cruisers Bicycles,3,23,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+225,Electra Delivery 3i - 2016/2017/2018,1,3,2018,959.99,672.7059845729999,Electra,Cruisers Bicycles,1,24,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+225,Electra Delivery 3i - 2016/2017/2018,1,3,2018,959.99,672.7059845729999,Electra,Cruisers Bicycles,2,11,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+225,Electra Delivery 3i - 2016/2017/2018,1,3,2018,959.99,672.7059845729999,Electra,Cruisers Bicycles,3,12,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+226,Electra Townie Original 21D EQ - 2017/2018,1,3,2018,679.99,476.49802857299994,Electra,Cruisers Bicycles,1,18,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+226,Electra Townie Original 21D EQ - 2017/2018,1,3,2018,679.99,476.49802857299994,Electra,Cruisers Bicycles,2,5,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+226,Electra Townie Original 21D EQ - 2017/2018,1,3,2018,679.99,476.49802857299994,Electra,Cruisers Bicycles,3,14,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+227,Electra Cruiser 7D (24-Inch) Ladies' - 2016/2018,1,3,2018,319.99,224.23065657299998,Electra,Cruisers Bicycles,1,19,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+227,Electra Cruiser 7D (24-Inch) Ladies' - 2016/2018,1,3,2018,319.99,224.23065657299998,Electra,Cruisers Bicycles,2,12,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+227,Electra Cruiser 7D (24-Inch) Ladies' - 2016/2018,1,3,2018,319.99,224.23065657299998,Electra,Cruisers Bicycles,3,22,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+228,Electra Cruiser 7D Tall - 2016/2018,1,3,2018,319.99,224.23065657299998,Electra,Cruisers Bicycles,1,22,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+228,Electra Cruiser 7D Tall - 2016/2018,1,3,2018,319.99,224.23065657299998,Electra,Cruisers Bicycles,2,7,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+228,Electra Cruiser 7D Tall - 2016/2018,1,3,2018,319.99,224.23065657299998,Electra,Cruisers Bicycles,3,29,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+229,Electra Cruiser Lux 1 - 2016/2018,1,3,2018,429.99,301.312353573,Electra,Cruisers Bicycles,1,27,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+229,Electra Cruiser Lux 1 - 2016/2018,1,3,2018,429.99,301.312353573,Electra,Cruisers Bicycles,2,29,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+229,Electra Cruiser Lux 1 - 2016/2018,1,3,2018,429.99,301.312353573,Electra,Cruisers Bicycles,3,7,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+230,Electra Cruiser Lux 1 Ladies' - 2018,1,3,2018,429.99,301.312353573,Electra,Cruisers Bicycles,1,7,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+230,Electra Cruiser Lux 1 Ladies' - 2018,1,3,2018,429.99,301.312353573,Electra,Cruisers Bicycles,2,25,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+230,Electra Cruiser Lux 1 Ladies' - 2018,1,3,2018,429.99,301.312353573,Electra,Cruisers Bicycles,3,29,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+231,Electra Cruiser Lux 3i Ladies' - 2018,1,3,2018,529.99,371.38662357299995,Electra,Cruisers Bicycles,1,25,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+231,Electra Cruiser Lux 3i Ladies' - 2018,1,3,2018,529.99,371.38662357299995,Electra,Cruisers Bicycles,2,8,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+231,Electra Cruiser Lux 3i Ladies' - 2018,1,3,2018,529.99,371.38662357299995,Electra,Cruisers Bicycles,3,6,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+232,Electra Cruiser Lux 7D Ladies' - 2018,1,3,2018,479.99,336.349488573,Electra,Cruisers Bicycles,1,5,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+232,Electra Cruiser Lux 7D Ladies' - 2018,1,3,2018,479.99,336.349488573,Electra,Cruisers Bicycles,2,11,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+232,Electra Cruiser Lux 7D Ladies' - 2018,1,3,2018,479.99,336.349488573,Electra,Cruisers Bicycles,3,16,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+233,Electra Cruiser Lux Fat Tire 7D - 2018,1,3,2018,639.99,448.46832057299997,Electra,Cruisers Bicycles,1,5,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+233,Electra Cruiser Lux Fat Tire 7D - 2018,1,3,2018,639.99,448.46832057299997,Electra,Cruisers Bicycles,2,25,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+233,Electra Cruiser Lux Fat Tire 7D - 2018,1,3,2018,639.99,448.46832057299997,Electra,Cruisers Bicycles,3,9,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+234,Electra Daydreamer 3i Ladies' - 2018,1,3,2018,899.99,630.661422573,Electra,Cruisers Bicycles,1,13,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+234,Electra Daydreamer 3i Ladies' - 2018,1,3,2018,899.99,630.661422573,Electra,Cruisers Bicycles,2,12,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+234,Electra Daydreamer 3i Ladies' - 2018,1,3,2018,899.99,630.661422573,Electra,Cruisers Bicycles,3,24,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+235,Electra Koa 3i Ladies' - 2018,1,3,2018,899.99,630.661422573,Electra,Cruisers Bicycles,1,7,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+235,Electra Koa 3i Ladies' - 2018,1,3,2018,899.99,630.661422573,Electra,Cruisers Bicycles,2,4,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+235,Electra Koa 3i Ladies' - 2018,1,3,2018,899.99,630.661422573,Electra,Cruisers Bicycles,3,1,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+236,Electra Morningstar 3i Ladies' - 2018,1,3,2018,749.99,525.550017573,Electra,Cruisers Bicycles,1,18,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+236,Electra Morningstar 3i Ladies' - 2018,1,3,2018,749.99,525.550017573,Electra,Cruisers Bicycles,2,7,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+236,Electra Morningstar 3i Ladies' - 2018,1,3,2018,749.99,525.550017573,Electra,Cruisers Bicycles,3,3,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+237,Electra Relic 3i - 2018,1,3,2018,849.99,595.624287573,Electra,Cruisers Bicycles,1,26,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+237,Electra Relic 3i - 2018,1,3,2018,849.99,595.624287573,Electra,Cruisers Bicycles,2,30,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+237,Electra Relic 3i - 2018,1,3,2018,849.99,595.624287573,Electra,Cruisers Bicycles,3,16,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+238,Electra Townie Balloon 8D EQ - 2016/2017/2018,1,3,2018,749.99,525.550017573,Electra,Cruisers Bicycles,1,20,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+238,Electra Townie Balloon 8D EQ - 2016/2017/2018,1,3,2018,749.99,525.550017573,Electra,Cruisers Bicycles,2,6,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+238,Electra Townie Balloon 8D EQ - 2016/2017/2018,1,3,2018,749.99,525.550017573,Electra,Cruisers Bicycles,3,12,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+239,Electra Townie Balloon 8D EQ Ladies' - 2016/2017/2018,1,3,2018,749.99,525.550017573,Electra,Cruisers Bicycles,1,28,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+239,Electra Townie Balloon 8D EQ Ladies' - 2016/2017/2018,1,3,2018,749.99,525.550017573,Electra,Cruisers Bicycles,2,17,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+239,Electra Townie Balloon 8D EQ Ladies' - 2016/2017/2018,1,3,2018,749.99,525.550017573,Electra,Cruisers Bicycles,3,29,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+240,Electra Townie Commute 27D Ladies - 2018,1,3,2018,899.99,630.661422573,Electra,Cruisers Bicycles,1,17,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+240,Electra Townie Commute 27D Ladies - 2018,1,3,2018,899.99,630.661422573,Electra,Cruisers Bicycles,2,19,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+240,Electra Townie Commute 27D Ladies - 2018,1,3,2018,899.99,630.661422573,Electra,Cruisers Bicycles,3,26,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+241,Electra Townie Commute 8D - 2018,1,3,2018,749.99,525.550017573,Electra,Cruisers Bicycles,1,17,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+241,Electra Townie Commute 8D - 2018,1,3,2018,749.99,525.550017573,Electra,Cruisers Bicycles,2,24,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+241,Electra Townie Commute 8D - 2018,1,3,2018,749.99,525.550017573,Electra,Cruisers Bicycles,3,8,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+242,Electra Townie Commute 8D Ladies' - 2018,1,3,2018,699.99,490.51288257299996,Electra,Cruisers Bicycles,1,10,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+242,Electra Townie Commute 8D Ladies' - 2018,1,3,2018,699.99,490.51288257299996,Electra,Cruisers Bicycles,2,2,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+242,Electra Townie Commute 8D Ladies' - 2018,1,3,2018,699.99,490.51288257299996,Electra,Cruisers Bicycles,3,5,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+243,Electra Townie Original 21D EQ Ladies' - 2018,1,3,2018,679.99,476.49802857299994,Electra,Cruisers Bicycles,1,11,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+243,Electra Townie Original 21D EQ Ladies' - 2018,1,3,2018,679.99,476.49802857299994,Electra,Cruisers Bicycles,2,18,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+243,Electra Townie Original 21D EQ Ladies' - 2018,1,3,2018,679.99,476.49802857299994,Electra,Cruisers Bicycles,3,7,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+244,Electra Townie Original 21D Ladies' - 2018,1,3,2018,559.99,392.408904573,Electra,Cruisers Bicycles,1,10,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+244,Electra Townie Original 21D Ladies' - 2018,1,3,2018,559.99,392.408904573,Electra,Cruisers Bicycles,2,1,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+244,Electra Townie Original 21D Ladies' - 2018,1,3,2018,559.99,392.408904573,Electra,Cruisers Bicycles,3,5,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+245,Electra Townie Original 3i EQ - 2017/2018,1,3,2018,659.99,462.483174573,Electra,Cruisers Bicycles,1,3,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+245,Electra Townie Original 3i EQ - 2017/2018,1,3,2018,659.99,462.483174573,Electra,Cruisers Bicycles,2,18,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+245,Electra Townie Original 3i EQ - 2017/2018,1,3,2018,659.99,462.483174573,Electra,Cruisers Bicycles,3,10,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+246,Electra Townie Original 3i EQ Ladies' - 2018,1,3,2018,639.99,448.46832057299997,Electra,Cruisers Bicycles,1,0,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+246,Electra Townie Original 3i EQ Ladies' - 2018,1,3,2018,639.99,448.46832057299997,Electra,Cruisers Bicycles,2,10,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+246,Electra Townie Original 3i EQ Ladies' - 2018,1,3,2018,639.99,448.46832057299997,Electra,Cruisers Bicycles,3,7,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+247,Electra Townie Original 7D EQ - 2018,1,3,2018,599.99,420.43861257299994,Electra,Cruisers Bicycles,1,15,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+247,Electra Townie Original 7D EQ - 2018,1,3,2018,599.99,420.43861257299994,Electra,Cruisers Bicycles,2,16,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+247,Electra Townie Original 7D EQ - 2018,1,3,2018,599.99,420.43861257299994,Electra,Cruisers Bicycles,3,3,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+248,Electra Townie Original 7D EQ Ladies' - 2017/2018,1,3,2018,599.99,420.43861257299994,Electra,Cruisers Bicycles,1,14,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+248,Electra Townie Original 7D EQ Ladies' - 2017/2018,1,3,2018,599.99,420.43861257299994,Electra,Cruisers Bicycles,2,26,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+248,Electra Townie Original 7D EQ Ladies' - 2017/2018,1,3,2018,599.99,420.43861257299994,Electra,Cruisers Bicycles,3,11,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+249,Electra White Water 3i - 2018,1,3,2018,749.99,525.550017573,Electra,Cruisers Bicycles,1,27,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+249,Electra White Water 3i - 2018,1,3,2018,749.99,525.550017573,Electra,Cruisers Bicycles,2,10,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+249,Electra White Water 3i - 2018,1,3,2018,749.99,525.550017573,Electra,Cruisers Bicycles,3,6,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+250,Electra Townie Go! 8i - 2017/2018,1,3,2018,2599.99,1821.9240125729998,Electra,Cruisers Bicycles,1,3,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+250,Electra Townie Go! 8i - 2017/2018,1,3,2018,2599.99,1821.9240125729998,Electra,Cruisers Bicycles,2,23,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+250,Electra Townie Go! 8i - 2017/2018,1,3,2018,2599.99,1821.9240125729998,Electra,Cruisers Bicycles,3,16,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+251,Electra Townie Commute Go! - 2018,1,3,2018,2999.99,2102.2210925729996,Electra,Cruisers Bicycles,1,2,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+251,Electra Townie Commute Go! - 2018,1,3,2018,2999.99,2102.2210925729996,Electra,Cruisers Bicycles,2,0,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+251,Electra Townie Commute Go! - 2018,1,3,2018,2999.99,2102.2210925729996,Electra,Cruisers Bicycles,3,10,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+252,Electra Townie Commute Go! Ladies' - 2018,1,3,2018,2999.99,2102.2210925729996,Electra,Cruisers Bicycles,1,28,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+252,Electra Townie Commute Go! Ladies' - 2018,1,3,2018,2999.99,2102.2210925729996,Electra,Cruisers Bicycles,2,20,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+252,Electra Townie Commute Go! Ladies' - 2018,1,3,2018,2999.99,2102.2210925729996,Electra,Cruisers Bicycles,3,27,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+253,Electra Townie Go! 8i Ladies' - 2018,1,3,2018,2599.99,1821.9240125729998,Electra,Cruisers Bicycles,1,16,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+253,Electra Townie Go! 8i Ladies' - 2018,1,3,2018,2599.99,1821.9240125729998,Electra,Cruisers Bicycles,2,29,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+253,Electra Townie Go! 8i Ladies' - 2018,1,3,2018,2599.99,1821.9240125729998,Electra,Cruisers Bicycles,3,15,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+254,Electra Townie Balloon 3i EQ - 2017/2018,1,3,2018,749.99,525.550017573,Electra,Cruisers Bicycles,1,24,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+254,Electra Townie Balloon 3i EQ - 2017/2018,1,3,2018,749.99,525.550017573,Electra,Cruisers Bicycles,2,7,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+254,Electra Townie Balloon 3i EQ - 2017/2018,1,3,2018,749.99,525.550017573,Electra,Cruisers Bicycles,3,4,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+255,Electra Townie Balloon 7i EQ Ladies' - 2017/2018,1,3,2018,899.99,630.661422573,Electra,Cruisers Bicycles,1,13,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+255,Electra Townie Balloon 7i EQ Ladies' - 2017/2018,1,3,2018,899.99,630.661422573,Electra,Cruisers Bicycles,2,12,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+255,Electra Townie Balloon 7i EQ Ladies' - 2017/2018,1,3,2018,899.99,630.661422573,Electra,Cruisers Bicycles,3,17,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+256,Electra Townie Commute 27D - 2018,1,3,2018,899.99,630.661422573,Electra,Cruisers Bicycles,1,20,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+256,Electra Townie Commute 27D - 2018,1,3,2018,899.99,630.661422573,Electra,Cruisers Bicycles,2,8,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+256,Electra Townie Commute 27D - 2018,1,3,2018,899.99,630.661422573,Electra,Cruisers Bicycles,3,1,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+257,Electra Amsterdam Fashion 3i Ladies' - 2017/2018,1,3,2018,899.99,630.661422573,Electra,Cruisers Bicycles,1,17,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+257,Electra Amsterdam Fashion 3i Ladies' - 2017/2018,1,3,2018,899.99,630.661422573,Electra,Cruisers Bicycles,2,5,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+257,Electra Amsterdam Fashion 3i Ladies' - 2017/2018,1,3,2018,899.99,630.661422573,Electra,Cruisers Bicycles,3,25,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+258,Electra Amsterdam Royal 8i - 2017/2018,1,3,2018,1259.9,882.86572773,Electra,Cruisers Bicycles,1,25,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+258,Electra Amsterdam Royal 8i - 2017/2018,1,3,2018,1259.9,882.86572773,Electra,Cruisers Bicycles,2,10,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+258,Electra Amsterdam Royal 8i - 2017/2018,1,3,2018,1259.9,882.86572773,Electra,Cruisers Bicycles,3,10,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+259,Electra Amsterdam Royal 8i Ladies - 2018,1,3,2018,1199.99,840.884232573,Electra,Cruisers Bicycles,1,10,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+259,Electra Amsterdam Royal 8i Ladies - 2018,1,3,2018,1199.99,840.884232573,Electra,Cruisers Bicycles,2,16,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+259,Electra Amsterdam Royal 8i Ladies - 2018,1,3,2018,1199.99,840.884232573,Electra,Cruisers Bicycles,3,0,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+260,Electra Townie Balloon 3i EQ Ladies' - 2018,1,3,2018,799.99,560.5871525729999,Electra,Cruisers Bicycles,1,20,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+260,Electra Townie Balloon 3i EQ Ladies' - 2018,1,3,2018,799.99,560.5871525729999,Electra,Cruisers Bicycles,2,20,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+260,Electra Townie Balloon 3i EQ Ladies' - 2018,1,3,2018,799.99,560.5871525729999,Electra,Cruisers Bicycles,3,5,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+261,Electra Townie Balloon 7i EQ - 2018,1,3,2018,899.99,630.661422573,Electra,Cruisers Bicycles,1,3,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+261,Electra Townie Balloon 7i EQ - 2018,1,3,2018,899.99,630.661422573,Electra,Cruisers Bicycles,2,4,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+261,Electra Townie Balloon 7i EQ - 2018,1,3,2018,899.99,630.661422573,Electra,Cruisers Bicycles,3,24,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+262,Trek MT 201 - 2018,9,1,2018,249.99,165.240965097,Trek,Children Bicycles,1,6,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+262,Trek MT 201 - 2018,9,1,2018,249.99,165.240965097,Trek,Children Bicycles,2,8,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+262,Trek MT 201 - 2018,9,1,2018,249.99,165.240965097,Trek,Children Bicycles,3,29,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+263,Strider Classic 12 Balance Bike - 2018,6,1,2018,89.99,77.006728746,Strider,Children Bicycles,1,21,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+263,Strider Classic 12 Balance Bike - 2018,6,1,2018,89.99,77.006728746,Strider,Children Bicycles,2,4,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+263,Strider Classic 12 Balance Bike - 2018,6,1,2018,89.99,77.006728746,Strider,Children Bicycles,3,21,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+264,Strider Sport 16 - 2018,6,1,2018,249.99,213.922792746,Strider,Children Bicycles,1,16,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+264,Strider Sport 16 - 2018,6,1,2018,249.99,213.922792746,Strider,Children Bicycles,2,13,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+264,Strider Sport 16 - 2018,6,1,2018,249.99,213.922792746,Strider,Children Bicycles,3,7,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+265,Strider Strider 20 Sport - 2018,6,1,2018,289.99,248.151808746,Strider,Children Bicycles,1,28,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+265,Strider Strider 20 Sport - 2018,6,1,2018,289.99,248.151808746,Strider,Children Bicycles,2,4,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+265,Strider Strider 20 Sport - 2018,6,1,2018,289.99,248.151808746,Strider,Children Bicycles,3,22,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+266,Trek Superfly 20 - 2018,9,1,2018,399.99,264.38951009699997,Trek,Children Bicycles,1,1,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+266,Trek Superfly 20 - 2018,9,1,2018,399.99,264.38951009699997,Trek,Children Bicycles,2,18,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+266,Trek Superfly 20 - 2018,9,1,2018,399.99,264.38951009699997,Trek,Children Bicycles,3,18,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+267,Trek Precaliber 12 Girl's - 2018,9,1,2018,199.99,132.191450097,Trek,Children Bicycles,1,27,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+267,Trek Precaliber 12 Girl's - 2018,9,1,2018,199.99,132.191450097,Trek,Children Bicycles,2,21,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+267,Trek Precaliber 12 Girl's - 2018,9,1,2018,199.99,132.191450097,Trek,Children Bicycles,3,12,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+268,Trek Kickster - 2018,9,1,2018,159.99,105.75183809699999,Trek,Children Bicycles,1,23,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+268,Trek Kickster - 2018,9,1,2018,159.99,105.75183809699999,Trek,Children Bicycles,2,3,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+268,Trek Kickster - 2018,9,1,2018,159.99,105.75183809699999,Trek,Children Bicycles,3,17,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+269,Trek Precaliber 12 Boy's - 2018,9,1,2018,199.99,132.191450097,Trek,Children Bicycles,1,22,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+269,Trek Precaliber 12 Boy's - 2018,9,1,2018,199.99,132.191450097,Trek,Children Bicycles,2,4,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+269,Trek Precaliber 12 Boy's - 2018,9,1,2018,199.99,132.191450097,Trek,Children Bicycles,3,26,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+270,Trek Precaliber 16 Boy's - 2018,9,1,2018,209.99,138.80135309699997,Trek,Children Bicycles,1,16,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+270,Trek Precaliber 16 Boy's - 2018,9,1,2018,209.99,138.80135309699997,Trek,Children Bicycles,2,15,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+270,Trek Precaliber 16 Boy's - 2018,9,1,2018,209.99,138.80135309699997,Trek,Children Bicycles,3,6,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+271,Trek Precaliber 16 Girl's - 2018,9,1,2018,209.99,138.80135309699997,Trek,Children Bicycles,1,6,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+271,Trek Precaliber 16 Girl's - 2018,9,1,2018,209.99,138.80135309699997,Trek,Children Bicycles,2,26,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+271,Trek Precaliber 16 Girl's - 2018,9,1,2018,209.99,138.80135309699997,Trek,Children Bicycles,3,23,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+272,Trek Precaliber 20 6-speed Boy's - 2018,9,1,2018,289.99,191.68057709699997,Trek,Children Bicycles,1,14,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+272,Trek Precaliber 20 6-speed Boy's - 2018,9,1,2018,289.99,191.68057709699997,Trek,Children Bicycles,2,1,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+272,Trek Precaliber 20 6-speed Boy's - 2018,9,1,2018,289.99,191.68057709699997,Trek,Children Bicycles,3,12,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+273,Trek Precaliber 20 6-speed Girl's - 2018,9,1,2018,289.99,191.68057709699997,Trek,Children Bicycles,1,20,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+273,Trek Precaliber 20 6-speed Girl's - 2018,9,1,2018,289.99,191.68057709699997,Trek,Children Bicycles,2,28,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+273,Trek Precaliber 20 6-speed Girl's - 2018,9,1,2018,289.99,191.68057709699997,Trek,Children Bicycles,3,19,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+274,Trek Precaliber 20 Boy's - 2018,9,1,2018,229.99,152.02115909699998,Trek,Children Bicycles,1,19,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+274,Trek Precaliber 20 Boy's - 2018,9,1,2018,229.99,152.02115909699998,Trek,Children Bicycles,2,15,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+274,Trek Precaliber 20 Boy's - 2018,9,1,2018,229.99,152.02115909699998,Trek,Children Bicycles,3,7,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+275,Trek Precaliber 20 Girl's - 2018,9,1,2018,229.99,152.02115909699998,Trek,Children Bicycles,1,28,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+275,Trek Precaliber 20 Girl's - 2018,9,1,2018,229.99,152.02115909699998,Trek,Children Bicycles,2,3,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+275,Trek Precaliber 20 Girl's - 2018,9,1,2018,229.99,152.02115909699998,Trek,Children Bicycles,3,23,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+276,Trek Precaliber 24 (7-Speed) - Boys - 2018,9,1,2018,319.99,211.51028609699998,Trek,Children Bicycles,1,7,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+276,Trek Precaliber 24 (7-Speed) - Boys - 2018,9,1,2018,319.99,211.51028609699998,Trek,Children Bicycles,2,9,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+276,Trek Precaliber 24 (7-Speed) - Boys - 2018,9,1,2018,319.99,211.51028609699998,Trek,Children Bicycles,3,14,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+277,Trek Precaliber 24 21-speed Boy's - 2018,9,1,2018,369.99,244.55980109699996,Trek,Children Bicycles,1,13,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+277,Trek Precaliber 24 21-speed Boy's - 2018,9,1,2018,369.99,244.55980109699996,Trek,Children Bicycles,2,4,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+277,Trek Precaliber 24 21-speed Boy's - 2018,9,1,2018,369.99,244.55980109699996,Trek,Children Bicycles,3,26,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+278,Trek Precaliber 24 21-speed Girl's - 2018,9,1,2018,369.99,244.55980109699996,Trek,Children Bicycles,1,17,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+278,Trek Precaliber 24 21-speed Girl's - 2018,9,1,2018,369.99,244.55980109699996,Trek,Children Bicycles,2,8,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+278,Trek Precaliber 24 21-speed Girl's - 2018,9,1,2018,369.99,244.55980109699996,Trek,Children Bicycles,3,15,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+279,Trek Precaliber 24 7-speed Girl's - 2018,9,1,2018,319.99,211.51028609699998,Trek,Children Bicycles,1,17,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+279,Trek Precaliber 24 7-speed Girl's - 2018,9,1,2018,319.99,211.51028609699998,Trek,Children Bicycles,2,18,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+279,Trek Precaliber 24 7-speed Girl's - 2018,9,1,2018,319.99,211.51028609699998,Trek,Children Bicycles,3,15,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+280,Trek Superfly 24 - 2017/2018,9,1,2018,489.99,323.87863709699997,Trek,Children Bicycles,1,23,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+280,Trek Superfly 24 - 2017/2018,9,1,2018,489.99,323.87863709699997,Trek,Children Bicycles,2,11,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+280,Trek Superfly 24 - 2017/2018,9,1,2018,489.99,323.87863709699997,Trek,Children Bicycles,3,1,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+281,Electra Cruiser 7D (24-Inch) Ladies' - 2016/2018,1,1,2018,319.99,224.23065657299998,Electra,Children Bicycles,1,11,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+281,Electra Cruiser 7D (24-Inch) Ladies' - 2016/2018,1,1,2018,319.99,224.23065657299998,Electra,Children Bicycles,2,3,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+281,Electra Cruiser 7D (24-Inch) Ladies' - 2016/2018,1,1,2018,319.99,224.23065657299998,Electra,Children Bicycles,3,2,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+282,Electra Cyclosaurus 1 (16-inch) - Boy's - 2018,1,1,2018,279.99,196.20094857299998,Electra,Children Bicycles,1,6,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+282,Electra Cyclosaurus 1 (16-inch) - Boy's - 2018,1,1,2018,279.99,196.20094857299998,Electra,Children Bicycles,2,8,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+282,Electra Cyclosaurus 1 (16-inch) - Boy's - 2018,1,1,2018,279.99,196.20094857299998,Electra,Children Bicycles,3,18,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+283,Electra Heartchya 1 (20-inch) - Girl's - 2018,1,1,2018,319.99,224.23065657299998,Electra,Children Bicycles,1,10,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+283,Electra Heartchya 1 (20-inch) - Girl's - 2018,1,1,2018,319.99,224.23065657299998,Electra,Children Bicycles,2,28,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+283,Electra Heartchya 1 (20-inch) - Girl's - 2018,1,1,2018,319.99,224.23065657299998,Electra,Children Bicycles,3,1,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+284,Electra Savannah 1 (20-inch) - Girl's - 2018,1,1,2018,319.99,224.23065657299998,Electra,Children Bicycles,1,27,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+284,Electra Savannah 1 (20-inch) - Girl's - 2018,1,1,2018,319.99,224.23065657299998,Electra,Children Bicycles,2,6,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+284,Electra Savannah 1 (20-inch) - Girl's - 2018,1,1,2018,319.99,224.23065657299998,Electra,Children Bicycles,3,26,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+285,Electra Soft Serve 1 (16-inch) - Girl's - 2018,1,1,2018,279.99,196.20094857299998,Electra,Children Bicycles,1,20,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+285,Electra Soft Serve 1 (16-inch) - Girl's - 2018,1,1,2018,279.99,196.20094857299998,Electra,Children Bicycles,2,22,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+285,Electra Soft Serve 1 (16-inch) - Girl's - 2018,1,1,2018,279.99,196.20094857299998,Electra,Children Bicycles,3,2,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+286,"Electra Starship 1 16"" - 2018",1,1,2018,279.99,196.20094857299998,Electra,Children Bicycles,1,28,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+286,"Electra Starship 1 16"" - 2018",1,1,2018,279.99,196.20094857299998,Electra,Children Bicycles,2,3,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+286,"Electra Starship 1 16"" - 2018",1,1,2018,279.99,196.20094857299998,Electra,Children Bicycles,3,7,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+287,Electra Straight 8 1 (16-inch) - Boy's - 2018,1,1,2018,279.99,196.20094857299998,Electra,Children Bicycles,1,2,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+287,Electra Straight 8 1 (16-inch) - Boy's - 2018,1,1,2018,279.99,196.20094857299998,Electra,Children Bicycles,2,15,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+287,Electra Straight 8 1 (16-inch) - Boy's - 2018,1,1,2018,279.99,196.20094857299998,Electra,Children Bicycles,3,26,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+288,Electra Straight 8 1 (20-inch) - Boy's - 2018,1,1,2018,389.99,273.28264557299997,Electra,Children Bicycles,1,9,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+288,Electra Straight 8 1 (20-inch) - Boy's - 2018,1,1,2018,389.99,273.28264557299997,Electra,Children Bicycles,2,13,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+288,Electra Straight 8 1 (20-inch) - Boy's - 2018,1,1,2018,389.99,273.28264557299997,Electra,Children Bicycles,3,2,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+289,"Electra Superbolt 1 20"" - 2018",1,1,2018,319.99,224.23065657299998,Electra,Children Bicycles,1,2,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+289,"Electra Superbolt 1 20"" - 2018",1,1,2018,319.99,224.23065657299998,Electra,Children Bicycles,2,5,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+289,"Electra Superbolt 1 20"" - 2018",1,1,2018,319.99,224.23065657299998,Electra,Children Bicycles,3,2,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+290,"Electra Superbolt 3i 20"" - 2018",1,1,2018,369.99,259.267791573,Electra,Children Bicycles,1,8,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+290,"Electra Superbolt 3i 20"" - 2018",1,1,2018,369.99,259.267791573,Electra,Children Bicycles,2,29,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+290,"Electra Superbolt 3i 20"" - 2018",1,1,2018,369.99,259.267791573,Electra,Children Bicycles,3,6,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+291,Electra Sweet Ride 1 (20-inch) - Girl's - 2018,1,1,2018,319.99,224.23065657299998,Electra,Children Bicycles,1,9,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+291,Electra Sweet Ride 1 (20-inch) - Girl's - 2018,1,1,2018,319.99,224.23065657299998,Electra,Children Bicycles,2,22,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+291,Electra Sweet Ride 1 (20-inch) - Girl's - 2018,1,1,2018,319.99,224.23065657299998,Electra,Children Bicycles,3,10,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+292,Electra Sweet Ride 3i (20-inch) - Girls' - 2018,1,1,2018,369.99,259.267791573,Electra,Children Bicycles,1,30,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+292,Electra Sweet Ride 3i (20-inch) - Girls' - 2018,1,1,2018,369.99,259.267791573,Electra,Children Bicycles,2,22,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+292,Electra Sweet Ride 3i (20-inch) - Girls' - 2018,1,1,2018,369.99,259.267791573,Electra,Children Bicycles,3,16,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+293,Electra Tiger Shark 1 (20-inch) - Boys' - 2018,1,1,2018,319.99,224.23065657299998,Electra,Children Bicycles,1,18,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+293,Electra Tiger Shark 1 (20-inch) - Boys' - 2018,1,1,2018,319.99,224.23065657299998,Electra,Children Bicycles,2,12,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+293,Electra Tiger Shark 1 (20-inch) - Boys' - 2018,1,1,2018,319.99,224.23065657299998,Electra,Children Bicycles,3,14,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+294,Electra Tiger Shark 3i (20-inch) - Boys' - 2018,1,1,2018,369.99,259.267791573,Electra,Children Bicycles,1,3,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+294,Electra Tiger Shark 3i (20-inch) - Boys' - 2018,1,1,2018,369.99,259.267791573,Electra,Children Bicycles,2,7,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+294,Electra Tiger Shark 3i (20-inch) - Boys' - 2018,1,1,2018,369.99,259.267791573,Electra,Children Bicycles,3,13,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+295,"Electra Treasure 1 20"" - 2018",1,1,2018,319.99,224.23065657299998,Electra,Children Bicycles,1,24,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+295,"Electra Treasure 1 20"" - 2018",1,1,2018,319.99,224.23065657299998,Electra,Children Bicycles,2,15,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+295,"Electra Treasure 1 20"" - 2018",1,1,2018,319.99,224.23065657299998,Electra,Children Bicycles,3,9,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+296,"Electra Treasure 3i 20"" - 2018",1,1,2018,369.99,259.267791573,Electra,Children Bicycles,1,9,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+296,"Electra Treasure 3i 20"" - 2018",1,1,2018,369.99,259.267791573,Electra,Children Bicycles,2,8,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+296,"Electra Treasure 3i 20"" - 2018",1,1,2018,369.99,259.267791573,Electra,Children Bicycles,3,12,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+297,"Electra Under-The-Sea 1 16"" - 2018",1,1,2018,279.99,196.20094857299998,Electra,Children Bicycles,1,22,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+297,"Electra Under-The-Sea 1 16"" - 2018",1,1,2018,279.99,196.20094857299998,Electra,Children Bicycles,2,7,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+297,"Electra Under-The-Sea 1 16"" - 2018",1,1,2018,279.99,196.20094857299998,Electra,Children Bicycles,3,22,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+298,Electra Water Lily 1 (16-inch) - Girl's - 2018,1,1,2018,279.99,196.20094857299998,Electra,Children Bicycles,1,26,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+298,Electra Water Lily 1 (16-inch) - Girl's - 2018,1,1,2018,279.99,196.20094857299998,Electra,Children Bicycles,2,27,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+298,Electra Water Lily 1 (16-inch) - Girl's - 2018,1,1,2018,279.99,196.20094857299998,Electra,Children Bicycles,3,14,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+299,Electra Townie Original 21D - 2018,1,2,2018,559.99,392.408904573,Electra,Comfort Bicycles,1,18,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+299,Electra Townie Original 21D - 2018,1,2,2018,559.99,392.408904573,Electra,Comfort Bicycles,2,0,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+299,Electra Townie Original 21D - 2018,1,2,2018,559.99,392.408904573,Electra,Comfort Bicycles,3,29,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+300,Electra Townie Balloon 3i EQ Ladies' - 2018,1,2,2018,799.99,560.5871525729999,Electra,Comfort Bicycles,1,7,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+300,Electra Townie Balloon 3i EQ Ladies' - 2018,1,2,2018,799.99,560.5871525729999,Electra,Comfort Bicycles,2,13,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+300,Electra Townie Balloon 3i EQ Ladies' - 2018,1,2,2018,799.99,560.5871525729999,Electra,Comfort Bicycles,3,3,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+301,Electra Townie Balloon 7i EQ - 2018,1,2,2018,899.99,630.661422573,Electra,Comfort Bicycles,1,10,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+301,Electra Townie Balloon 7i EQ - 2018,1,2,2018,899.99,630.661422573,Electra,Comfort Bicycles,2,26,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+301,Electra Townie Balloon 7i EQ - 2018,1,2,2018,899.99,630.661422573,Electra,Comfort Bicycles,3,29,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+302,Electra Townie Original 1 - 2018,1,2,2018,449.99,315.32720757299995,Electra,Comfort Bicycles,1,0,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+302,Electra Townie Original 1 - 2018,1,2,2018,449.99,315.32720757299995,Electra,Comfort Bicycles,2,6,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+302,Electra Townie Original 1 - 2018,1,2,2018,449.99,315.32720757299995,Electra,Comfort Bicycles,3,6,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+303,Electra Townie Go! 8i - 2017/2018,1,2,2018,2599.99,1821.9240125729998,Electra,Comfort Bicycles,1,12,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+303,Electra Townie Go! 8i - 2017/2018,1,2,2018,2599.99,1821.9240125729998,Electra,Comfort Bicycles,2,23,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+303,Electra Townie Go! 8i - 2017/2018,1,2,2018,2599.99,1821.9240125729998,Electra,Comfort Bicycles,3,13,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+304,Electra Townie Original 21D EQ - 2017/2018,1,2,2018,679.99,476.49802857299994,Electra,Comfort Bicycles,1,15,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+304,Electra Townie Original 21D EQ - 2017/2018,1,2,2018,679.99,476.49802857299994,Electra,Comfort Bicycles,2,6,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+304,Electra Townie Original 21D EQ - 2017/2018,1,2,2018,679.99,476.49802857299994,Electra,Comfort Bicycles,3,23,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+305,Electra Townie Balloon 3i EQ - 2017/2018,1,2,2018,749.99,525.550017573,Electra,Comfort Bicycles,1,23,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+305,Electra Townie Balloon 3i EQ - 2017/2018,1,2,2018,749.99,525.550017573,Electra,Comfort Bicycles,2,21,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+305,Electra Townie Balloon 3i EQ - 2017/2018,1,2,2018,749.99,525.550017573,Electra,Comfort Bicycles,3,11,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+306,Electra Townie Balloon 7i EQ Ladies' - 2017/2018,1,2,2018,899.99,630.661422573,Electra,Comfort Bicycles,1,21,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+306,Electra Townie Balloon 7i EQ Ladies' - 2017/2018,1,2,2018,899.99,630.661422573,Electra,Comfort Bicycles,2,17,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+306,Electra Townie Balloon 7i EQ Ladies' - 2017/2018,1,2,2018,899.99,630.661422573,Electra,Comfort Bicycles,3,7,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+307,Electra Townie Balloon 8D EQ - 2016/2017/2018,1,2,2018,749.99,525.550017573,Electra,Comfort Bicycles,1,17,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+307,Electra Townie Balloon 8D EQ - 2016/2017/2018,1,2,2018,749.99,525.550017573,Electra,Comfort Bicycles,2,18,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+307,Electra Townie Balloon 8D EQ - 2016/2017/2018,1,2,2018,749.99,525.550017573,Electra,Comfort Bicycles,3,17,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+308,Electra Townie Balloon 8D EQ Ladies' - 2016/2017/2018,1,2,2018,749.99,525.550017573,Electra,Comfort Bicycles,1,23,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+308,Electra Townie Balloon 8D EQ Ladies' - 2016/2017/2018,1,2,2018,749.99,525.550017573,Electra,Comfort Bicycles,2,15,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+308,Electra Townie Balloon 8D EQ Ladies' - 2016/2017/2018,1,2,2018,749.99,525.550017573,Electra,Comfort Bicycles,3,9,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+309,Electra Townie Commute 27D - 2018,1,2,2018,899.99,630.661422573,Electra,Comfort Bicycles,1,7,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+309,Electra Townie Commute 27D - 2018,1,2,2018,899.99,630.661422573,Electra,Comfort Bicycles,2,9,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+309,Electra Townie Commute 27D - 2018,1,2,2018,899.99,630.661422573,Electra,Comfort Bicycles,3,30,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+310,Electra Townie Commute 27D Ladies - 2018,1,2,2018,899.99,630.661422573,Electra,Comfort Bicycles,1,18,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+310,Electra Townie Commute 27D Ladies - 2018,1,2,2018,899.99,630.661422573,Electra,Comfort Bicycles,2,5,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+310,Electra Townie Commute 27D Ladies - 2018,1,2,2018,899.99,630.661422573,Electra,Comfort Bicycles,3,8,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+311,Electra Townie Commute 8D - 2018,1,2,2018,749.99,525.550017573,Electra,Comfort Bicycles,1,20,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+311,Electra Townie Commute 8D - 2018,1,2,2018,749.99,525.550017573,Electra,Comfort Bicycles,2,27,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+311,Electra Townie Commute 8D - 2018,1,2,2018,749.99,525.550017573,Electra,Comfort Bicycles,3,23,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+312,Electra Townie Commute 8D Ladies' - 2018,1,2,2018,699.99,490.51288257299996,Electra,Comfort Bicycles,1,23,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+312,Electra Townie Commute 8D Ladies' - 2018,1,2,2018,699.99,490.51288257299996,Electra,Comfort Bicycles,2,2,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+312,Electra Townie Commute 8D Ladies' - 2018,1,2,2018,699.99,490.51288257299996,Electra,Comfort Bicycles,3,18,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088
+313,Electra Townie Original 1 Ladies' - 2018,1,2,2018,449.99,315.32720757299995,Electra,Comfort Bicycles,1,14,Santa Cruz Bikes,(831) 476-4321,santacruz@bikes.shop,3700 Portola Drive,Santa Cruz,CA,95060
+313,Electra Townie Original 1 Ladies' - 2018,1,2,2018,449.99,315.32720757299995,Electra,Comfort Bicycles,2,24,Baldwin Bikes,(516) 379-8888,baldwin@bikes.shop,4200 Chestnut Lane,Baldwin,NY,11432
+313,Electra Townie Original 1 Ladies' - 2018,1,2,2018,449.99,315.32720757299995,Electra,Comfort Bicycles,3,0,Rowlett Bikes,(972) 530-5555,rowlett@bikes.shop,8000 Fairway Avenue,Rowlett,TX,75088

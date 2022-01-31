@@ -1,0 +1,29 @@
+# Napredni nasveti za uporabo paketa Shiny R
+
+V tem poglavju predstavimo nekaj bolj naprednih napotkov za uporabo paketa Shiny. Primeri, ki so tu navedeni, zahtevajo bolj napredno znanje programiranja in razumevanje drugih programskih jezikov, ki niso R.
+
+## Odvisnosti widgetov in deklarativno programiranje
+
+Spomnimo se primera "odzivnega widgeta" v 2. predavanju. Če ste bili dovolj pazljivi, ste opazili, da je aplikacija v konzoli vrnila opozorilo:
+
+<div class="alert alert-warning">
+```
+Warning: Error in checkHT: invalid 'n' -  must contain at least one non-missing element, got none.
+```
+
+</div>
+
+Zakaj je izpisala opozorilo? Odgovor na vprašanje se nanaša na _deklarativno obliko programiranja_. Za razliko od klasičnega programiranja v R (imperativna oblika), kjer se ukazi izvajajo zaporedno, se pri Shiny aplikacijah ukazi izvajajo le po potrebi in "vsi naenkrat". Izhod se bo torej posodobil, ko bo uporabnik spremenil vhod, od katerega je le-ta odvisen. Torej, ob spremembi vhoda se bodo istočasno spremenili **vsi** izhodi, ki so od njega odvisni.
+
+Lahko opazimo, da se vsakič, ko naložimo datoteko, izhodu `output$tabela` vrednost dodeli dvakrat: prvič, ko se spremeni `input$datoteka` in se takrat posodobita `output$tabela` in `output$odzivni_drsnik`. V tem trenutku ima `input$datoteka` že neko vrednost, `input$drsnik_dolzina` pa ima vrednost NULL, zato se pri izvajanjue ukaza prikaže opozorilo `head(read.csv(input$datoteka$datapath), input$drsnik_dolzina)`. Drugič se spremeni, ker se je v prejšnjem koraku posodobil `input$drsnik_dolzina` in se `output$tabela` posodobi glede na njegovo vrednost.
+
+V našem primeru se posodabljanje vedno zgodi dvakrat, paziti pa moramo, da ne ustvarimo cikla posodabljana. V tem primeru ga bo Shiny zaznal in nam prekinil delovanje strežnika.
+
+Če se želimo izogniti temu opozorilu moramo spremeniti pogoj, ki nadzoruje prikaz tabele:
+```{r eval = F}
+output$tabela <- renderTable({
+        #input$datoteka zamejamo z input$drsnik_dolzina
+        if(!is.null(input$drsnik_dolzina)){
+          ...
+```
+

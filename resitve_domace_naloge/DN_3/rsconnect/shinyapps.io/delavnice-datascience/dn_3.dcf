@@ -1,0 +1,11 @@
+name: dn_3
+title:
+username:
+account: delavnice-datascience
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 5435262
+bundleId: 5463798
+url: https://delavnice-datascience.shinyapps.io/dn_3/
+when: 1642062159.95989
+lastSyncTime: 1642062159.95989
