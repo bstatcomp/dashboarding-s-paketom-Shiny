@@ -7,7 +7,6 @@ stranski-pano-in-vnos-slik
 kontrolni-widgeti
 domača-naloga
 odzivni-dashboard-i
-uvod-1
 priprava-1
 strežniška-funkcija
 odzivni-tekst

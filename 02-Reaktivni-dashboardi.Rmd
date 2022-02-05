@@ -1,10 +1,8 @@
 # Odzivni dashboard-i
 
-## Uvod
+## Priprava
 
 V prvem predavanju  smo gradili statične aplikacije Shiny. V tem pa bomo pokazali, kako statičnim aplikacijam dodamo interaktivnost oziroma, z drugim izrazom, **odzivnost** na uporabnikove spremembe. Zato bomo danes bolje spoznali strežniško funkcijo `server`. Najprej pa spoznajmo, kaj so vhodi in izhodi aplikacij Shiny.
-
-## Priprava
 
 ### Vhodi in izhodi {-}
 

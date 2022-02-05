@@ -26,7 +26,7 @@ Dashboard-i so tematika te delavnice. Spoznali bomo paket **Shiny R**, ki nam om
 ## Struktura te knjige {-}
 Vsako poglavje ima 3 sklope:
 
-1) **Priprava.** Ta sklop je namenjen temu, da se udeleženci pripravijo na predavanje. Ker bodo le-ta intenzivna in namenjena predstavitvi glavnih konceptov ter uporabi funkcij na praktičnih primerih, je dobro, da poznamo osnovne klice uporabljenih funkcij. Za vsako pripravo je na voljo video. Priprava traja največ 15 minut.
+1) **Priprava.** Ta sklop je namenjen temu, da se udeleženci pripravijo na predavanje. Ker bodo le-ta intenzivna in namenjena predstavitvi glavnih konceptov ter uporabi funkcij na praktičnih primerih, je dobro, da poznamo osnovne klice uporabljenih funkcij. Za vsako pripravo je na voljo video. Priprava traja največ 15 minut. Lahko se zgodi, da nekatera poglavja nimajo priprave.
 
 2) **Jedro.** V tem sklopu je zajeta vsebina posameznega predavanja in včasih dodatna snov, ki jo predelamo samostojno. Podrobneje opišemo posamezne koncepte in funkcije ter demonstriramo na praktičnih primerih.
 
