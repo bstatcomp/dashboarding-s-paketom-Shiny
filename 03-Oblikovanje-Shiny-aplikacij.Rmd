@@ -400,7 +400,7 @@ Kot vidimo, se `tabPanel` z vrednostjo "panel 2.2" prikaže na desni polovici st
 
 ### Ročno definirana razporeditev
 
-Poleg že pripravljenih razporeditev, ki jih nudi Shiny, lahko sami določimo razporeditev. Strani aplikacij so razdeljene v vrstice, vsaka z dvanajstimi navideznimi stolpci, na katere lahko postavljamo poljubne objekte in panoje. Za poljubno razporeditev potrebujemo dve funkciji: `fluidRow` in `column`. Funkcija `fluidRow` ustvari novo vrstico, kot njene argumente pa podamo `column` funkcije. Prvi argument funkcije `column` predstavlja širino podano v številu stolpcev, čez katere se bodo raztezali objekti ali panoji. Definiramo jih s parametri funkcije `column`?? . Poleg širine lahko s parametrom `offset` določimo tudi zamik stolpca. V tem primeru moramo paziti, da ne presežemo dvanajstega stolpca. Vrednost parametra `offset` se nanaša na zamik od prejšnjega definiranega stolpca (`column`), ne pa od levega roba spletne strani. Ko definiramo strukturo, lahko začnemo vstavljati objekte in panoje. Poglejmo si primer:
+Poleg že pripravljenih razporeditev, ki jih nudi Shiny, lahko sami določimo razporeditev. Strani aplikacij so razdeljene v vrstice, vsaka z dvanajstimi navideznimi stolpci, na katere lahko postavljamo poljubne objekte in panoje. Za poljubno razporeditev potrebujemo dve funkciji: `fluidRow` in `column`. Funkcija `fluidRow` ustvari novo vrstico, kot njene argumente pa podamo `column` funkcije. Prvi argument funkcije `column` predstavlja širino podano v številu stolpcev, čez katere se bodo raztezali objekti ali panoji. Poleg širine lahko s parametrom `offset` določimo tudi zamik stolpca. V tem primeru moramo paziti, da ne presežemo dvanajstega stolpca. Vrednost parametra `offset` se nanaša na zamik od prejšnjega definiranega stolpca (`column`), ne pa od levega roba spletne strani. Ko definiramo strukturo, lahko začnemo vstavljati objekte in panoje. Poglejmo si primer:
 
 ```{r eval = F}
 library(shiny)
@@ -496,7 +496,7 @@ ui <- fluidPage(
 
 Funkciji `bs_theme` lahko podamo naslednje parametre:
 
-- version: verzija, ki jo uporabljamo (trenutno privzeta tema 5),
+- version: verzija, ki jo uporabljamo (trenutno privzeta verzija 5),
 - bootswatch: izbira prednastavljene teme,
 - bg: barva ozadja,
 - fg: barva ospredja - barva glavnega teksta,
@@ -506,7 +506,7 @@ Funkciji `bs_theme` lahko podamo naslednje parametre:
 - info: barva pisave za informiranje,
 - warning: barva za opozorila,
 - danger: barva za napake,
-- base_font: privzeta pisave,
+- base_font: privzeta pisava,
 - code_font: pisava za kodne izseke,
 - heading_font: pisava za naslove,
 - font_scale: faktor povečave pisave.

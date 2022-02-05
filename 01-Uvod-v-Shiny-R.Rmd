@@ -115,7 +115,7 @@ V strežniški funkciji pripada vsakemu izhodu (izpis teksta, izris grafa…) de
 
 Preden se naučimo uporabljati bolj zapletene objekte, si oglejmo, kako v aplikacijah Shiny oblikujemo besedilo. Ko poženemo aplikacije, se te prepišejo v jezik HTML. Če želimo besedilo naših aplikacij preoblikovati, moramo navodila za preoblikovanje spremeniti v jezik HTML. Shiny R ponuja vrsto funkcij za oblikovanje besedila, ki se ujemajo z oznakami programskega jezika HTML. Nekaj primerov:
 
-Funkcija v R | oznaka HTML | Pomen
+Funkcija v R | Oznaka HTML | Pomen
 :----| :---- | :----
 `p()`|`<p>` | Odstavek teksta.
 `h1()`|`<h1>` | Naslov prvega nivoja.
@@ -200,7 +200,7 @@ V spodnjem primeru nadgradimo zgornji primer tako, da vsak pano vsebuje več gra
 
 ```{r eval = F}
 ui <- fluidPage(
-  titlePan"l("Moja prva Shiny aplikac"ja"),
+  titlePanel("Moja prva Shiny aplikacija"),
 
   # Razporediev sidebarLayout
   sidebarLayout(

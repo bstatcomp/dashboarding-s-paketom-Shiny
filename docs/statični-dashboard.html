@@ -24,7 +24,7 @@
 <meta name="author" content="Jana Faganeli Pucer, Patrik Kojanec, Matej Pičulin in Erik Štrumbelj" />
 
 
-<meta name="date" content="2022-01-31" />
+<meta name="date" content="2022-02-05" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -156,7 +156,7 @@ div.csl-indent {
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">Dashboarding v Shiny R</a></li>
+<li><a href="./">Dashboarding s paketom Shiny</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Uvod</a>
@@ -311,7 +311,7 @@ div.csl-indent {
 <thead>
 <tr class="header">
 <th align="left">Funkcija v R</th>
-<th align="left">oznaka HTML</th>
+<th align="left">Oznaka HTML</th>
 <th align="left">Pomen</th>
 </tr>
 </thead>
@@ -417,7 +417,7 @@ div.csl-indent {
 <p>Prikaže se nam okno z dvema gradnikoma, ki vsebujeta le tekst. Leva tretjina zaslona je privzeto namenjena stranskemu panoju, desni dve tretjini pa glavnemu panoju. V primeru, da je celotno okno preozko, pa se lahko stranski pano premakne tudi na vrh zaslona. Več o ročni nastavitvi postavitve panojev bomo povedali na tretjem predavanju.</p>
 <p>V spodnjem primeru nadgradimo zgornji primer tako, da vsak pano vsebuje več gradnikov in dodamo logotip Data Science:</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="statični-dashboard.html#cb7-1" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(</span>
-<span id="cb7-2"><a href="statični-dashboard.html#cb7-2" aria-hidden="true" tabindex="-1"></a>  titlePan<span class="st">&quot;l(&quot;</span>Moja prva Shiny aplikac<span class="st">&quot;ja&quot;</span>),</span>
+<span id="cb7-2"><a href="statični-dashboard.html#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">titlePanel</span>(<span class="st">&quot;Moja prva Shiny aplikacija&quot;</span>),</span>
 <span id="cb7-3"><a href="statični-dashboard.html#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-4"><a href="statični-dashboard.html#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Razporediev sidebarLayout</span></span>
 <span id="cb7-5"><a href="statični-dashboard.html#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sidebarLayout</span>(</span>
@@ -448,7 +448,7 @@ div.csl-indent {
 <span id="cb7-30"><a href="statični-dashboard.html#cb7-30" aria-hidden="true" tabindex="-1"></a>    <span class="fu">p</span>(<span class="st">&quot;Pozor: slike morajo biti znotraj mape www!&quot;</span>)</span>
 <span id="cb7-31"><a href="statični-dashboard.html#cb7-31" aria-hidden="true" tabindex="-1"></a>    )</span>
 <span id="cb7-32"><a href="statični-dashboard.html#cb7-32" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb7-33"><a href="statični-dashboard.html#cb7-33" aria-hidden="true" tabindex="-1"></a><span class="er">)</span></span></code></pre></div>
+<span id="cb7-33"><a href="statični-dashboard.html#cb7-33" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
 <div style="border : 2px solid gray">
 <p><img src="images/shiny_1_2.PNG" /></p>
 </div>

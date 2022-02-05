@@ -55,20 +55,13 @@ Dodajmo prejšnjemu primeru strežniško funkcijo, ki izpiše besedilo:
 ui <- fluidPage(
 
   titlePanel("Primer izhodov"),
-
   plotOutput("primer_plot"), #primer_plot je identifikacijsko ime
-
   textOutput("primer_tekst") #primer_tekst je identifikacijsko ime
-
 )
 
-
 server <- function(input, output){
-
   output$primer_tekst <- "Izhodni tekst!"
-
 }
-
 
 shinyApp(ui = ui, server = server)
 
