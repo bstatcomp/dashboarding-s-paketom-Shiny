@@ -21,7 +21,7 @@ Neobdelani podatki so običajno preveč obsežni, da bi iz njih lahko hitro razb
 
 S statičnimi povzetki torej težko pregledamo in na en mah zajamemo vse pomembne informacije. Kot rešitev teh omejitev so se razvila orodja, ki slonijo na **kontrolnih ploščah** (angl. *dashboard*, izraz, ki ga bomo uporabljali v tej delavnici). Ta orodja temeljijo na kompromisu med preglednostjo in fleksibilnostjo prikaza. Uporabniku prikažemo manjše število povzetkov, ki pa so interaktivni in uporabniku omogočajo, da si jih prilagodi.
 
-Dashboard-i so tematika te delavnice. Spoznali bomo paket **Shiny R**, ki nam omogoča, da s pomočjo programskga jezika R ustvarimo dashboard-e v obliki interaktivnih spletnih aplikacij. Ob koncu delavnice bomo znali ustvariti svoj dashboard, kot je na primer [ta](https://delavnice-datascience.shinyapps.io/dn_3/). 
+Dashboard-i so tematika te delavnice. Spoznali bomo paket **Shiny R**, ki nam omogoča, da s pomočjo programskega jezika R ustvarimo dashboard-e v obliki interaktivnih spletnih aplikacij. Ob koncu delavnice bomo znali ustvariti svoj dashboard, kot je na primer [ta](https://delavnice-datascience.shinyapps.io/dn_3/). 
 
 ## Struktura te knjige {-}
 Vsako poglavje ima 3 sklope:
